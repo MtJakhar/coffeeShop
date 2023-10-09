@@ -9,3 +9,56 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Coffee {
+  id          Int      @id @default(autoincrement())
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  name        String
+  price       String
+  description String
+  image       String[]
+  roast       ROAST
+  brand_id    Int
+  brand       Brand    @relation(fields: [brand_id], references: [id])
+  country_id  Int
+  country     Country  @relation(fields: [country_id], references: [id])
+  region_id   Int
+  region      Region   @relation(fields: [region_id], references: [id])
+  webAddress  String   @unique
+}
+
+model Brand {
+  id          Int      @id @default(autoincrement())
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  name        String
+  description String
+  image       String
+  coffees     Coffee[]
+}
+
+model Country {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  name       String
+  coffees    Coffee[]
+}
+
+model Region {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  name       String
+  coffees    Coffee[]
+}
+
+enum ROAST {
+  LIGHT
+  LIGHT_MEDIUM
+  MEDIUM
+  MEDIUM_DARK
+  DARK
+  EXTRA_DARK
+}
