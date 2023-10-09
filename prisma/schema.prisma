@@ -18,6 +18,7 @@ model Coffee {
   price       String
   description String
   image       String[]
+  webAddress  String   @unique
   roast       ROAST
   brand_id    Int
   brand       Brand    @relation(fields: [brand_id], references: [id])
@@ -25,7 +26,6 @@ model Coffee {
   country     Country  @relation(fields: [country_id], references: [id])
   region_id   Int
   region      Region   @relation(fields: [region_id], references: [id])
-  webAddress  String   @unique
 }
 
 model Brand {
