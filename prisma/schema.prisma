@@ -35,6 +35,7 @@ model Brand {
   name        String
   description String
   image       String
+  address     String
   coffees     Coffee[]
 }
 
