@@ -1,6 +1,6 @@
 import { ROAST } from "@prisma/client";
 
-export const coffee = [
+export const coffees = [
 	{
 		name: "Black Apple Espresso",
 		brand: "Airship",

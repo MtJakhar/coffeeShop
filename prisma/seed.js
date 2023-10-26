@@ -1,3 +1,8 @@
+import { brands } from './brands'
+import { coffees } from './coffees'
+import { countries } from './countries'
+import { regions } from './regions'
+
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
