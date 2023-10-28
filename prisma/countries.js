@@ -9,7 +9,7 @@ export const countries = [
     name: "Burundi"
   },
   {
-    name: "Columbia"
+    name: "Colombia"
   },
   {
     name: "Congo"

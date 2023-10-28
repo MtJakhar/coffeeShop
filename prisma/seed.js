@@ -1,17 +1,19 @@
-import { brands, brands } from "./brands";
-import { coffees } from "./coffees";
-import { countries } from "./countries";
-import { regions } from "./regions";
+import { brands } from "./brands.js";
+import { coffees } from "./coffees.js";
+import { countries } from "./countries.js";
+import { regions } from "./regions.js";
+import { PrismaClient } from "@prisma/client";
 
-const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
+  //delete previous table data
 	await prisma.brand.deleteMany();
 	await prisma.country.deleteMany();
 	await prisma.region.deleteMany();
 	await prisma.coffee.deleteMany();
 
+  //create new table data
 	await prisma.brand.createMany({
 		data: brands,
 	});
