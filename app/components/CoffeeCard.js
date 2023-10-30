@@ -1,21 +1,21 @@
 import React from "react";
 import Image from "next/image";
 
-const CoffeeCard = () => {
+const CoffeeCard = (props) => {
 	return (
     <>
       <div className="justify-center border-2 border-black text-center">
         <Image
           className="mx-auto"
-          src="https://lh3.googleusercontent.com/pw/ADCreHfbfgtwA0okW4ymmX1KmJNm8Qa7vj4oLDrmw983i1Bj2bH5pF2tnomHHxDu6G0YrSztVBsI2GJaKjaRNWrw8KPOmwBxeLs3IqEJmjGMpv2MnPt17jU=w1920-h1080"
+          src={props.coffee.image[0]}
           width={500}
           height={500}
           alt="Coffee Image"
         />
         <hr />
-        <h3>Brand name</h3>
-        <h1>Coffee Name</h1>
-        <p>$18.50</p>
+        <h3>{props.coffee.brand_id}</h3>
+        <h1>{props.coffee.name}</h1>
+        <p>{props.coffee.price}</p>
       </div>
     </>
 	);
