@@ -11,7 +11,7 @@ export const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc4OwbTDac5V4cxCYbgqf1UNMwajlBjZnTXMxqwV9MleMCa31lOcUnd7D9SNq2Kq72T6Vqd6FgdesIZga9ok-uZ4ArSxwnL0MrrpcmA9eFqq6QqBak=w1920-h1080",
 		],
 		roast: ROAST.MEDIUM,
-		price: "23.50",
+		price: "$23.50",
 		webAddress: "black-apple-espresso",
 		description:
 			"With its syrupy body, tons of chocolaty sweetness, and splash of juicy cherry acidity, this one's ready to become your new favorite espresso.",
@@ -26,7 +26,7 @@ export const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdIdpKm0dzbxUm7OykPTaCsxTn4uQ0DTA2btw-_k0j1GgUTpjZoRSwbj_QE7Sh4xkvBxcLfGULUeGqo5xaA8ZjsTevoiqVNV9fpKeqnI8H3DCSV0Pg=w1920-h1080",
 		],
 		roast: ROAST.MEDIUM,
-		price: "18.50",
+		price: "$18.50",
 		webAddress: "black-bear-blend",
 		description:
 			"Deeply sweet and chocolaty, with a kiss of roastiness pairing beautifully with notes of toasted walnut.",
@@ -41,7 +41,7 @@ export const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHf9pOji6PRJW17cyF4xPZ5L-Ufp7qVpEaMjk4Z8RGYJKnWEvwYM7SxxFZYOc7gUk68KKWd3gywj0iRxRhzu9YUaQSaU_UVADMWHzwXVUBO4o4XMjbs=w1920-h1080",
 		],
 		roast: ROAST.MEDIUM,
-		price: "18.50",
+		price: "$18.50",
 		webAddress: "buffalo-blend",
 		description:
 			"Honey sweetness stars in this smooth, endlessly drinkable cup, supported by notes of toasted almond and a crisp green apple acidity.",
