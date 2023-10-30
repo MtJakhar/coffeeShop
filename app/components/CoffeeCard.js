@@ -13,7 +13,7 @@ const CoffeeCard = (props) => {
           alt="Coffee Image"
         />
         <hr />
-        <h3>{props.coffee.brand_id}</h3>
+        <h3>{props.brandName.name}</h3>
         <h1>{props.coffee.name}</h1>
         <p>{props.coffee.price}</p>
       </div>
