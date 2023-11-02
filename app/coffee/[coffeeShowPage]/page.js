@@ -1,32 +1,58 @@
 import Image from "next/image";
 import { Button } from "@mui/material";
+import { PrismaClient } from "@prisma/client";
 
-export default function CoffeeShowPage() {
+const prisma = new PrismaClient();
+
+const fetchCoffeeData = async (coffeeAddress) => {
+	const coffee = await prisma.coffee.findUnique({
+		where: {
+			webAddress: coffeeAddress
+		}
+	});
+
+	return coffee;
+};
+
+const fetchBrandData = async (brand_id) => {
+	const brand = await prisma.brand.findUnique({
+		where: {
+			id: brand_id
+		}
+	})
+	return brand
+}
+
+
+export default async function CoffeeShowPage({ params }) {
+	const coffee = await fetchCoffeeData(params.coffeeShowPage);
+	const brand = await fetchBrandData(coffee.brand_id)
+	console.log({ coffee })
+
 	return (
 		<>
-			<h1>Coffee Show Page</h1>
+			<h1>{brand.name}</h1>
 			<div className="flex">
 				<Image
-					src="https://lh3.googleusercontent.com/pw/ADCreHc4OwbTDac5V4cxCYbgqf1UNMwajlBjZnTXMxqwV9MleMCa31lOcUnd7D9SNq2Kq72T6Vqd6FgdesIZga9ok-uZ4ArSxwnL0MrrpcmA9eFqq6QqBak=w1920-h1080"
+					src={coffee.image[1]}
 					width={800}
 					height={800}
 					alt="image of coffee"
 				/>
 				<div className="text-center justify-center p-7">
-					<h1>Product Name</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Consequat id porta nibh venenatis cras sed
-						felis eget. Netus et malesuada fames ac turpis. Ultrices
-						in iaculis nunc sed. Viverra vitae congue eu consequat
-						ac felis donec. Tellus in hac habitasse platea dictumst
-						vestibulum rhoncus. Auctor augue mauris augue neque
-						gravida in fermentum et sollicitudin. Nunc non blandit
-						massa enim nec dui nunc. Faucibus ornare suspendisse sed
-						nisi lacus sed viverra.
-					</p>
-					<Button className="m-2 bg-slate-600" variant="contained">Add to Cart</Button>
+					<h1>{coffee.name}</h1>
+					<p>{coffee.description}</p>
+					<div className="text-center justify-center">
+						<p>One Time Purchase -----{coffee.price}</p>
+						<div>
+							<Button
+								className="m-2 bg-slate-600"
+								variant="contained"
+							>
+								Add to Cart
+							</Button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
