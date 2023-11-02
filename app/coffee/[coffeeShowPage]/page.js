@@ -55,6 +55,12 @@ export default async function CoffeeShowPage({ params }) {
 					</div>
 				</div>
 			</div>
+			<Image 
+				src={brand.image}
+				width={800}
+				height={800}
+				alt="brand image"
+			/>
 		</>
 	);
 }
