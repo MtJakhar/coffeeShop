@@ -14,6 +14,7 @@ const getBrandData = async () => {
 
 	return brands;
 };
+
 export default async function Shop() {
 	const coffeeData = await getCoffeeData();
 	const brandData = await getBrandData();
