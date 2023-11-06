@@ -16,9 +16,23 @@ const getBrandData = async () => {
 	return brands;
 };
 
+const getCountryData = async () => {
+	const countries = await prisma.country.findMany();
+
+	return countries;
+}
+
+const getRegionData = async () => {
+	const regions = await prisma.region.findMany();
+	
+	return regions
+}
+
 export default async function Shop() {
 	const coffeeData = await getCoffeeData();
 	const brandData = await getBrandData();
+	const countryData = await getCountryData();
+	const regionData = await getRegionData();
 
 	return (
 		<>
@@ -26,7 +40,7 @@ export default async function Shop() {
 				<h1>SHOPPING</h1>
 				<div className="flex">
 					<div>
-						<AccordionShop />
+						<AccordionShop coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData}/>
 					</div>
 					<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
 						{coffeeData.map((coffee) => {
