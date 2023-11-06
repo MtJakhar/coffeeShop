@@ -23,17 +23,22 @@ export default async function Shop() {
 		<>
 			<div>
 				<h1>SHOPPING</h1>
-				<div className="grid md:grid-cols-4 grid-cols-1 gap-6 m-4">
-					{coffeeData.map((coffee) => {
-						return (
-							<CoffeeCard
-								coffee={coffee}
-								brandName={brandData.find(
-									(brand) => brand.id === coffee.brand_id
-								)}
-							/>
-						);
-					})}
+				<div className="flex">
+					<div>
+						Accordion
+					</div>
+					<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
+						{coffeeData.map((coffee) => {
+							return (
+								<CoffeeCard
+									coffee={coffee}
+									brandName={brandData.find(
+										(brand) => brand.id === coffee.brand_id
+									)}
+								/>
+							);
+						})}
+					</div>
 				</div>
 			</div>
 		</>
