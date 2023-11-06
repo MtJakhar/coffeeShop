@@ -1,5 +1,6 @@
 import CoffeeCard from "../components/CoffeeCard";
 import { PrismaClient } from "@prisma/client";
+import AccordionShop from "../components/AccordionShop";
 
 const prisma = new PrismaClient();
 
@@ -25,7 +26,7 @@ export default async function Shop() {
 				<h1>SHOPPING</h1>
 				<div className="flex">
 					<div>
-						Accordion
+						<AccordionShop />
 					</div>
 					<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
 						{coffeeData.map((coffee) => {
