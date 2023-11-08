@@ -3,6 +3,7 @@ import { PrismaClient } from "@prisma/client";
 import AccordionShop from "../components/AccordionShop";
 
 const prisma = new PrismaClient();
+//crate state in this shop page
 
 const getCoffeeData = async () => {
 	const coffees = await prisma.coffee.findMany();
