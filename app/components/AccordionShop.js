@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { useState } from "react";
@@ -9,68 +9,84 @@ const AccordionShop = ({ brandData, coffeeData, countryData, regionData }) => {
 		brand: [],
 		country: [],
 		region: [],
-		roast: []
+		roast: [],
 	});
 
 	const handleCheckBox = (key, selectedValue) => {
-		if(userInput[key].includes(selectedValue)) {
+		if (userInput[key].includes(selectedValue)) {
 			setUserInput((prevData) => ({
 				...prevData,
-				[key]: prevData[key].filter((element) => element !== selectedValue)
+				[key]: prevData[key].filter(
+					(element) => element !== selectedValue
+				),
 			}));
 		} else {
-				setUserInput((prevData) => ({
-					...prevData,
-					[key]: [...prevData[key], selectedValue]
+			setUserInput((prevData) => ({
+				...prevData,
+				[key]: [...prevData[key], selectedValue],
 			}));
 		}
-	}
+	};
 
-  // const roastData = [
-  //   {
-  //     name: "Light",
-  //   },
-  //   {
-  //     name: "Light Medium",
-  //   },
-  //   {
-  //     name: "Medium",
-  //   },
-  //   {
-  //     name: "Medium Dark",
-  //   },
-  //   {
-  //     name: "Dark",
-  //   },
-  //   {
-  //     name: "Extra Dark",
-  //   },
-  // ]
+	const roastData = [
+	  {
+			name: "Light",
+	    data: "LIGHT"
+	  },
+	  {
+			name: "Light Medium",
+	    data: "LIGHT_MEDIUM"
+	  },
+	  {
+			name: "Medium",
+	    data: "MEDIUM"
+	  },
+	  {
+			name: "Medium Dark",
+	    data: "MEDIUM_DARK"
+	  },
+	  {
+			name: "Dark",
+	    data: "DARK"
+	  },
+	  {
+			name: "Extra Dark",
+	    data: "EXTRA_DARK"
+	  },
+	];
 
-	// const listedItems = [
-	// 	{
-	// 		name: "Brand",
-	// 		data: brandData,
-	// 	},
-	// 	{
-	// 		name: "Country",
-	// 		data: countryData,
-	// 	},
-	// 	{
-	// 		name: "Region",
-	// 		data: regionData,
-	// 	},
-	// 	{
-	// 		name: "Roast Level",
-	// 		data: roastData,
-	// 	},
-	// ];
+	const listedItems = [
+		{
+			name: "brand",
+			data: brandData,
+		},
+		{
+			name: "country",
+			data: countryData,
+		},
+		{
+			name: "region",
+			data: regionData,
+		},
+		{
+			name: "roast",
+			data: roastData,
+		},
+	];
 
+	console.log(userInput)
 	return (
 		<div>
-			<AccordionCard name="brand" data={brandData} handleCheckBox={handleCheckBox}/>
-			<AccordionCard name="country" data={countryData} handleCheckBox={handleCheckBox}/>
-			<AccordionCard name="region" data={regionData} handleCheckBox={handleCheckBox}/>
+			{listedItems.map((item) => {
+				return (
+					<AccordionCard
+						name={item.name}
+						data={item.data}
+						handleCheckBox={handleCheckBox}
+					/>
+				);
+			})}
+
 		</div>
 	);
 };
