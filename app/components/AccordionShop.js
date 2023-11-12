@@ -87,7 +87,6 @@ const AccordionShop = ({ brandData, coffeeData, countryData, regionData }) => {
 					/>
 				);
 			})}
-
 		</div>
 	);
 };

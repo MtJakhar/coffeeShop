@@ -29,7 +29,7 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 					<AccordionDetails>
 						{data.map((element) => {
 							return (
-								<div>
+								<div key={element.name}>
 									<FormControlLabel
 										key={element.name}
 										control={<Checkbox />}
@@ -47,14 +47,13 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 					<AccordionDetails>
 						{data.map((element) => {
 							return (
-								<div>
+								<div key={element.name}>
 									<FormControlLabel
-										key={element.name}
 										control={<Checkbox />}
 										label={element.name}
 										labelPlacement="end"
 										onClick={() =>
-											handleCheckBox(name, element.name)
+											handleCheckBox(name, element.id)
 										}
 									/>
 								</div>

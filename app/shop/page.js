@@ -47,6 +47,7 @@ export default async function Shop() {
 						{coffeeData.map((coffee) => {
 							return (
 								<CoffeeCard
+									key={coffee.id}
 									coffee={coffee}
 									brandName={brandData.find(
 										(brand) => brand.id === coffee.brand_id
