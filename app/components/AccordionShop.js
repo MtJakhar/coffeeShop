@@ -80,6 +80,7 @@ const AccordionShop = ({ brandData, coffeeData, countryData, regionData }) => {
 			{listedItems.map((item) => {
 				return (
 					<AccordionCard
+						key={item.name}
 						name={item.name}
 						data={item.data}
 						handleCheckBox={handleCheckBox}

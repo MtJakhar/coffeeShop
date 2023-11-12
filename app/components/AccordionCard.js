@@ -31,6 +31,7 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 							return (
 								<div>
 									<FormControlLabel
+										key={element.name}
 										control={<Checkbox />}
 										label={element.name}
 										labelPlacement="end"
@@ -48,6 +49,7 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 							return (
 								<div>
 									<FormControlLabel
+										key={element.name}
 										control={<Checkbox />}
 										label={element.name}
 										labelPlacement="end"
