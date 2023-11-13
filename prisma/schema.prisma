@@ -19,7 +19,8 @@ model Coffee {
   description String
   image       String[]
   webAddress  String   @unique
-  roast       ROAST
+  roast_id    Int
+  roast       Roast    @relation(fields: [roast_id], references: [id])
   brand_id    Int
   brand       Brand    @relation(fields: [brand_id], references: [id])
   country_id  Int
@@ -55,12 +56,10 @@ model Region {
   name       String
   coffees    Coffee[]
 }
-
-enum ROAST {
-  LIGHT
-  LIGHT_MEDIUM
-  MEDIUM
-  MEDIUM_DARK
-  DARK
-  EXTRA_DARK
+model Roast {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  name       String
+  coffees    Coffee[]
 }

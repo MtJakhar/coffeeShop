@@ -29,7 +29,7 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData }) => {
   return (
     <div className="flex">
     <div>
-      <AccordionShop coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData} userInput={userInput} setUserInput={setUserInput}/>
+      <AccordionShop coffeeData={newCoffeeData} brandData={brandData} countryData={countryData} regionData={regionData} userInput={userInput} setUserInput={setUserInput}/>
     </div>
     {/* <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
       {newCoffeeData.map((coffee) => {
