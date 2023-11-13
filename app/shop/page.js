@@ -1,6 +1,8 @@
-import CoffeeCard from "../components/CoffeeCard";
+
 import { PrismaClient } from "@prisma/client";
-import AccordionShop from "../components/AccordionShop";
+import ShopComponent from "../components/ShopComponent";
+
+
 
 const prisma = new PrismaClient();
 //crate state in this shop page
@@ -39,24 +41,7 @@ export default async function Shop() {
 		<>
 			<div>
 				<h1>SHOPPING</h1>
-				<div className="flex">
-					<div>
-						<AccordionShop coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData}/>
-					</div>
-					<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
-						{coffeeData.map((coffee) => {
-							return (
-								<CoffeeCard
-									key={coffee.id}
-									coffee={coffee}
-									brandName={brandData.find(
-										(brand) => brand.id === coffee.brand_id
-									)}
-								/>
-							);
-						})}
-					</div>
-				</div>
+				<ShopComponent coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData}/>
 			</div>
 		</>
 	);

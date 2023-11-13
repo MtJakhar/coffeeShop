@@ -4,13 +4,7 @@ import React from "react";
 import { useState } from "react";
 import AccordionCard from "./AccordionCard";
 
-const AccordionShop = ({ brandData, coffeeData, countryData, regionData }) => {
-	const [userInput, setUserInput] = useState({
-		brand: [],
-		country: [],
-		region: [],
-		roast: [],
-	});
+const AccordionShop = ({ brandData, coffeeData, countryData, regionData, userInput, setUserInput  }) => {
 
 	const handleCheckBox = (key, selectedValue) => {
 		if (userInput[key].includes(selectedValue)) {
