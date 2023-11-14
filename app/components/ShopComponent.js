@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import CoffeeCard from './CoffeeCard';
 import AccordionShop from './AccordionShop';
 
-const ShopComponent = ({ brandData, coffeeData, countryData, regionData }) => {
+const ShopComponent = ({ brandData, coffeeData, countryData, regionData, roastData }) => {
   const [userInput, setUserInput] = useState({
 		brand: [],
 		country: [],
@@ -17,9 +17,9 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData }) => {
       // Check if each user input category is not an empty array and matches the coffee data
       return (
         (!userInput.brand.length || userInput.brand.includes(coffee.brand_id)) &&
-        (!userInput.country.length || userInput.country.includes(country_id)) &&
+        (!userInput.country.length || userInput.country.includes(coffee.country_id)) &&
         (!userInput.region.length || userInput.region.includes(coffee.region_id)) &&
-        (!userInput.roast.length || userInput.roast.includes(coffee.roast))
+        (!userInput.roast.length || userInput.roast.includes(coffee.roast_id))
       );
     });
   }
@@ -29,9 +29,9 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData }) => {
   return (
     <div className="flex">
     <div>
-      <AccordionShop coffeeData={newCoffeeData} brandData={brandData} countryData={countryData} regionData={regionData} userInput={userInput} setUserInput={setUserInput}/>
+      <AccordionShop coffeeData={newCoffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roastData={roastData} userInput={userInput} setUserInput={setUserInput}/>
     </div>
-    {/* <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
+    <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
       {newCoffeeData.map((coffee) => {
         return (
           <CoffeeCard
@@ -43,8 +43,8 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData }) => {
           />
         );
       })}
-    </div> */}
-    <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
+    </div>
+    {/* <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
       {coffeeData.map((coffee) => {
         return (
           <CoffeeCard
@@ -56,7 +56,7 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData }) => {
           />
         );
       })}
-    </div>
+    </div> */}
   </div>
   )
 }

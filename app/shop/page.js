@@ -43,12 +43,12 @@ export default async function Shop() {
 	const countryData = await getCountryData();
 	const regionData = await getRegionData();
 	const roastData = await getRoastData();
-
+	
 	return (
 		<>
 			<div>
 				<h1>SHOPPING</h1>
-				<ShopComponent coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roast={roastData}/>
+				<ShopComponent coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roastData={roastData}/>
 			</div>
 		</>
 	);

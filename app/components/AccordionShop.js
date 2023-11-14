@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import { useState } from "react";
 import AccordionCard from "./AccordionCard";
 
-const AccordionShop = ({ brandData, newCoffeeData, countryData, regionData, userInput, setUserInput  }) => {
+const AccordionShop = ({ brandData, newCoffeeData, countryData, regionData, roastData, userInput, setUserInput  }) => {
 
 	const handleCheckBox = (key, selectedValue) => {
 		if (userInput[key].includes(selectedValue)) {
@@ -21,33 +20,6 @@ const AccordionShop = ({ brandData, newCoffeeData, countryData, regionData, user
 			}));
 		}
 	};
-
-	const roastData = [
-	  {
-			name: "Light",
-	    data: "LIGHT"
-	  },
-	  {
-			name: "Light Medium",
-	    data: "LIGHT_MEDIUM"
-	  },
-	  {
-			name: "Medium",
-	    data: "MEDIUM"
-	  },
-	  {
-			name: "Medium Dark",
-	    data: "MEDIUM_DARK"
-	  },
-	  {
-			name: "Dark",
-	    data: "DARK"
-	  },
-	  {
-			name: "Extra Dark",
-	    data: "EXTRA_DARK"
-	  },
-	];
 
 	const listedItems = [
 		{
@@ -71,6 +43,7 @@ const AccordionShop = ({ brandData, newCoffeeData, countryData, regionData, user
 	console.log(userInput)
 	return (
 		<div>
+			
 			{listedItems.map((item) => {
 				return (
 					<AccordionCard
