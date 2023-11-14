@@ -6,9 +6,6 @@ const countries = [
     name: "Brazil"
   },
   {
-    name: "Burundi"
-  },
-  {
     name: "Colombia"
   },
   {
@@ -30,13 +27,7 @@ const countries = [
     name: "Ethiopia"
   },
   {
-    name: "Guatemala"
-  },
-  {
     name: "Honduras"
-  },
-  {
-    name: "India"
   },
   {
     name: "Indonesia"
@@ -60,13 +51,7 @@ const countries = [
     name: "Peru"
   },
   {
-    name: "Rwanda"
-  },
-  {
     name: "Tanzania"
-  },
-  {
-    name: "Uganda"
   },
   {
     name: "United States"

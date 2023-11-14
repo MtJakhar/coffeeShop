@@ -12,8 +12,8 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData, roastDa
 		roast: [],
 	});
 
-  const filterCoffeeData = (data, userInput) => {
-    return data.filter((coffee) => {
+  const filterCoffeeData = (coffData, userInput) => {
+    return coffData.filter((coffee) => {
       // Check if each user input category is not an empty array and matches the coffee data
       return (
         (!userInput.brand.length || userInput.brand.includes(coffee.brand_id)) &&
@@ -27,37 +27,27 @@ const ShopComponent = ({ brandData, coffeeData, countryData, regionData, roastDa
   let newCoffeeData = filterCoffeeData(coffeeData, userInput)
 
   return (
-    <div className="flex">
     <div>
-      <AccordionShop coffeeData={newCoffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roastData={roastData} userInput={userInput} setUserInput={setUserInput}/>
+      <h1>{newCoffeeData.length}</h1>
+      <div className="flex">
+        <div>
+          <AccordionShop coffeeData={newCoffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roastData={roastData} userInput={userInput} setUserInput={setUserInput}/>
+        </div>
+        <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
+          {newCoffeeData.map((coffee) => {
+            return (
+              <CoffeeCard
+                key={coffee.id}
+                coffee={coffee}
+                brandName={brandData.find(
+                  (brand) => brand.id === coffee.brand_id
+                )}
+              />
+            );
+          })}
+        </div>
+      </div>
     </div>
-    <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
-      {newCoffeeData.map((coffee) => {
-        return (
-          <CoffeeCard
-            key={coffee.id}
-            coffee={coffee}
-            brandName={brandData.find(
-              (brand) => brand.id === coffee.brand_id
-            )}
-          />
-        );
-      })}
-    </div>
-    {/* <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
-      {coffeeData.map((coffee) => {
-        return (
-          <CoffeeCard
-            key={coffee.id}
-            coffee={coffee}
-            brandName={brandData.find(
-              (brand) => brand.id === coffee.brand_id
-            )}
-          />
-        );
-      })}
-    </div> */}
-  </div>
   )
 }
 
