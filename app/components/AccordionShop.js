@@ -35,7 +35,7 @@ const AccordionShop = ({ brandData, newCoffeeData, countryData, regionData, roas
 			data: regionData,
 		},
 		{
-			name: "Butt",
+			name: "roast",
 			data: roastData,
 		},
 	];
