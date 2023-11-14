@@ -25,26 +25,7 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 				<AccordionSummary expandIcon={<ExpandMore />}>
 					<p>{summaryName(name)}</p>
 				</AccordionSummary>
-				{name === "roast" ? (
-					<AccordionDetails>
-						{data.map((element) => {
-							return (
-								<div key={element.name}>
-									<FormControlLabel
-										key={element.name}
-										control={<Checkbox />}
-										label={element.name}
-										labelPlacement="end"
-										onClick={() =>
-											handleCheckBox(name, element.data)
-										}
-									/>
-								</div>
-							);
-						})}
-					</AccordionDetails>
-				) : (
-					<AccordionDetails>
+				<AccordionDetails>
 						{data.map((element) => {
 							return (
 								<div key={element.name}>
@@ -60,7 +41,6 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 							);
 						})}
 					</AccordionDetails>
-				)}
 			</Accordion>
 		</>
 	);

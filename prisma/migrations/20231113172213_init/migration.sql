@@ -1,6 +1,3 @@
--- CreateEnum
-CREATE TYPE "ROAST" AS ENUM ('LIGHT', 'LIGHT_MEDIUM', 'MEDIUM', 'MEDIUM_DARK', 'DARK', 'EXTRA_DARK');
-
 -- CreateTable
 CREATE TABLE "Coffee" (
     "id" SERIAL NOT NULL,
@@ -11,7 +8,7 @@ CREATE TABLE "Coffee" (
     "description" TEXT NOT NULL,
     "image" TEXT[],
     "webAddress" TEXT NOT NULL,
-    "roast" "ROAST" NOT NULL,
+    "roast_id" INTEGER NOT NULL,
     "brand_id" INTEGER NOT NULL,
     "country_id" INTEGER NOT NULL,
     "region_id" INTEGER NOT NULL,
@@ -53,8 +50,21 @@ CREATE TABLE "Region" (
     CONSTRAINT "Region_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
+CREATE TABLE "Roast" (
+    "id" SERIAL NOT NULL,
+    "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMP(3) NOT NULL,
+    "name" TEXT NOT NULL,
+
+    CONSTRAINT "Roast_pkey" PRIMARY KEY ("id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "Coffee_webAddress_key" ON "Coffee"("webAddress");
+
+-- AddForeignKey
+ALTER TABLE "Coffee" ADD CONSTRAINT "Coffee_roast_id_fkey" FOREIGN KEY ("roast_id") REFERENCES "Roast"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "Coffee" ADD CONSTRAINT "Coffee_brand_id_fkey" FOREIGN KEY ("brand_id") REFERENCES "Brand"("id") ON DELETE RESTRICT ON UPDATE CASCADE;

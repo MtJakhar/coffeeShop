@@ -31,17 +31,24 @@ const getRegionData = async () => {
 	return regions
 }
 
+const getRoastData = async () => {
+	const roasts = await prisma.roast.findMany();
+	
+	return roasts
+}
+
 export default async function Shop() {
 	const coffeeData = await getCoffeeData();
 	const brandData = await getBrandData();
 	const countryData = await getCountryData();
 	const regionData = await getRegionData();
-
+	const roastData = await getRoastData();
+	
 	return (
 		<>
 			<div>
 				<h1>SHOPPING</h1>
-				<ShopComponent coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData}/>
+				<ShopComponent coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roastData={roastData}/>
 			</div>
 		</>
 	);

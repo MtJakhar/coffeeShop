@@ -1,4 +1,4 @@
-export const countries = [
+const countries = [
   {
     name: "Bolivia"
   },
@@ -75,3 +75,7 @@ export const countries = [
     name: "Various"
   }
 ]
+
+module.exports = {
+	countries
+}

@@ -1,4 +1,4 @@
-export const brands = [
+const brands = [
   {
     name: "Airship",
     description: "Love the smell of coffee? Airship is right there with you! Mark Bray’s Northwest Arkansas roaster seeks peak aroma in every coffee for an enticing and invigorating fragrance. In partnering with a local culinary center, it’s spreading that delightfully pungent message throughout the region.",
@@ -133,3 +133,7 @@ export const brands = [
     image: "https://lh3.googleusercontent.com/pw/ADCreHeZ4gD0O6yYjObEI-zpaSAD5SupyIaTknkakZMqB4gn-laCUJ4nyv2yPrkJ4i4QBkXU7Xoe5A3KNbEWLYBeBVuIAKAxeH34PKtL9u7h7Af44TuqZDE=w2400"
   },
 ]
+
+module.exports = {
+	brands
+}
