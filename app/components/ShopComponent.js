@@ -37,7 +37,7 @@ const ShopComponent = ({
 	};
 
 	let newCoffeeData = filterCoffeeData(coffeeData, userInput);
-  console.log(coffees)
+
 	return (
 		<div>
 			<h1>{newCoffeeData.length}</h1>

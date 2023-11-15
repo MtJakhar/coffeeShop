@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@mui/material";
 import { PrismaClient } from "@prisma/client";
+import ReviewSlider from "@/app/components/ReviewSlider";
 
 const prisma = new PrismaClient();
 
@@ -23,16 +24,28 @@ const fetchBrandData = async (brand_id) => {
 	return brand
 }
 
+const fetchReviewData = async (coffee_id) => {
+	const reviews = await prisma.review.findMany({
+		where: {
+			coffee_id: coffee_id
+		}
+	})
+	return reviews
+}
+
+
 
 export default async function CoffeeShowPage({ params }) {
 	const coffee = await fetchCoffeeData(params.coffeeShowPage);
-	const brand = await fetchBrandData(coffee.brand_id)
-	console.log({ coffee })
+	const brand = await fetchBrandData(coffee.brand_id);
+	const reviews = await fetchReviewData(coffee.id);
 
+	{console.log({reviews})}
 	return (
 		<>
 			<h1>{brand.name}</h1>
 			<div className="flex">
+			
 				<Image
 					src={coffee.image[1]}
 					width={800}
@@ -61,6 +74,7 @@ export default async function CoffeeShowPage({ params }) {
 				height={800}
 				alt="brand image"
 			/>
+			<ReviewSlider reviewData={reviews} coffee={coffee}/>
 		</>
 	);
 }
