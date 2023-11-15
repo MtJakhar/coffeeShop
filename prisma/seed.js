@@ -3,6 +3,8 @@ const { coffees } = require('./coffees.js');
 const { countries } = require('./countries.js');
 const { regions } = require('./regions.js');
 const { roasts } = require('./roasts.js');
+const { reviews } = require('./reviews.js');
+const { users } = require('./users.js');
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
@@ -11,6 +13,8 @@ async function main() {
   //delete previous table data
 	console.log("Deleting previous table data...")
 	await prisma.coffee.deleteMany();
+	await prisma.user.deleteMany();
+	await prisma.review.deleteMany();
 	await prisma.brand.deleteMany();
 	await prisma.country.deleteMany();
 	await prisma.region.deleteMany();
@@ -39,11 +43,23 @@ async function main() {
 		data: roasts, 
 	});
 
+	console.log("Creating new user data...")
+	await prisma.user.createMany({
+		data: users
+	});
+
 	console.log("Creating new coffee data...")
 	await prisma.coffee.createMany({
 		data: coffees,
 	});
+
+	console.log("Creating new reviews data...")
+	await prisma.review.createMany({
+		data: reviews
+	});
 }
+
+
 
 main()
 	.catch((e) => {

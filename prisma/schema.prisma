@@ -27,6 +27,7 @@ model Coffee {
   country     Country  @relation(fields: [country_id], references: [id])
   region_id   Int
   region      Region   @relation(fields: [region_id], references: [id])
+  reviews     Review[]
 }
 
 model Brand {
@@ -56,10 +57,38 @@ model Region {
   name       String
   coffees    Coffee[]
 }
+
+model Review {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+  first_name String
+  last_name  String
+  text       String
+  rating     Float
+  coffee_id  Int
+  coffee     Coffee   @relation(fields: [coffee_id], references: [id])
+  user_id    Int
+  user       User     @relation(fields: [user_id], references: [id])
+}
+
 model Roast {
   id         Int      @id @default(autoincrement())
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
   name       String
   coffees    Coffee[]
+}
+
+model User {
+  id         Int      @id @default(autoincrement())
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
+  first_name String
+  last_name  String
+  address    String
+  email      String
+  phone      String
+  password   String
+  reviews    Review[]
 }
