@@ -58,7 +58,7 @@ CREATE TABLE "Review" (
     "first_name" TEXT NOT NULL,
     "last_name" TEXT NOT NULL,
     "text" TEXT NOT NULL,
-    "rating" DOUBLE PRECISION NOT NULL,
+    "rating" INTEGER NOT NULL,
     "coffee_id" INTEGER NOT NULL,
     "user_id" INTEGER NOT NULL,
 
@@ -84,7 +84,7 @@ CREATE TABLE "User" (
     "last_name" TEXT NOT NULL,
     "address" TEXT NOT NULL,
     "email" TEXT NOT NULL,
-    "phone" INTEGER NOT NULL,
+    "phone" TEXT NOT NULL,
     "password" TEXT NOT NULL,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
