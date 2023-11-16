@@ -1,11 +1,15 @@
 import React from 'react'
+import Stars from './Stars'
+
 
 const ReviewCard = ({ review }) => {
   return (
-    <div>
+    <div className="border-2 border-black">
       <h1>{review.first_name} {review.last_name}</h1>
-      <h2>*****</h2>
-      <p>{review.text}</p>
+      <div>
+        <Stars rating={review.rating}/>
+      </div>
+      <p>"{review.text}"</p>
     </div>
   )
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@mui/material";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "@/app/components/ReviewSlider";
+import { StarOutlineRounded, StarRounded } from "@mui/icons-material";
 
 const prisma = new PrismaClient();
 
@@ -44,6 +45,8 @@ export default async function CoffeeShowPage({ params }) {
 	return (
 		<>
 			<h1>{brand.name}</h1>
+			<StarRounded className="red-500"/>
+			<StarOutlineRounded />
 			<div className="flex">
 			
 				<Image
