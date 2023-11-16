@@ -65,7 +65,7 @@ model Review {
   first_name String
   last_name  String
   text       String
-  rating     Float
+  rating     Int
   coffee_id  Int
   coffee     Coffee   @relation(fields: [coffee_id], references: [id])
   user_id    Int
