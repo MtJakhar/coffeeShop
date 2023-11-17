@@ -9,8 +9,8 @@ const prisma = new PrismaClient();
 const fetchCoffeeData = async (coffeeAddress) => {
 	const coffee = await prisma.coffee.findUnique({
 		where: {
-			webAddress: coffeeAddress
-		}
+			webAddress: coffeeAddress,
+		},
 	});
 
 	return coffee;
@@ -19,36 +19,30 @@ const fetchCoffeeData = async (coffeeAddress) => {
 const fetchBrandData = async (brand_id) => {
 	const brand = await prisma.brand.findUnique({
 		where: {
-			id: brand_id
-		}
-	})
-	return brand
-}
+			id: brand_id,
+		},
+	});
+	return brand;
+};
 
 const fetchReviewData = async (coffee_id) => {
 	const reviews = await prisma.review.findMany({
 		where: {
-			coffee_id: coffee_id
-		}
-	})
-	return reviews
-}
-
-
+			coffee_id: coffee_id,
+		},
+	});
+	return reviews;
+};
 
 export default async function CoffeeShowPage({ params }) {
 	const coffee = await fetchCoffeeData(params.coffeeShowPage);
 	const brand = await fetchBrandData(coffee.brand_id);
 	const reviews = await fetchReviewData(coffee.id);
 
-	{console.log({reviews})}
 	return (
 		<>
 			<h1>{brand.name}</h1>
-			<StarRounded className="red-500"/>
-			<StarOutlineRounded />
 			<div className="flex">
-			
 				<Image
 					src={coffee.image[1]}
 					width={800}
@@ -71,13 +65,13 @@ export default async function CoffeeShowPage({ params }) {
 					</div>
 				</div>
 			</div>
-			<Image 
+			<Image
 				src={brand.image}
 				width={800}
 				height={800}
 				alt="brand image"
 			/>
-			<ReviewSlider reviewData={reviews} coffee={coffee}/>
+			<ReviewSlider reviewData={reviews} coffee={coffee} />
 		</>
 	);
 }
