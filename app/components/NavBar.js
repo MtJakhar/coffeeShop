@@ -4,6 +4,8 @@ import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import LoginModal from "./LoginModal";
+
 
 const NavBar = () => {
   return (
@@ -12,7 +14,7 @@ const NavBar = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Logo/Name
         </Typography>
-        <Button variant="contained">Log In</Button>
+        <LoginModal />
         <Button variant="contained">Cart</Button>
       </Toolbar>
     </AppBar>
