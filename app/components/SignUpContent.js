@@ -1,11 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 
-const SignUpContent = ({ isLogin, setIsLogin }) => {
-
-  const handleClick = () => {
-    setIsLogin(!isLogin)
-  }
+const SignUpContent = ({ inputs, handleClick, handleChangeInput }) => {
 
 	return (
 		<>
@@ -20,6 +16,8 @@ const SignUpContent = ({ isLogin, setIsLogin }) => {
 					id="firstName"
 					name="firstName"
 					type="text"
+					value={inputs.firstName}
+					onChange={handleChangeInput}
 				/>
 				<input
 					className="border rounded p-2 py-3 w-full m-1"
@@ -27,20 +25,45 @@ const SignUpContent = ({ isLogin, setIsLogin }) => {
 					id="lastName"
 					name="lastName"
 					type="text"
+					value={inputs.lastName}
+					onChange={handleChangeInput}
+				/>
+				<input
+					className="border rounded p-2 py-3 w-full m-1"
+					placeholder="Address"
+					id="address"
+					name="address"
+					type="text"
+					value={inputs.address}
+					onChange={handleChangeInput}
+				/>
+				<input
+					className="border rounded p-2 py-3 w-full m-1"
+					placeholder="Phone"
+					id="phone"
+					name="phone"
+					type="tel"
+					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+					value={inputs.phone}
+					onChange={handleChangeInput}
 				/>
 				<input
 					className="border rounded p-2 py-3 w-full m-1"
 					placeholder="Email"
 					id="email"
 					name="email"
-					type="text"
+					type="email"
+					value={inputs.email}
+					onChange={handleChangeInput}
 				/>
 				<input
 					className="border rounded p-2 py-3 w-full m-1"
 					placeholder="Password"
 					id="password"
 					name="password"
-					type="text"
+					type="password"
+					value={inputs.password}
+					onChange={handleChangeInput}
 				/>
         <p>8 character minimum</p>
 			</div>
