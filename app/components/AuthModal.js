@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import LoginContent from "./LoginContent";
 import SignUpContent from "./SignUpContent";
 
-const LoginModal = () => {
+const AuthModal = () => {
 	const [open, setOpen] = useState(false);
 	const [isLogin, setIsLogin] = useState(true);
 	const handleOpen = () => {
@@ -63,4 +63,4 @@ const LoginModal = () => {
 	);
 };
 
-export default LoginModal;
+export default AuthModal;

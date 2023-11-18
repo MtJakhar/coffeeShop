@@ -15,24 +15,28 @@ const SignUpContent = ({ isLogin, setIsLogin }) => {
 			</div>
 			<div>
 				<input
+					className="border rounded p-2 py-3 w-full m-1"
 					placeholder="First Name"
 					id="firstName"
 					name="firstName"
 					type="text"
 				/>
 				<input
+					className="border rounded p-2 py-3 w-full m-1"
 					placeholder="Last Name"
 					id="lastName"
 					name="lastName"
 					type="text"
 				/>
 				<input
+					className="border rounded p-2 py-3 w-full m-1"
 					placeholder="Email"
 					id="email"
 					name="email"
 					type="text"
 				/>
 				<input
+					className="border rounded p-2 py-3 w-full m-1"
 					placeholder="Password"
 					id="password"
 					name="password"
