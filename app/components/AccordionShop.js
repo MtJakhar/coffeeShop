@@ -40,7 +40,6 @@ const AccordionShop = ({ brandData, newCoffeeData, countryData, regionData, roas
 		},
 	];
 
-	console.log(userInput)
 	return (
 		<div>
 			

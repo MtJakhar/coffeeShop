@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Modal, Typography } from "@mui/material";
+import { Box, Button, Modal } from "@mui/material";
 import React, { useState } from "react";
 import LoginContent from "./LoginContent";
 import SignUpContent from "./SignUpContent";
@@ -8,11 +8,39 @@ import SignUpContent from "./SignUpContent";
 const AuthModal = () => {
 	const [open, setOpen] = useState(false);
 	const [isLogin, setIsLogin] = useState(true);
+	const [inputs, setInputs] = useState({
+		firstName: "",
+		lastName: "",
+		address: "",
+		phone: "",
+		email: "",
+		password: ""
+	})
+
+	const handleChangeInput = (e) => {
+		setInputs({
+			...inputs,
+			[e.target.name] : e.target.value
+		})
+	}
+
 	const handleOpen = () => {
 		setOpen(true);
 	};
 	const handleClose = () => {
 		setOpen(false);
+	};
+
+	const handleClick = () => {
+		setIsLogin(!isLogin);
+		setInputs({
+			firstName: "",
+			lastName: "",
+			address: "",
+			phone: "",
+			email: "",
+			password: ""
+		})
 	};
 
 	const renderContent = (LoginContent, SignupContent) => {
@@ -51,10 +79,16 @@ const AuthModal = () => {
 						<LoginContent
 							isLogin={isLogin}
 							setIsLogin={setIsLogin}
+							inputs={inputs}
+							handleClick={handleClick}
+							handleChangeInput={handleChangeInput}
 						/>,
 						<SignUpContent
 							isLogin={isLogin}
 							setIsLogin={setIsLogin}
+							inputs={inputs}
+							handleClick={handleClick}
+							handleChangeInput={handleChangeInput}
 						/>
 					)}
 				</Box>
