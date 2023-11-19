@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "@mui/material";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "@/app/components/ReviewSlider";
-import { StarOutlineRounded, StarRounded } from "@mui/icons-material";
 
 const prisma = new PrismaClient();
 
