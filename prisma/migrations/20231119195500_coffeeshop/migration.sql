@@ -93,6 +93,9 @@ CREATE TABLE "User" (
 -- CreateIndex
 CREATE UNIQUE INDEX "Coffee_webAddress_key" ON "Coffee"("webAddress");
 
+-- CreateIndex
+CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
 -- AddForeignKey
 ALTER TABLE "Coffee" ADD CONSTRAINT "Coffee_roast_id_fkey" FOREIGN KEY ("roast_id") REFERENCES "Roast"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
