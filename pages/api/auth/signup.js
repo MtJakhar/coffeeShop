@@ -41,14 +41,7 @@ export default async function signup(req, res) {
 			},
 			{
 				valid: validator.isStrongPassword(password),
-				errorMessage: `Error: Password Requirements Not Met\n
-        Please ensure that your password:
-        
-        1. Has a minimum length of 6 characters.
-        2. Includes at least one capital letter.
-        3. Contains at least one number.
-        4. Includes at least one special character.
-        `,
+				errorMessage: `Error: Password Requirements Not Met`,
 			},
 		];
 
