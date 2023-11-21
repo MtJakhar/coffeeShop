@@ -15,13 +15,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-      <AuthContext>
-				<main>
-					<NavBar />
-					{children}
-					<Footer />
-				</main>
-      </AuthContext>
+				<AuthContext>
+					<main>
+						<NavBar />
+						{children}
+						<Footer />
+					</main>
+				</AuthContext>
 			</body>
 		</html>
 	);
