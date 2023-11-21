@@ -1,13 +1,34 @@
-import { Button } from "@mui/material";
-import React from "react";
+import { Alert, Button } from "@mui/material";
+import React, { useContext } from "react";
+import { AuthenticationContext } from "../context/AuthContext";
 
-const SignUpContent = ({ inputs, handleClick, handleChangeInput }) => {
+const SignUpContent = ({
+	inputs,
+	handleAuthClick,
+	handleClick,
+	handleChangeInput,
+	disabled,
+}) => {
+	const { error } = useContext(AuthenticationContext);
 
 	return (
 		<>
+			{error ? (
+				<Alert severity="error" className="mb-4">
+					{error}
+				</Alert>
+			) : null}
 			<h1>Sign Up</h1>
 			<div className="flex">
-				<p>Already have an Account? <span className="underline font-bold cursor-pointer" onClick={handleClick}>Login</span></p>
+				<p>
+					Already have an Account?{" "}
+					<span
+						className="underline font-bold cursor-pointer"
+						onClick={handleClick}
+					>
+						Login
+					</span>
+				</p>
 			</div>
 			<div>
 				<input
@@ -65,12 +86,26 @@ const SignUpContent = ({ inputs, handleClick, handleChangeInput }) => {
 					value={inputs.password}
 					onChange={handleChangeInput}
 				/>
-        <p>8 character minimum</p>
+				<p>8 character minimum</p>
 			</div>
-			<Button variant="contained" className="bg-red-500">SIGN UP</Button>
-      <div>
-        <p>By creating an account I agree to Blank's <span className="underline font-bold">Privacy Policy</span> & <span className="underline font-bold">Terms of Services</span></p>
-      </div>
+			<Button
+				variant="contained"
+				className="bg-red-500"
+				disabled={disabled}
+				onClick={handleAuthClick}
+			>
+				SIGN UP
+			</Button>
+			<div>
+				<p>
+					By creating an account I agree to Blank's{" "}
+					<span className="underline font-bold">Privacy Policy</span>{" "}
+					&{" "}
+					<span className="underline font-bold">
+						Terms of Services
+					</span>
+				</p>
+			</div>
 		</>
 	);
 };

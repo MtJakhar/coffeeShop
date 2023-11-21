@@ -1,7 +1,9 @@
 "use client";
 
-import { Box, Button, Modal } from "@mui/material";
-import React, { useState } from "react";
+import useAuth from "@/hooks/useAuth";
+import { Box, Button, CircularProgress, Modal } from "@mui/material";
+import React, { useEffect, useState, useContext } from "react";
+import { AuthenticationContext } from "../context/AuthContext";
 import LoginContent from "./LoginContent";
 import SignUpContent from "./SignUpContent";
 
@@ -14,19 +16,22 @@ const AuthModal = () => {
 		address: "",
 		phone: "",
 		email: "",
-		password: ""
-	})
+		password: "",
+	});
+	const { loading, data, error } = useContext(AuthenticationContext);
+	const { login, signup } = useAuth();
 
 	const handleChangeInput = (e) => {
 		setInputs({
 			...inputs,
-			[e.target.name] : e.target.value
-		})
-	}
+			[e.target.name]: e.target.value,
+		});
+	};
 
 	const handleOpen = () => {
 		setOpen(true);
 	};
+
 	const handleClose = () => {
 		setOpen(false);
 	};
@@ -39,9 +44,43 @@ const AuthModal = () => {
 			address: "",
 			phone: "",
 			email: "",
-			password: ""
-		})
+			password: "",
+		});
 	};
+
+	const handleAuthClick = () => {
+		if (isLogin) {
+			login(
+				{ email: inputs.email, password: inputs.password },
+				handleClose
+			);
+		} else {
+			signup(inputs, handleClose);
+		}
+	};
+
+	const [disabled, setDisabled] = useState(true);
+
+	useEffect(() => {
+		if (isLogin) {
+			if (inputs.password && inputs.email) {
+				return setDisabled(false);
+			}
+		} else {
+			if (
+				inputs.firstName &&
+				inputs.lastName &&
+				inputs.email &&
+				inputs.password &&
+				inputs.address &&
+				inputs.phone
+			) {
+				return setDisabled(false);
+			}
+		}
+
+		setDisabled(true);
+	}, [inputs]);
 
 	const renderContent = (LoginContent, SignupContent) => {
 		if (isLogin) {
@@ -68,28 +107,31 @@ const AuthModal = () => {
 			<Button variant="contained" onClick={handleOpen}>
 				Log In
 			</Button>
-			<Modal
-				open={open}
-				onClose={handleClose}
-				aria-labelledby="modal-modal-title"
-				aria-describedby="modal-modal-description"
-			>
+			<Modal open={open} onClose={handleClose}>
 				<Box sx={style}>
-					{renderContent(
-						<LoginContent
-							isLogin={isLogin}
-							setIsLogin={setIsLogin}
-							inputs={inputs}
-							handleClick={handleClick}
-							handleChangeInput={handleChangeInput}
-						/>,
-						<SignUpContent
-							isLogin={isLogin}
-							setIsLogin={setIsLogin}
-							inputs={inputs}
-							handleClick={handleClick}
-							handleChangeInput={handleChangeInput}
-						/>
+					{loading ? (
+						<div className="py-24 px-2 h-[200px] flex justify-center">
+							<CircularProgress />
+						</div>
+					) : (
+						renderContent(
+							<LoginContent
+								inputs={inputs}
+								handleClick={handleClick}
+								handleAuthClick={handleAuthClick}
+								handleChangeInput={handleChangeInput}
+								disabled={disabled}
+								error={error}
+							/>,
+							<SignUpContent
+								inputs={inputs}
+								handleClick={handleClick}
+								handleAuthClick={handleAuthClick}
+								handleChangeInput={handleChangeInput}
+								disabled={disabled}
+								error={error}
+							/>
+						)
 					)}
 				</Box>
 			</Modal>

@@ -1,10 +1,22 @@
-import { Button } from "@mui/material";
-import React from "react";
+import { Alert, Button } from "@mui/material";
+import React, { useContext } from "react";
+import { AuthenticationContext } from "../context/AuthContext";
 
-const LoginContent = ({ inputs, handleClick, handleChangeInput }) => {
-
+const LoginContent = ({
+	inputs,
+	handleClick,
+	handleAuthClick,
+	handleChangeInput,
+	disabled,
+}) => {
+	const { error } = useContext(AuthenticationContext);
 	return (
 		<>
+			{error ? (
+				<Alert severity="error" className="mb-4">
+					{error}
+				</Alert>
+			) : null}
 			<h1>Log In</h1>
 			<div className="flex">
 				<p>
@@ -24,7 +36,7 @@ const LoginContent = ({ inputs, handleClick, handleChangeInput }) => {
 					id="email"
 					name="email"
 					type="email"
-          value={inputs.email}
+					value={inputs.email}
 					onChange={handleChangeInput}
 				/>
 				<input
@@ -33,12 +45,17 @@ const LoginContent = ({ inputs, handleClick, handleChangeInput }) => {
 					id="password"
 					name="password"
 					type="password"
-          value={inputs.password}
+					value={inputs.password}
 					onChange={handleChangeInput}
 				/>
 			</div>
-			<Button variant="contained" className="bg-red-500">
-				SIGN IN
+			<Button
+				variant="contained"
+				className="bg-red-500"
+				disabled={disabled}
+				onClick={handleAuthClick}
+			>
+				LOGIN IN
 			</Button>
 		</>
 	);
