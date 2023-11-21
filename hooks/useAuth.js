@@ -1,11 +1,10 @@
 import { AuthenticationContext } from "@/app/context/AuthContext";
 import axios from "axios";
+import { deleteCookie } from "cookies-next";
 import { useContext } from "react";
 
 const useAuth = () => {
-	const { data, error, loading, setAuthState } = useContext(
-		AuthenticationContext
-	);
+	const { setAuthState } = useContext(AuthenticationContext);
 
 	const login = async ({ email, password }, handleClose) => {
 		setAuthState({
@@ -49,10 +48,10 @@ const useAuth = () => {
 				"http://localhost:3000/api/auth/signup",
 				{
 					firstName,
-          lastName,
-          address,
-          phone,
-          email,
+					lastName,
+					address,
+					phone,
+					email,
 					password,
 				}
 			);
@@ -70,9 +69,21 @@ const useAuth = () => {
 			});
 		}
 	};
+
+	const logout = () => {
+		deleteCookie("jwt");
+
+		setAuthState({
+			data: null,
+			error: null,
+			loading: false,
+		});
+	};
+
 	return {
 		login,
 		signup,
+		logout,
 	};
 };
 

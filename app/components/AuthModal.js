@@ -18,7 +18,7 @@ const AuthModal = () => {
 		email: "",
 		password: "",
 	});
-	const { loading, error } = useContext(AuthenticationContext);
+	const { loading, data, error } = useContext(AuthenticationContext);
 	const { login, signup } = useAuth();
 
 	const handleChangeInput = (e) => {
@@ -50,7 +50,10 @@ const AuthModal = () => {
 
 	const handleAuthClick = () => {
 		if (isLogin) {
-			login({ email: inputs.email, password: inputs.password }, handleClose);
+			login(
+				{ email: inputs.email, password: inputs.password },
+				handleClose
+			);
 		} else {
 			signup(inputs, handleClose);
 		}
