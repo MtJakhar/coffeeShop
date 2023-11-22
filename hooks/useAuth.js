@@ -34,6 +34,7 @@ const useAuth = () => {
 			});
 		}
 	};
+	
 	const signup = async (
 		{ firstName, lastName, address, email, phone, password },
 		handleClose

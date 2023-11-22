@@ -18,7 +18,7 @@ const AuthModal = () => {
 		email: "",
 		password: "",
 	});
-	const { loading, data, error } = useContext(AuthenticationContext);
+	const { loading, error } = useContext(AuthenticationContext);
 	const { login, signup } = useAuth();
 
 	const handleChangeInput = (e) => {

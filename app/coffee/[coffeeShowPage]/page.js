@@ -2,6 +2,9 @@ import Image from "next/image";
 import { Button } from "@mui/material";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "@/app/components/ReviewSlider";
+import { useContext } from "react";
+import { AuthenticationContext } from "@/app/context/AuthContext";
+import AddReview from "@/app/components/AddReview";
 
 const prisma = new PrismaClient();
 
@@ -32,6 +35,10 @@ const fetchReviewData = async (coffee_id) => {
 	});
 	return reviews;
 };
+
+// const { data } = useContext(AuthenticationContext);
+
+// console.log
 
 export default async function CoffeeShowPage({ params }) {
 	const coffee = await fetchCoffeeData(params.coffeeShowPage);
@@ -71,6 +78,7 @@ export default async function CoffeeShowPage({ params }) {
 				alt="brand image"
 			/>
 			<ReviewSlider reviewData={reviews} coffee={coffee} />
+			<AddReview />
 		</>
 	);
 }
