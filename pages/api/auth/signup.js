@@ -94,6 +94,7 @@ export default async function signup(req, res) {
 		setCookie("jwt", token, { req, res, maxAge: 60 * 6 * 24 });
 
 		return res.status(200).json({
+			id: user.id,
 			firstName: user.first_name,
 			lastName: user.last_name,
 			email: user.email,

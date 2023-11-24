@@ -17,27 +17,34 @@ const AddReview = ({ coffee }) => {
 		coffee_id: coffee,
 		user_id: data?.id,
 	});
+
   
 	const clickHandler = () => {
 		setAddReviewBtn(!addReviewBtn);
 	};
-
+	
 	const onChangeRating = (e) => {
 		setNewData({
 			...newData,
 			[e.target.name]: parseInt(e.target.value),
 		});
 	};
-
+	
 	const onChangeHandler = (e) => {
 		setNewData({
 			...newData,
 			[e.target.name]: e.target.value,
 		});
 	};
-
+	
   const postReview = async () => {
-    try {
+		try {
+			setNewData({
+				...newData,
+        user_id: data.id
+      });
+			
+
       const response = await axios.post("http://localhost:3000/api/createReview", {
         first_name: newData.first_name,
         last_name: newData.last_name,
@@ -50,14 +57,15 @@ const AddReview = ({ coffee }) => {
       console.log("Data Posted", response.newData);
 
       setNewData({
-        first_name: data?.firstName,
-        last_name: data?.lastName,
+        first_name: data.firstName,
+        last_name: data.lastName,
         text: "",
         rating: 3,
         coffee_id: coffee,
-        user_id: data?.id,
+        user_id: data.id,
       })
       setAddReviewBtn(false);
+			window.location.reload();
     } catch (error) {
       console.error("Error creating data", error);
     }
@@ -71,6 +79,8 @@ const AddReview = ({ coffee }) => {
         last_name: data.lastName,
         user_id: data.id
       });
+			console.log("Data", data);
+			console.log("Id", data?.id);
     }
   }, [data]);
   

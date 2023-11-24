@@ -55,7 +55,7 @@ const LoginContent = ({
 				disabled={disabled}
 				onClick={handleAuthClick}
 			>
-				LOGIN IN
+				LOG IN
 			</Button>
 		</>
 	);
