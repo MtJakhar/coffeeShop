@@ -235,12 +235,12 @@ const coffees = [
 		],
 		roast_id: 3,
 		price: "$23.50",
-		webAddress: "brazil-coffee-b&b",
+		webAddress: "brazil-coffee-bb",
 		description:
 			"Everything you could ask for from a classic Brazilian coffee, this one features a rich body and tons of fudgy sweetness - combining in a way that reminds us of dark chocolate peanut butter cups.",
 	},
 	{
-		name: "Costa Rica b",
+		name: "Costa Rica",
 		brand_id: 3,
 		country_id: 5,
 		region_id: 3,
@@ -250,7 +250,7 @@ const coffees = [
 		],
 		roast_id: 1,
 		price: "$23.50",
-		webAddress: "costa-rica-coffee-b&b",
+		webAddress: "costa-rica-coffee-bb",
 		description:
 			"Unique and delicious, this tropical Costa Rican cup reminds us tiki cocktails with notes of ripe strawberry and juicy pineapple complemented by a lingering nutty sweetness.",
 	},
@@ -295,7 +295,7 @@ const coffees = [
 		],
 		roast_id: 3,
 		price: "$23.50",
-		webAddress: "ethiopia-sidamo-b&b",
+		webAddress: "ethiopia-sidamo-bb",
 		description:
 			"This elegant washed Ethiopian coffee shines with a bouquet of floral notes and succulent peach tea sweetness.",
 	},
@@ -340,7 +340,7 @@ const coffees = [
 		],
 		roast_id: 3,
 		price: "$23.50",
-		webAddress: "indonesia-sumarta-b&b",
+		webAddress: "indonesia-sumarta-bb",
 		description:
 			"Pleasantly sweet and round, this coffee features dense notes of brown sugar, juicy cherries, and a hint of earthy cedar sweetness.",
 	},
