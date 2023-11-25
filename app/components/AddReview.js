@@ -18,7 +18,6 @@ const AddReview = ({ coffee }) => {
 		user_id: data?.id,
 	});
 
-  
 	const clickHandler = () => {
 		setAddReviewBtn(!addReviewBtn);
 	};
@@ -54,8 +53,6 @@ const AddReview = ({ coffee }) => {
         user_id: newData.user_id,
       })
 
-      console.log("Data Posted", response.newData);
-
       setNewData({
         first_name: data.firstName,
         last_name: data.lastName,
@@ -79,8 +76,6 @@ const AddReview = ({ coffee }) => {
         last_name: data.lastName,
         user_id: data.id
       });
-			console.log("Data", data);
-			console.log("Id", data?.id);
     }
   }, [data]);
   
