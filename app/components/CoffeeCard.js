@@ -24,7 +24,7 @@ const CoffeeCard = ({ brandName, coffee }) => {
 				<hr />
 				<h3>{brandName.name}</h3>
 				<h1>{coffee.name}</h1>
-				<p>{coffee.price}</p>
+				<p>${coffee.price}</p>
 			</div>
 		</>
 	);
