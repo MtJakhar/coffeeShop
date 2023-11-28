@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "@/app/components/ReviewSlider";
 import AddReview from "@/app/components/AddReview";
+import AddToCart from "@/app/components/AddToCart";
 
 const prisma = new PrismaClient();
 
@@ -56,12 +57,7 @@ export default async function CoffeeShowPage({ params }) {
 					<div className="text-center justify-center">
 						<p>One Time Purchase -----{coffee.price}</p>
 						<div>
-							<Button
-								className="m-2 bg-slate-600"
-								variant="contained"
-							>
-								Add to Cart
-							</Button>
+							<AddToCart coffee={coffee}/>
 						</div>
 					</div>
 				</div>

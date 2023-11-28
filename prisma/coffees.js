@@ -9,7 +9,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc4OwbTDac5V4cxCYbgqf1UNMwajlBjZnTXMxqwV9MleMCa31lOcUnd7D9SNq2Kq72T6Vqd6FgdesIZga9ok-uZ4ArSxwnL0MrrpcmA9eFqq6QqBak=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "black-apple-espresso",
 		description:
 			"With its syrupy body, tons of chocolaty sweetness, and splash of juicy cherry acidity, this one's ready to become your new favorite espresso.",
@@ -24,7 +24,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdIdpKm0dzbxUm7OykPTaCsxTn4uQ0DTA2btw-_k0j1GgUTpjZoRSwbj_QE7Sh4xkvBxcLfGULUeGqo5xaA8ZjsTevoiqVNV9fpKeqnI8H3DCSV0Pg=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "black-bear-blend",
 		description:
 			"Deeply sweet and chocolaty, with a kiss of roastiness pairing beautifully with notes of toasted walnut.",
@@ -39,7 +39,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHf9pOji6PRJW17cyF4xPZ5L-Ufp7qVpEaMjk4Z8RGYJKnWEvwYM7SxxFZYOc7gUk68KKWd3gywj0iRxRhzu9YUaQSaU_UVADMWHzwXVUBO4o4XMjbs=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "buffalo-blend",
 		description:
 			"Honey sweetness stars in this smooth, endlessly drinkable cup, supported by notes of toasted almond and a crisp green apple acidity.",
@@ -54,7 +54,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcKb4seRH3_sR83RDZ9RqhbNf4U6ozd8LVGiVTQQ7G5CRDGeIGncH4ftfgfkb6EaG-naq-rq8VbZDR6MbSUyl-KYx3-oK9_Hj80OZ1axh-ftU0RdB8=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "colombia-sugar-cane-decaf",
 		description:
 			"Like its name suggests, a sugar cane-based process removes the caffeine here—but leaves this coffee’s superior integrity, and drinkability, totally intact.",
@@ -69,7 +69,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfuvGvrZgGLasPpW9APUkXkPNQ8V5tMK2yMcGXRPNdohYe0JL99YKkOh0RtsALTmfFgPqhJ3MWs3gDhBkAF48FCteFqHHiURvGeeaQKIJtSLx5DS9o=w1920-h1080",
 		],
 		roast_id: 1,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "ethiopia-kochere-1",
 		description:
 			"How about starting your day with sugared berries and sunshine? This Ethiopian summer stunner delivers lush berry sweetness in a rich, smooth body.",
@@ -84,7 +84,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHduPv88Ki-Cx-jQ6YOtJKt1Baqd0Qa9rAktPyiZ3K68l-RfSZpMiqn8oWB4T_K1aOMVLQiXnwWQNTFPC7gHW5k7SNof2ofO7dhcKHON7se7dhflhpc=w1920-h1080",
 		],
 		roast_id: 5,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "night-moves",
 		description:
 			"A rich body and dense, roasty sweetness are complimented by notes of cocoa and a hint of zesty orange aromatics.",
@@ -99,7 +99,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeKPq2WrczSzKSq9quri7yR_8oSvhIvxHi9I-vOxvl2PFoJJmFQQ-yH3kc72hiL2psplJdFMPBpB_7_q7Apyy7YYF03QcFM6JdikybTb8xdBuimQ34=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "sumatra-kerinci",
 		description:
 			"Plenty of bright grapefruit acidity and deep plum sweetness rounds out a comforting earthiness in this satisfying cup.",
@@ -114,7 +114,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHd2KJQQ8HWG4MRrCY4IzErksWY5gh--NcyLah0TXTgt0OHGQoTl_XIYjiMLq7mGkmk-Pc3CmlrJQMs2WyMzxl-tprgm4ikkAAeojbkUV-yCwHI8iQ4=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "black-velvet",
 		description:
 			"Silky smooth and dark as night, this blend features a hint of spice and a nutty sweetness that'll pair beautifully with a splash of your favorite milk, but is just as delicious on its own.",
@@ -129,7 +129,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdRPg6mConmrXyRwxI6rIZY8RJZvuLmY3acwksQMNu8D6-THCuyHtJyVBieiGD4hwD-ZitsbeFbP9q7hKzsQyhbSAYI6Nid3MN2EfkhtYKkbslAi4c=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "cabot-street",
 		description:
 			"Sticky-bodied and jam-packed with fruity flavors, this coffee features a bright apple acidity that cools to reveal notes of fresh green grapes.",
@@ -144,7 +144,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdHa0b5_71zNU8xwpowBKuahuO0P_vWCr511wJjVv_98XDQtnShWNTmSHyWPn3mNj5wjGPiotl5Ns8HdNSJhfXt8NsE7GZN9i6z3ezJKtscQSUkfvc=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "diesel-coffee",
 		description:
 			"Dark, rich and energizing, here’s fuel for your morning (or afternoon, or evening). A bit of earthy smokiness gives it extra oomph.",
@@ -159,7 +159,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHf1kx1cjaOKLw2BY4cWcdI2WL7XYu65WFx1sTors8Pt7mI-JP3NBy7wUFu6fSyUVquyDSc-wHgBDIBKvL5zn3TOqBQgrVgQ2DPsxCif2LG8JJo8ytk=w1920-h1080",
 		],
 		roast_id: 1,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "ethiopia-kochere-2",
 		description:
 			"What keeps us coming back to coffees from this region? Case-in-point: this one, with citrus acidity and spicy accents—bold flavor in an otherwise delicate cup.",
@@ -174,7 +174,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdSCii_hf6j4eZ3j0khZClfZmMNACpWGZ8eDfXmh2X4zyRJ4ks_kDwnBmaM2VvqPTUz-zhHRfVHXEt00p3iBRfYID_vJSApkL8hYQ7UdTOIAPcraJc=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "house-blend",
 		description:
 			"Keep it smooth with a blend that won’t make waves. Well balanced and rich, this is uncontroversially superb coffee.",
@@ -189,7 +189,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfksNLHF7Dw-ttgg4a9ob3IZnTVF8YBV4ZBBVxRFnxYdFdDDmJB1frc76qCpReaNaFrQtOB3EFmOMZrKnnQ1542_biUiI6ZNDrqin7nNcF8QoIix2I=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "rocketeer",
 		description:
 			"Ground control, this coffee needs to land in everyone’s lineup. Smooth and rich, spicy with a bit of citrus—it’s just a people pleaser.",
@@ -204,7 +204,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc21ASqlo_nqDdhg4rDTCh53tmK5hrBDC6X9a_M4a5i2SfiKVgN9rgKNc7tQQsIPY9EcscE1U7ylNyR1PqroLnuJNPCjIWgfdiJlOAYlAuGLbBK0n8=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "space-cadet",
 		description:
 			"Extra smooth, extra chocolaty-sweet, and dare we say...extraterrestrial? A splash of ripe cherry juiciness makes this crowd-pleasing cup every bit as delicious hot as it is cold.",
@@ -219,7 +219,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHf-3Zi2nPA2I2TTQ9Eu20SARypezV12Rv2cM-udvgqstroUQtQEFKAn4HGa7s6ChbWUJwzFcZCbdLO7tkBup1NpUDxeSHsmLN7RIFYwJJCdrHXyshY=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "witch-city",
 		description:
 			"For the fourth year in a row, 2 is collaborating with Georgia Wrenn, a 12-year-old artist from Salem who creates Salem-themed artwork under her brand 'Georgia Made This'. This blend is more comforting than scary, but it'll taste delicious throughout the fall.",
@@ -234,7 +234,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeoPUmyCEY2Klv2D9TzHd_9cwGd1-xI4gDwjpxa5fnLuXsddJ7sxAFr4Htt3plR1ThwNCvj8GSin7P-4CUYp1UQAKVg7xC7SeG-eyuckHuQHoGDZ_8=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "brazil-coffee-bb",
 		description:
 			"Everything you could ask for from a classic Brazilian coffee, this one features a rich body and tons of fudgy sweetness - combining in a way that reminds us of dark chocolate peanut butter cups.",
@@ -249,7 +249,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeNxTDb8iic5qb0fE2U55EiTMja6FHvANtmNkRzh3aHJjRkAbsGtc9xtFK02TRVbHHtcEpZ5cn73ph6SC4CxBcWy2W_nUe1jiJkHBHrBEWRB-2b8_k=w1920-h1080",
 		],
 		roast_id: 1,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "costa-rica-coffee-bb",
 		description:
 			"Unique and delicious, this tropical Costa Rican cup reminds us tiki cocktails with notes of ripe strawberry and juicy pineapple complemented by a lingering nutty sweetness.",
@@ -264,7 +264,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcIivvyhyo96GuSuGf-CzbQzyBQP9iRsqSHCkMnECOMynxzN71ybT2Q-V7G85sLVELCcbdGle3f10JhPhO1R-rgVjORYzqo_czrL_ouFW_foUNm25A=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "decaf-single-origin",
 		description:
 			"Velvety smooth and plenty sweet, this fabulous single origin decaf features notes of honey, apples, and caramel.",
@@ -279,7 +279,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdWTZB3wPl4w_ffxr1Mqe_9QIGWt37QaBa6aWtwKun4Sr05XYWUCEw3mty5P12KofXVkWJRRYk6mUUB4l6DQxRadqTs5QQzApqFQto6fFIgNV3j0hw=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "downtown-blend",
 		description:
 			"Silky smooth and plenty sweet, this luxurious blend features notes of toasted nuts and dense brown sugar in addition to hints of cocoa on the finish.",
@@ -294,7 +294,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdcQJTbMr0mefNbk6yzLD0sPMVQ18M4qbly3-asE3_oXKfh4sK-h8rPpAVtsFm4BvE61t8c1M4yKkTBJ_eIskMaVA-D3LpBgGpGcsqaplsyY4IstWc=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "ethiopia-sidamo-bb",
 		description:
 			"This elegant washed Ethiopian coffee shines with a bouquet of floral notes and succulent peach tea sweetness.",
@@ -309,7 +309,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdm57z7K5iVgbygLzOJfGWuN1p3YT9A6Kmxxm5Bwxv2JkM1EP-9R-wtMJFSbWNYwd0iVmr9lqLSR35X4cwQq3DI77KE-SGUakMbSSV-x5xD6bhuiiw=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "fancy-diner-coffee",
 		description:
 			"If you're looking for memories of the all night fluorescent dining rooms in which you first fell in love with coffee, but made with much higher quality beans, these beans are for you.",
@@ -324,7 +324,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeneEPLGqHonBnMsMEV1aikX8KKYl9ITlMaTAzYzxRcCFkNdJn5I5KsmMElP8Uu_FAduhJz623IOtg_bbI_CEVMmDiIzGSwciGdMZUqPaIWUT5kx_M=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "hawaii-kona-extra-fancy",
 		description:
 			"This real deal Kona coffee is super smooth, with notes of brown sugar and sweet walnut balanced by gorgeous green apple acidity. 10% of proceeds go to the Hawaii Wildfire Relief Campaign.",
@@ -339,7 +339,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfzYmQhXTuZu6JulkjnmM43XtddCkXr4EPw6nLp2ZzmcWjEtab-lCFeI_FMMUzo0GgVBI2UybcHg9rB2xhfP8P-trSSfLPMTju9cSMLSRDlDjY3sg4=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "indonesia-sumarta-bb",
 		description:
 			"Pleasantly sweet and round, this coffee features dense notes of brown sugar, juicy cherries, and a hint of earthy cedar sweetness.",
@@ -354,7 +354,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcN-mA8aM8skbwF6Smry_bYe2i2Jj2gx6kfbHY9bZuPqcv5skiJENCHQ0A0fR5N3r8EdUcrmRh06kFrl17fi2jw7tZcI-Fa2mjiNlI3xP2-YwLrMTE=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "peru-las-damas",
 		description:
 			"A creamy body and plenty of bittersweet chocolaty richness combine with zesty orange aromatics and a hint of nutty sweetness.",
@@ -369,7 +369,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeHPGD21um2lbrEmvmYmQUzkSKIWBxjRi8unQcrpdkdYPFdptBsc2LIH9Wg2_Srj2zHAcJAR4q32LwIs07PI5a05mZsyrmyxhRHf7z3Nv7db_py3wI=w1920-h1080",
 		],
 		roast_id: 1,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "tanzania-peaberry-kilimanjaro",
 		description:
 			"Grown at the base of Kiliminjaro, this coffee features a rich caramel sweetness that perfectly pairs with notes of juicy green apple and zesty citrus.",
@@ -384,7 +384,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdGwztR0dKo-vR0-69HomHviKCw_bhqUOpuowi04oSeGKVhdoJ2r3Y1uqXN2XqqoN4ZIJ8jc4dJX_Unr0YhX-ihOnAZe0Uk5SYUZfNqwoybFcPir7g=w1920-h1080",
 		],
 		roast_id: 1,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "el-retiro",
 		description:
 			"This natural process Bourbon variety from the Chimaltenango region of Guatemala tastes like ripe, dark grapes with a hint of cocoa.",
@@ -399,7 +399,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdh99BFaK5mqIrBv_mCPDlb2zdtlv241AlD9atYvwv0hjZwpjUjnv8RhX7SZfyX6HDXlDgq_sF4SE9kfkr0Cyr4MWn8rUDbV42txRljiyss7EI1g8w=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "el-triunfo-decaf",
 		description:
 			"Classic and delicious, this delightful decaffeinated cup feaures notes of sweet milk chocolate, rich caramel, and syrupy molasses.",
@@ -414,7 +414,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcmKaOkz9YanAb-5nNeCKEFekr1B9ZNe9ae0xDqdp4wceZ6ELj57y8VEfg204xuyQ6NbubJ1zrM8a0B8Dc7FiAcI4EOpRJvTO4NaG4OL9HNUJ05wUg=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "french-roast",
 		description:
 			"The sweetness of dark chocolate and cherry gets a kiss of roastiness in this deep, rich, full-bodied cup.",
@@ -429,7 +429,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcDtuNMyHhDysnmAgMOzUUwYb62kzyWlEzYVcl7YHEEk5dOQL3UtDGT3_jDHgXwUxyxqljf8FxdErwrfAApiDVRRgVPhgJvPi7pQeKb0W0VsHVmM2c=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "monkey-bite",
 		description:
 			"The sweetness of dark chocolate and cherry gets a kiss of roastiness in this deep, rich, full-bodied cup.",
@@ -444,7 +444,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHclH9d-s3UyU1aoF6bhIQhJgfDAW-xbvJnQYf6D1u01M3Jh4VzwTPaoxoGb97gMEciNsRu2lRAtwz5Jw1gUI3JTnIVG8fGfGt7cBCUKQsciBv4lXFw=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "pump-house",
 		description:
 			"Big caramel sweetness and just a hint of fruity acidity make this coffee perfect for espresso (or really, any way you want to brew it).",
@@ -459,7 +459,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfcfGXSzoEnC-8reCd6Re-cxNMoLwZHxLpiVIbXYtHJg53UhEsxNdU4ixxYg_0SGbpOmY4amDjlJKhRmgdQWkM3zDdQBZ1VSvOSavxOFwubKnl7Aco=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "wate-gogugu",
 		description:
 			"Tons of floral aromatics and notes of sweet honeysuckle make this the perfect coffee for spring, complemented by delicate notes of black tea and zesty lemon.",
@@ -474,7 +474,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcF1u0SMypdap_BqHaFhdne1GrRIqlcdODB_mnMZC0zhGyzjDaIz_KPSJxanKzIiUJs51DlMO34COU2oNRsZribCyFH-cjmHOodJvJ_IC3f82rSFVM=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "agua",
 		description:
 			"This fruity-sweet cup offers a juicy citrus acidity upfront, then balances it beautifully with a lingering nutty sweetness.",
@@ -489,7 +489,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcLc8a5vvPaXLglE68uMNz-LSQJiAouXIfi6hqb7qPZCK-eO5acXrNe9988rnAVMRhuhptyNPGTByNf_grhD5Amtq899gLUh_uCfGk7LbON6iE6PT4=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "canopy",
 		description:
 			"A deep black cherry sweetness peeks through this coffee's pronounced dark chocolate and cinnamon notes.",
@@ -504,7 +504,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcnkGKqSAmgnZj8CddW0F_x_2dnkPPvaqbs_d0YKPbdOEl9ciKDzN2jD7w7On7aeDOzoB0E6TakDAXwB2G98kWqd7Gbs170jrA2xb0hMWNXAXc8uuc=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "heirloom",
 		description:
 			"Chocolate and almond butter sweetness for days - this cup offers that classic candy bar profile, with a hint of juicy tangerine acidity.",
@@ -519,7 +519,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeK1jxPWAFS6qZTRlNHxrmafihvNeoA2bxjQOY1cP6GDqlGPA0z3QIr5m968Z2w1x37AD8Lwmbng3OuEm-aemstIo5VUnBtthh3b7QlJlJWfFDC1QA=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "sunbeam",
 		description:
 			"As bright and joyful as its namesake, Sunbeam delivers a shining citrusy acidity alongside a gentle chocolate and roasted almond sweetness.",
@@ -534,7 +534,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdfWCceafWIA8lYb0SlMCU4DCT3LEvDI_vddhWnbonSPdiS6qS4-ECuOTU543nGeHUH_keuCsWkv0SOyEp-u2l5RrtPxA6weoxjS23s6TJQqK5ZY3A=w1920-h1080",
 		],
 		roast_id: 5,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "terra",
 		description:
 			"Terra's deep, dark chocolaty sweetness and kiss of roastiness pair beautifully with your milk of choice - its gentle orange acidity makes it just as delicious black.",
@@ -549,7 +549,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdu6x7bLzv9bgbFM4mHx5IOth42h7ZHkNgfpkO_eZD6O29iej6FUMTgYa8D2ot61yFL0l_P4JFgPExjsg8l202TZ4DbmvoGubNuzpdW9W8ZHVUkfFA=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "karmadilo-bold-espresso-blend",
 		description:
 			"For those among us who live la vida mocha: here's your go-to. With incredible depth and chocolaty sweetness, this one packs a wallop you won't soon forget.",
@@ -564,7 +564,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc1PP6JiRM-pXGJryvzMTVfD7P9Cbepig9zFneSmQa_vmTv-07zE_xrNr0322QVnlyljf_zZUE9vBf3eXBmRc6xp5Go66FuHOEcWqcZNLve0FZrfWk=w1920-h1080",
 		],
 		roast_id: 5,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "west-pole",
 		description:
 			"Dark roasted, but you won't find any ash in this cup - only rich, full-bodied flavors that show off the hard work of the producers behind this blend. (Formerly known as Mezzanote.)",
@@ -579,7 +579,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfBH3BaY0tCSkrk8hrTRzXJMeNO37Nu4t-AdeGkOoXxYzz4RShVqi_Hkb0KkHEHxzKD0pPYNnMem-NZZPfXAkIRy468E-ax-5YFG4wQNR5_r7ktzxo=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "ecuador-hacienda-la-papaya",
 		description:
 			"From one of the most oft-praised farms in specialty coffee, experience a cup filled with a special combination of fresh raspberry flavor and floral aromas.",
@@ -594,7 +594,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHevf0OUP1bBQSNR5A8QgQhTbqaFzxJ1NKKvbAA9gZGoYIqAk5-XIWHwVuaN2TK8pstpx_kV7H6DY0zmx7nhekDYGtdD44NwWJflyVMDshHQoOfNMyI=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "ethiopia-yaye-natural",
 		description:
 			"Lush, ripe red strawberries star in this juicy natural, featuring intense flavors of black tea and a deep plum sweetness.",
@@ -609,7 +609,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHczYu1LlBk90I5YhL18PFpTmuzL5NwLFpR5_3UB5c7mw4Cx5ssS3bljJfM4X2lTRKGq22N8coi2C4OJdjLqCJzPvZ-DvA_woerZ4Ap5baBrtP6tV9M=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "guatemala-martin-lopez-alvarado",
 		description:
 			"This late-summer gem features lovely fruit notes like nectarine and grapefruit, with accents of baking spice for good measure.",
@@ -624,7 +624,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfZumBOq9ZK5SIhIFb4-wyDSU-YE3Xw21CoApzI_b8XRjtE30bXkH4s9EILnqk8b_8LNl_u_P-DDjx0Mk1J6-7lZ-ovQvfNeCTteRroJvamjxOPyLk=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "honduras-pablo-cruz",
 		description:
 			"Balanced and delicious, this Honduran coffee features crisp and lingering notes of green apple, complemented by a rich sweetness and creamy notes of toasted nuts.",
@@ -639,7 +639,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdULygwL5alFrbCuCApdO1oBrR8A8Dg65h9BDt8lqVKKDrgR89fwqOBIBRbtgtd9w9LvfvcbNreoubwzyPcFV8MT4psq0jj_W_9ynAcOkfZjuajbdY=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "house-blend-dune",
 		description:
 			"This excellently executed house blend is an absolute crowd-pleaser with tons of sweetness, a velvety smooth body, and subtle hints of fresh fruit.",
@@ -654,7 +654,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHedN1d26D2EqNqv-XyqaHyknTvzPMnpMcZIGh7sxgdGU-Kzngjh2vmJXdiKhtDjwIjfcMSJnPOr4WBCvf3u218UbrhHU5Xjch-d8p-RMTQHgm-cMBM=w1920-h10800",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "presidio-decaf",
 		description:
 			"Caffeine-free, flavor-full. Sums up this easy-to-love decaf that's plenty sweet with notes of juicy cherry and bright grapefruit.",
@@ -669,7 +669,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdLqsRlKqLSQzTt10mB4LcVCAV4ATN8AApE2EvFNmNT9M3B-g2ULywySOQw_rdwNzuEHhDjxH7t_bFRVdNKV4V2XWc7nuCi2igG1elXTLN_FTmc3lk=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "santarossa-blend",
 		description:
 			"Sweet, decadent, and just plain tasty - this blend features syrupy caramel sweetness, with cozy notes of toasted nuts and rich cocoa.",
@@ -684,7 +684,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHePrqMaza6OX7yqFxOmw_ufa7LS8OpimecHqbmn1rOv3TKeZRkS9vdP09PtbV6t6Wd6YaqXYX_4fHTwjna2XpwbBO0XSH8hdadfJuxT6BJWeIhD0Sw=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "zip-zinger",
 		description:
 			"This versatile blend likes to mix it up. Whether as a sweet and fruity drip coffee or a richer and more chocolaty espresso this coffee is just plain delicious.",
@@ -699,7 +699,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfMCxWVH8Nw0jim5q_sUwtLB4Xu9FPqSxq09po16xoW0RQrnGkt6Y4DBXsN4FN_sfqlQggep8VewW-IbbBZWNIJlBZfUsXfTiDwHsrUWdre6JYNl6g=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "dipsea-espresso",
 		description:
 			"Brazilian coffees often make up the base of an espresso blend, but this coffee, named after a hiking trail in Marin County, proves they can more than stand on their own in straight shots or with milk.",
@@ -714,7 +714,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeeUZyXKBxNGNFcu7h1w9aWUb87MmwVyc8XLifzJTnG6PCvwTF_Rj8aMGwJBHYdeSH5gae2tbbsModFpRQvXmrdoZ1aC0WKCiSOOdIEHpctEqFVR64=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "ethiopia-ardi-natural-equator",
 		description:
 			"Smooth, fruity and sweet, with notes of vanilla, lavender and meyer lemon. This naturally processed coffee may change your whole perception of what coffee can be.",
@@ -729,7 +729,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeRFtItNLqXkj-HYxg8ADm-aA10SaB4HRuIb5gwh5kATZx97SGU4tUZxHEg_OYv-BtDmpmuGv6KWKJc5IKNaQIT-aFgAEDoWRmumTN8o6MdE0dW0Ok=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "eye-of-tiger-espresso",
 		description:
 			"Juicy cherry acidity paired with incredible chocolaty depth and nutty sweetness will have you running up and down flights of stairs in the blink of an eye.",
@@ -744,7 +744,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe2XQVvzThScbGDYWNWnwYCF5qCtHau6e4401OTho3KD8Ada5X2Wa5Ym8_orkmZL1wK33kCEl4BEQ777QQgi5ydkQs0LJzo-qtwcAIZM5MDY7aFYno=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "nicaragua-las-hermanas-fair-trade",
 		description:
 			"This lot from the women of the SOPPEXCCA Co-op in the Jinotega region of Nicaragua brings together ripe plum and tangerine sweetness with an intriguing note of cedar in the background.",
@@ -759,7 +759,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdupMGXAghBHGneCmY3OMa0xWCSR5NLloI09t-71lOZ0EVPSHm0AbmVzRRkfWTyGfTH1SWJsSn00-0Q3pldaQ_krXp7RawAz8CQR1AnY2oZY-1Uumc=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "nicaragua-sacacli-equator",
 		description:
 			"This Nicaraguan coffee is the first to receive a regenerative agriculture certification and tastes fantastic to boot! We're tasting a delightful balance of crisp and juicy notes of green apple with plenty of creamy sweetness that reminds us of toasted nuts and well-made chocolate.",
@@ -774,7 +774,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc6KPGLyzvOO0-uoAzwWBykncRBcfeh-M2dvXnpDl8OiImqCrma9fXgcNpOATbsDkSsm-4wrM_QJUIon5r7sdWbYMp404bYuzHRsSZIybg7G2PKc3A=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "prime-meridian",
 		description:
 			"Big bodied and plenty sweet, this comforting cup features notes of dark chocolate and roasted walnuts alongside a dark caramel sweetness.",
@@ -789,7 +789,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHd1XT5BxTbe7ybLCfN72ylu3QB8C-loyaRN5uYStBaKznZi-AeZf5Wq_v5p-Sp6STbgxnEUi6SmNIlOZmGpX4IlE2PTumCueGVDj5wkFEM-cC9W384=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "sumatra-queen-ketiara",
 		description:
 			"Sumatran coffees are known for their earthiness: this lot, sourced exclusively from women farmers, transforms that trademark note into a sweet tobacco, accented by baking spice and chocolate.",
@@ -804,7 +804,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfMJwYqNj5gZ3mHxSFn7NcGiiyVJW31XfUm2p_8EJ64cQwoGICchtMNCeMB1brNYBH09MeEiQjtiMV9BK9dRzYpldTgMSDw730SXW_wvHSBJwU0jZs=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "alberto-mamani",
 		description:
 			"From the famously steep cliffs of Bolivia: this comforting coffee that reminds us of the flavors of apple pie.",
@@ -819,7 +819,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeKis2Zc_Rxag_p8vW0FBhyDAQfuM_6ZcX92N4byxFrCeqF0vzSkJQcf6bLgEkEnx1kfCUHlO-D1KvIiXndd4siDoK7GUCVS827Wm8zO3LFLKBCHB0=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "huellas",
 		description:
 			"Complex aromatics, a big body and tons of flavor–this coffee, from 14 small family farms in Peru, really has it all.",
@@ -834,7 +834,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc_o5bzUclLxvXAJvT7pGStytVytyIvd1rWbisiW_wpCg8damUUa2y2r6_osyzlEo1dnxCiuN2hjww-X1vNg2ia8pKJfMaEPTm5L56Vc2aKUmFAhYc=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "milk-honey-blend",
 		description:
 			"With notes of bittersweet caramel, creamy milk chocolate, and a rich, roasty body - this luxurious blend lives up to its name.",
@@ -849,7 +849,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe4yVoc6_rZceGLAAZDBvDtitRYNG3IgIfuBRLC_-Q-3AOVNSU4q982DHYHDqTIwH0w6pqOx_cr3oudLtfhFhMVHiMfxVGpw2EDXflzICiEIIP_4so=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "njowa",
 		description:
 			"Funky blood orange acidity makes this big-bodied Kenya a unique treat.",
@@ -864,7 +864,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcLYOtnYeN-JsEdTZuOjzm9mz-_zLqOVq8nxLI7SqH_u9yuzMuKRRrv41GuMQv7ESDC3PtqN8pZxNP2DqBV22b9wvlso20kMsM112aYh224dwf3P_E=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "power-glory-blend",
 		description:
 			"Feel the power of hazelnutty sweetness and a hefty body meet the glory of citrus aromatics and notes of fresh fruit.",
@@ -879,7 +879,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfWwbkdCbP3xka2mdqKBNS4n6hvADfWL-Z75W6E4s6Hi6RpQPUEm-mgLDuaQLr4AEqGeMfyOCuAeKlbl35E43rnKP2slxviwcVO4YEVRlcuGMW5YjQ=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "good-vibes",
 		description:
 			"A really complex and clean natural Brazil, this appropriately named coffee tastes like cocoa and peanut butter with a big and luxuriously smooth body.",
@@ -894,7 +894,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcvn18Xbak6z4RT4tG_dOUXP2Pqx97P_IDXPx7iojnx7qEr6mKFmYa6OfRjxrlerQJwvcWONRWWblhFYZEa-bPthqdKTfh5ZHB4DjsApqaXSqHilOk=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "kickstart",
 		description:
 			"Dark chocolate and brown sugar sweetness are front and center in this easy-drinking coffee, with a surprising (and delightful) note of rose throughout.",
@@ -909,7 +909,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHd_DsIuEayGK8liA-tD3AScCbZUGcuZ8IbnjC9qNgv0brdZ-w8ytmpx3xFYuagsQc1Gtv0ipHuY1y0hhFxQFZVHb9F_P_3OabrgW9LKSo8VyhU6TsY=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "rise-and-shine",
 		description:
 			"Dark and bold and super sweet, with noticeable notes of dark chocolate. This is the kind of cup that starts off a very good day.",
@@ -924,7 +924,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeKgM0Csvs0NzxVFCgq-Wlkkv_qoe2AX93NbWBGRoMswS5LcZmNyiyklpXid22JoKB-m-ru6UQiKK22AgglcTV824kl0AFgkQQsLkq_nEbrLNqBymw=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "after-hours",
 		description:
 			"With a level of brightness higher than most decafs, After Hours provides an actually exciting caffeine-free drinking experience.",
@@ -939,7 +939,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdpmhBLJc3Q0UaCtRoVqn8Fk5zZqhI_DuU-oGvN5bHI0rJKl8dDyiMiBHm62ZXrs-kKTohrefV76jJl29JCuo_SukimzplAJNJyXSiRIPDUFKFK2K8=w1920-h1080",
 		],
 		roast_id: 5,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "bauhaus",
 		description:
 			"A sticky body and the tell-tale tolls of a big ol' dark roast are front and center in this blend that's not just for goths and art students.",
@@ -954,7 +954,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfTSXOCtykSz41L4NaIgIVLt49BCyTFPET9QXRJS-RQFwNJFSch2ulKlPOz7LIi8OU4YcMaJgpC3-CicMUYDbF9iMgHQ7XFJJeRZYOwJPvLYIZaBsw=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "carrier-wave",
 		description:
 			"Approachable yet complex and delightfully balanced, this coffee features notes of creamy milk chocolate and sweet caramel in addition to a touch of ripe stonefruit.",
@@ -969,7 +969,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdv1215RlsCFrRec1AAaagOYRa2YQD_WKNriiSxkob-DJMIcn6Nz5P9nr3UiUEfyzB-rhOidAVHAH5iyyEmzGOrnk7eZWpMa88HLU_vZa5gt7jhSZk=w1920-h1080",
 		],
 		roast_id: 5,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "darkroom",
 		description:
 			"This dark roast features a rich, syrupy body with a pleasantly balanced roastiness and bittersweet chocolaty aftertaste.",
@@ -984,7 +984,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfsf2pA-a5ybYXX5bK5X0TE0SDlNC0Rb78yTkY09h30fk6XbuYa2C3-VlsbfEWyS89JbJE3C4-31TvCKTqqFpG9zPCVf7t9ZSQwlXq23_OlsSLn1yQ=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "shadow-play",
 		description:
 			"Roasty, caramelized sweetness combines with a delectably smooth body and hints of chocolate to make this coffee downright slurpable.",
@@ -999,7 +999,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdFOG4lBVDydll8m8rRDvD0PqCvngWw0i4a2_ufGOocevj-ciJ-x25DOKI-f4v34KuhVTuVMzahBNk8Z-UlQ1iq-4rITRjFcEZr8heL_Ia_HDwCh3M=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "the-core",
 		description:
 			"Straight shots, lattes, even a nice little mocha - put this blend at the center of your espresso repertoire.",
@@ -1014,7 +1014,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfOSnGrfN9ZkPkrwFSSuuKjPBLXS8zSVCxTKAwieqRlYwBDhUHmFeSoHPzO3Xl3GyUz6WkcO78PEaVRvakoPWBBodnJxbQsxvenwqL2NZWY6jxEMno=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "bom-senso",
 		description:
 			"With a big, chocolaty body, cozy roasted almond nuttiness and tons of balanced caramel sweetness, this Trade-exclusive cup is just about as comforting as you can get.",
@@ -1029,7 +1029,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeRtKijHufOLv2llhD--kdGIwUKT2FEMbdd5MH02wuf_LEyZzhn4Vn1pVTHJ_1AB4QN_iOXaAi2f3o3pDQkzrxG1Pw0lEAB9vnT5yv-wigtbXF-3EE=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "civitas",
 		description:
 			"Truly one for the people: this tremendously comforting blend features perfectly integrated notes of dark chocolate and roast, balanced by a raisin-like sweetness.",
@@ -1044,7 +1044,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe8YfGBG-sIbYbMaR1oy-CvBvpxXPzGxYVwH8HakbC1wm_PmGIgdTAn5y2tKUuAUGFSFcTpDr_0NykvssZCmkNlZxo_qO9RMbCrQ6MHA7MifDWIg1Q=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "flores-belas",
 		description:
 			"This gorgeously balanced cup is a Trade exclusive! Rich chocolate flavors pair beautifully with just a splash of orange acidity, and a deep caramel sweetness that lingers past the last drop.",
@@ -1059,7 +1059,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfcYNtT3DhDTpXHQ4a6DDLY99OOoJh27ABbesR2qJT3QgylkeWYUIOJUkj2YIMSfrq6q5Ie3z0k9n_KNZIQQ4gvNdbjcJj0KjlWEFsOMUj4_s630PM=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "mexico-mazateca",
 		description:
 			"The washed process coffees coming out of Mexico are getting more and more varied and delicious. In this one: a tasty mix of cherry and citrus flavors.",
@@ -1074,7 +1074,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcxz1_k2qBa8uo9CmKTO0-lvobPlobJyuORYzxCLHhaMaIUibyYO4G9M6HuOsWvD54SDhXhEOkS0QTreGXjrlrKxeePWpW0kPGEjtJUb9FDASLaThY=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "amersterdam",
 		description:
 			"Rich, sweet, smooth - this comforting cup reminds us of chocolaty fudge with a toffee swirl. Perfect on its own or with a splash of your favorite milk, we're pretty sure you'll love this one.",
@@ -1089,7 +1089,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcewnN5rwv8lX4TNroxxJ29XIO31f3dV6pm5_FzyuwkrahOmYFRR13d8rXkUq494yrQ6iqJc8vjamH4Uw3zekpF1p2FK08tzKjb0VcWmRHDcYTSoAQ=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "great-heights",
 		description:
 			"Dark chocolate and peanut butter flavors always work well together. You'll find those flavors and more in this big-bodied, gently roasty treat.",
@@ -1104,7 +1104,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcPahz5cfADyX6-cDVM6k4qjXZtyrw36ZH8Iwb8HMegHRVCfMiLClOxS3yk-_CGLh_rj2MTnlckfi5JYt8H9JpvqKIDZv46Vq-8360NEGyP5GPStMQ=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "the-village",
 		description:
 			"Composed of seasonally-rotating coffees from female producers and cooperatives, the newest version of The Village comes from the women of the smallholder farms in the Kalehe region of the Congo. It balances gentle notes of Earl Grey tea with a sturdy body and brown sugar sweetness.",
@@ -1119,7 +1119,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfUxCmzYm2pAH_0eBLq7bNaoIFXIgY378rJ-KtY4CcokeMSemYvj3MCc74fVkMMoifZYV9iZ7SyjWYc8NKHxAH41uty5ZYcGk662JMM3VxLI-pprIw=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "crazy-goat",
 		description:
 			"High on a hill with a lonely goatherd...sums up the tale behind this complex blend that keeps things balanced but isn’t afraid to get a little crazy.",
@@ -1134,7 +1134,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfUbb3XFC8cvwCaD-HOQrbkuwRXypM8EYGQ10HE8cUZSi5KLsZTQ3L8RIKlB4bsXsZAAMtQF2nFtOjSqpiqkPrPVCfrCauCHEaFny-mlqVZGO3pchQ=w1920-h1080",
 		],
 		roast_id: 5,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "dark-thunder",
 		description:
 			"There's a storm a-brewin', and so are we: a fresh pot of this rich, deep, smoky-sweet blend. Bold and full-bodied, this one will weather anything you add to it.",
@@ -1149,7 +1149,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdfnGAAcs9Nlha0rw-z1SqPEo3UWYnciZo4h6bLaMmo5Lxg6BbA-DJDGS6y-WkPFitmmdLjbJXpY13CaLv6HGHSOqKy1RjJddi0k8jY9RH-IoPWApM=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "old-world-venezia",
 		description:
 			"Rich, robust, and nostalgic: this full-bodied cup's hints of spice and dark chocolate invoke an old-world romance.",
@@ -1164,7 +1164,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHea9V5urD-alSxqTooVMA40OKs9Y57qoHnNokv1c_nOCbKkrKkMmj7RJizcJHn9tWD7Qy_eE-knZiNIssyshj7UzC5Wao3dpRmZLMjEECR_FRcjm-E=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "bella-vista",
 		description:
 			"Lingering chocolaty-hazelnut sweetness defines this comforting Mexican cup, with notes of dried fruit highlighting all that candy bar goodness.",
@@ -1179,7 +1179,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHegDN6ALeM3JR35JqPst0t-xOojDjf9lSXmNLSXrZySP8Z_Z4ngQ8zDr4EgHfS6wjtSM5wRhmz96lJ9WhrIzugbsKD2Cbr6VXb_A28ax8TfolwjJtw=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "bunum-wo-estate-peaberry",
 		description:
 			"Deliciously sweet and unique, this Indonesian coffee features sweet tobacco aromatics with hints of toasted hazelnuts and a touch of juicy cherry notes.",
@@ -1194,7 +1194,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcd9ba5nsO2gJH7T5qcwvotvailiep8EZF_yGOBgngLqYj9ca7nXWjSo5hF3X1Jn2GWTkAojxaR7Vk8c_LTqlFzjWjZZ9hPoS1C0ES8LCZJroXPYvs=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "nebula",
 		description:
 			"Super honey-sweet and full-bodied, this comforting cup's rich chocolaty notes and hint of roast will satisfy any sweet tooth.",
@@ -1209,7 +1209,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe37HrBFyOYoOnBNkUY22Rk1FJn9TDzheQVu3ZQVyMIJIn1Mr-a42PSxEHffGPg0VC02m737vkkzPQHQaoXu0Rl_WilJ2YBD93l-EXbBn4NTy6cVcQ=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "yummy-decaf",
 		description:
 			"This decaf's pleasant brown sugar sweetness is the perfect accompaniment to juicy orange acidity and notes of fresh stone fruit.",
@@ -1224,7 +1224,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfRg4Jep6EHhY5z4Sy5dbBK0fIIFYeYuyQ7Q483rzJTrn9rOIWSjCebPiyZy-7dFT7qLb24yD_3O6pG1tTcTO9CGbklR2BganRnbR3N67eM0LWLIYw=w1920-h1080",
 		],
 		roast_id: 6,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "beowolf-blend",
 		description:
 			"Intensely chocolaty and surprisingly sweet. This full-bodied cup is bold enough to help you slay any monster that gets in your way.",
@@ -1239,7 +1239,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcPWLyG78EukstNTqhQDLKT3ypq86HmvqIOeVhDHWhMcpyKcBnyU5B4dMqUESlklTFF1eBUY31TuEbi2iLWQqJcR4tBjM2HhA2_VIkko012-AOhNsc=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "city-blend",
 		description:
 			"Sweet balance found in soft citrus acidity and toffee sweetness. So smooth and poetic, we had to write a haiku.",
@@ -1254,7 +1254,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfv12WQ_8ZDA6bVKd23jPu8pKsxnCX8A18kE7FUYfTWga2a2_C-xVYFgNmcprySKmmtqZqOKHV6ZFFmQyUyVg_39e_La6NkPk7Gtpq311HvjxXGuqc=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "colombian",
 		description:
 			"Smooth and clean, with a crisp green apple acidity and herbaceous notes of pine. Its full body carries a deep fruit sweetness that lingers until the last sip.",
@@ -1269,7 +1269,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdoPmQZ2wXqSgbit8jmGJouVtXki6myZG1ESti7ZsAJSuC2wHehSxGEncpJJU0tWWzHhlPyQJ-KZNDWsbRbJnzvaySKCBzkP8eEGZMAZK_5mHqDdqc=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "costa-rica-la-minita",
 		description:
 			"Full-bodied and easy-drinking, this coffee's notes of milk chocolate work in harmony with a plum and honey sweetness to make a cup of coffee that anyone can enjoy.",
@@ -1284,7 +1284,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfBrbWVCgVzSkZ0qK1Tjkj0QKlYvglcjJUKpaOCz9csO7G85-x_g0G8YLApfpkpTr77wWZ0gsH7Z9fm0j_mbfsT6pX8XfTc2x6qWKBq1Bl42WIesic=w1920-h1080",
 		],
 		roast_id: 6,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "italian-roast",
 		description:
 			"This bold cup gives you all the deep, dark roastiness you want, while keeping everything sweet and pleasant with flavors of chocolate and raisin.",
@@ -1299,7 +1299,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe-P2fJH8sUDl7FsBtcrAza1guNy2_CUCaRKaOpugEiisSTXJOQct4-qy5xts4YCLqZCI39-uX1idmbt2RzGoXWF4Hczq_xG2OrYczKYefQO_Ov8wE=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "orens-special-blend",
 		description:
 			"Comforting and rich, with a full body and a deep molasses sweetness. Notes of milk chocolate and dried plum stand out in this supremely cozy cup.",
@@ -1314,7 +1314,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe2zlAoADpfEFw1PZlsENu5J4Id-LPmFFy8AhTGyZ7MDO-_FvYuuDlCIjvTlaaNam3fxEhHnknJo8ULZi1_TAZq1xSXuhhsZB5noZiYyVlc31vAxMw=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "east-coast",
 		description:
 			"Cream rises to the top of an espresso blend as multifaceted as its eponymous coast. Sweet, yet serious. Confident, yet comforting.",
@@ -1329,7 +1329,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHeroHUX9I1HCT2oa6hUhO1kfrKW78cMfxhURW4ppZsi5AYjGneiUdcQNhDRcDREW1mjMJefyHccRhbC_RrX4lCbyrbNDcNIfpStUymyvoJonRJEggc=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "finca-la-amistad",
 		description:
 			"Five years into their relationship with the Valle family in Nicaragua, Panther's Finca La Amistad keeps getting more and more delicious. It's a smooth, everyday cup with tons of caramel notes and a bit of apple to boot.",
@@ -1344,7 +1344,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcMIoYXpTIi6aOb6hx65aCJFA_O4gTa5KOH2-tZ9TWkVUk1Ew4lH_p86lsb7Mfi1CoEw34sqWUVVgGaLkv_SlT_i8rPYPr1t8xfky9bTdCdyF_DfGY=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "isreal-salazar",
 		description:
 			"Huge, juicy acidity is the highlight in this exciting coffee from high above the mountains of Cauca in Colombia. We taste big flavors of citrus with a little bit of raisin to boot–a unique and tasty combination.",
@@ -1359,7 +1359,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcPYleueDymYA5uXy7400B-1wDZpAZtxItvNPNUiiaiHOeYQURyqAP-JtkeSHi-RvpE98AsEF1STMXW5aTZX1g__e-x_qiU41IODUxnsl8TJHRKCms=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "mejor",
 		description:
 			"Fruity and sweet, with a juicy note of cherry bolstered by a deep, nutty sweetness.",
@@ -1374,7 +1374,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcvW5ieciudc0STiAiNBujmgLLVIbDDC3IBiAl5K6ggLVvYiGezeRaKStMmFpDk8pa7egmhpUiGBVQYC_COeeJodU6akqCp2F5E0v78kFDX5LQPqck=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "rayos-del-sol",
 		description:
 			"Notes of apricot and juicy mango up front give way to a pervasive sweetness with notes of smooth milk chocolate, fragrant vanilla, and rich caramel.",
@@ -1389,7 +1389,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHejXpo9FGr8P4FI_Ovr_eZjTq5e97QyHo2Q0N4eAXlRQwEdcphbJNJJTkxp1H3vBeJhioRAQgc3XFje77-dFXZRQ6cJS2gPxb7w7cgLmCqDvrMBWdU=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "west-coast",
 		description:
 			"Light, bright and carefree, an espresso blend with an airy sweetness and weightless body (much like the ones in Malibu).",
@@ -1404,7 +1404,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHc0_RLcG5jly8RdvuiVNlvmlEGsgSNEDBbvGrBfz-ehIiDMSV5sSeVBojjcrFH3gigkA_TWiVkEP4YHcoto9xHP2uCzrBkAT9aFhEu0bgWz3PMau6Q=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "4-20-french-roast",
 		description:
 			"No blackbirds here, but you'll find plenty of cinnamon sweetness and rich smokiness baked into this full-bodied cup.",
@@ -1419,7 +1419,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHff1V0jfRPbS-0WAWlspLWopQxp1a-nQQC6FqbmfENuGymDTafUrqTV_vPQVwdHxDWlLXc21tghlPvotmpqDarkGPuddrvHgnAuVHAOE4ftqi7129U=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "bolivia-aprocafe",
 		description:
 			"Lovers of coffees with a huge, smooth body: can we interest you in a Bolivia with tons of chocolate flavor a little accent of cherry?",
@@ -1434,7 +1434,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHe3NjYe5yfpvSrVPHVsg-whw8m44AuNH3kcunKYDtm_4kiFm8yHfy07DpyFsZBTfeBn0rdTC0XdgC8U7bmTfTyVi3MMGgkipBaW8YY-1Q0vZY-gBPw=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "el-salcador-finca-hungria",
 		description:
 			"A sweet, smooth cup, featuring a rich chocolaty body and a honeycomb sweetness. Prepare for maximum coziness.",
@@ -1449,7 +1449,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfRkR0JMc7UTV_-n49isItodR3RjQNtYHiMnEvu9qOX9PKTIAWSdFFiEJuqQhzOiathphWL2bB5nzTUpYGm37FhpaAOwiPTFQMweoHwF2n15yH7pfc=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "farmhouse-breakfast-blend",
 		description:
 			"Caramel sweetness stars in this tremendously drinkable blend, brightened by a meyer lemon acidity and a nutty-sweet finish.",
@@ -1464,7 +1464,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfkufKO0alXeLgLaqcZqzzRaexPkMagppDoBH_EVDYSIVflaUR0mjOZ-BAj9YMtP-DNe6NgP1FFUU0El-8rzRMjD2-PVKt01oow1fuBr-_JMCOvLoM=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "funky-chicken",
 		description:
 			"Don't be surprised if you flap your arms and your feet start kickin' – this balanced blend brings together gently earthy flavors with notes of stonefruit and sugary sweetness.",
@@ -1479,7 +1479,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHed86GsbnbcqyFH45WMOEO4w6YXlBLm5j6VogwVFFMV4CAsprP0CZiX9t9DObOCj_ayw2Mhljt3klhBGJVcKSPmtNscXavilaTKXCyQf_-Iqx_uhiw=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "honduras-cosma",
 		description:
 			"This bold, sweet cup, produced by a women's co-op, offers up a comforting walnutty sweetness among notes of smooth dark chocolate.",
@@ -1494,7 +1494,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHd8b0SFtwbfgmUhA8e51gg6MgYVjzEK1ZGIYSTbZ2-0HDwSt6m2PeYS_b0ipyvJHuYuzRIpQNI3_5VtVuNx43BegaAcBveuXHJGRht8tgvZm9S8o7A=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "old-crow-cuppa-joe",
 		description:
 			"Rich, chocolaty, and very berry sweet - this full bodied blend offers a little bit of something for everyone to enjoy.",
@@ -1509,7 +1509,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHcurzVePehEBNcjs_rKg3mqNH-5-fnwGXAeS2fGy7EQrLYFj1Sqyf-La9M7OKyGhr_9CrVLQky05f3ky8k5EF1BGjjxyy6sX4jl0H9XH6buJTffTOk=w1920-h1080",
 		],
 		roast_id: 4,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "star-hill-stout-blend",
 		description:
 			"Sweet, rich, and creamy as a cozy cup of hot cocoa, this coffee features a hint of roast that'd stand up nicely to a splash of milk.",
@@ -1524,7 +1524,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHf9lf9uHfPDctCXO9kySenWAEF_GYcSdGyAwiW9opva11rYvdmZmBMJaHWULWgcBJ18Z6Vp5pFOvak-w6sQjRKKM1S-OuQoh5Hf1hDNCr2Kpjnl1zg=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$18.50",
+		price: "18.50",
 		webAddress: "waxwing",
 		description:
 			"Earthy depth meets a juicy berry sweetness in a rich, chocolaty body - this blend is ready to be the wind beneath your wings.",
@@ -1539,7 +1539,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfmHc0V10WSPeQ1NAlbpi2AzWCB6HppXNm6aUrw55b1AAqj6CEEAnrzv3f21E4fSMncUVxi2yLBSw8ftgBZKCpyNEFYASR1lmGOWUT7FOJoBylPirs=w1920-h1080",
 		],
 		roast_id: 3,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "hellacious",
 		description:
 			"Hellacious has plenty of the deep chocolate and brown sugar sweetness you expect from a specialty espresso blend, and it throws in a smidge of fun acidity to make those cappuccinos really sing.",
@@ -1554,7 +1554,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHdKGZfdOG-BmNdKwDG76QJlfdfP2yS-n81s3bk-M0Oq7YaXkZJp4bUw6FXFrt_CMWa1jEcdWM3NXTbDtKtFejvYSy3ZPnr4T_lTeg8oEtirzoGm7PY=w1920-h1080",
 		],
 		roast_id: 2,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "las-viudas",
 		description:
 			"This Colombian stunner mixes bright citrus flavors with a sticky dried fruit sweetness. It's sourced exclusively from women producers in Huila, Colombia.",
@@ -1569,7 +1569,7 @@ const coffees = [
 			"https://lh3.googleusercontent.com/pw/ADCreHfzhgmp13nAyP3ceuJOVoDhoiZMXsGpI6qmZr19ZQ4q5PPLTlfYxtjHFhXeBUAb69f0JYNEopnDs1u2rExPYZlyD8clNFHGThTApA9ZLP1DhW9QKPw=w1920-h1080",
 		],
 		roast_id: 1,
-		price: "$23.50",
+		price: "23.50",
 		webAddress: "space-cowboy",
 		description:
 			"Blast off with this delightfully soft and fruity coffee sourced from Mrs. Zenebech Ageze's small farm in the famous Yirgacheffe region of Ethiopia.",
