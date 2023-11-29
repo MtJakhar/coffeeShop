@@ -4,7 +4,6 @@ const prisma = new PrismaClient();
 
 export default async function updateReview(req, res) {
 	const data = req.body;
-  console.log(data)
 
 	try {
 		if (req.method === "PATCH") {

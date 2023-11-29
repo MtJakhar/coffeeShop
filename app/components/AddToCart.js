@@ -13,7 +13,6 @@ import axios from "axios";
 
 const AddToCart = ({ coffee }) => {
 	const [itemQuant, setItemQuant] = useState(1);
-
 	const MenuProps = {
 		PaperProps: {
 			style: {
@@ -23,6 +22,7 @@ const AddToCart = ({ coffee }) => {
 	};
 
 	const coffeeData = {
+		id: coffee.id,
 		name: coffee.name,
 		image: coffee.image[1],
 		price: coffee.price,
@@ -46,11 +46,12 @@ const AddToCart = ({ coffee }) => {
 		return array;
 	};
 
-	const sendItem = async() => {
+	const sendItem = async(e) => {
+		e.preventDefault();
 		try {
-			const response = await axios.post("http://localhost:3000/api/checkout", coffeeData);
-
-			setItemQuant(1);
+			const { data } = await axios.post("http://localhost:3000/api/checkout", coffeeData);
+			const { url } = data
+			window.location.href = url
 		} catch(error) {
 			console.error("Error", error)
 		}
