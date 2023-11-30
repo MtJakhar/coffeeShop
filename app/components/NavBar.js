@@ -9,6 +9,7 @@ import AuthModal from "./AuthModal";
 import { useContext } from "react";
 import { AuthenticationContext } from "../context/AuthContext";
 import useAuth from "@/hooks/useAuth";
+import CartModal from "./CartModal";
 
 const NavBar = () => {
 	const { data, loading } = useContext(AuthenticationContext);
@@ -30,7 +31,7 @@ const NavBar = () => {
 						)}
 					</>
 				)}
-				<Button variant="contained">Cart</Button>
+				<CartModal />
 			</Toolbar>
 		</AppBar>
 	);

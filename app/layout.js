@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import AuthContext from "./context/AuthContext";
-
+import CartContextProvider from "./context/CartContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,11 +16,13 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={inter.className}>
 				<AuthContext>
-					<main>
-						<NavBar />
-						{children}
-						<Footer />
-					</main>
+					<CartContextProvider>
+						<main>
+							<NavBar />
+							{children}
+							<Footer />
+						</main>
+					</CartContextProvider>
 				</AuthContext>
 			</body>
 		</html>
