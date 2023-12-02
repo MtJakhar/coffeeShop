@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import {
-	ArrowCircleLeftOutlinedIcon,
-	ArrowCircleRightOutlinedIcon,
-} from "@mui/icons-material";
+
+import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
+
 import Image from "next/image";
 import { IconButton } from "@mui/material";
 
@@ -23,8 +23,8 @@ const CheckOutCard = ({ coffee }) => {
 			<Image
 				className="mx-auto"
 				src={coffee.image[0]}
-				width={500}
-				height={500}
+				width={200}
+				height={200}
 				alt="Coffee Image"
 			/>
 			<h1>{coffeeData.name}</h1>
