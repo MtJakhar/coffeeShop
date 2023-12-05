@@ -14,6 +14,7 @@ import axios from "axios";
 
 const AddToCart = ({ coffee }) => {
 	const [itemQuant, setItemQuant] = useState(1);
+	const { cart } = useContext(CartContext);
 	const MenuProps = {
 		PaperProps: {
 			style: {
