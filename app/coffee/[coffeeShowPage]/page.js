@@ -2,7 +2,7 @@ import Image from "next/image";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "@/app/components/ReviewSlider";
 import AddReview from "@/app/components/AddReview";
-import AddToCart from "@/app/components/AddToCart";
+import AddCartBtn from "@/app/components/AddCartBtn";
 
 const prisma = new PrismaClient();
 
@@ -54,9 +54,9 @@ export default async function CoffeeShowPage({ params }) {
 					<h1>{coffee.name}</h1>
 					<p>{coffee.description}</p>
 					<div className="text-center justify-center">
-						<p>One Time Purchase -----{coffee.price}</p>
+						<p>One Time Purchase -----${coffee.price}</p>
 						<div>
-							<AddToCart coffee={coffee}/>
+							<AddCartBtn coffee={coffee}/>
 						</div>
 					</div>
 				</div>

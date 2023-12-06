@@ -8,6 +8,7 @@ const CartModal = () => {
 	const [open, setOpen] = useState(false);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+	console.log(cart)
 
 	const style = {
 		position: "absolute",
@@ -36,9 +37,9 @@ const CartModal = () => {
 						<div>
 							<h1>Checkout Items</h1>
 							<div>
-								{cart.map((cartItem) => {
+								{cart.map((cartItem, index) => {
 									return (
-										<CheckOutCard />
+										<CheckOutCard key={index} id={index} coffee={cartItem}/>
 									)
 								})}
 							</div>
