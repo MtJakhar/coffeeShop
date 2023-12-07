@@ -1,14 +1,16 @@
+"use client";
+
 import { Button, Box, Modal } from "@mui/material";
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import CheckOutCard from "./CheckOutCard";
 
 const CartModal = () => {
 	const { cart } = useContext(CartContext);
 	const [open, setOpen] = useState(false);
+	const [cartCount, setCartCount] = useState(0);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
-	console.log(cart)
 
 	const style = {
 		position: "absolute",
@@ -16,16 +18,32 @@ const CartModal = () => {
 		left: "50%",
 		transform: "translate(-50%, -50%)",
 		width: 400,
+		maxHeight: "80vh", // Set maximum height to 80% of the viewport height
 		bgcolor: "background.paper",
 		border: "2px solid #000",
 		boxShadow: 24,
 		p: 4,
+		overflowY: "auto", // Enable vertical scrolling
+	};
+
+	useEffect(() => {
+		setCartCount(cart.length);
+	}, [cart]);
+
+	let total = 0;
+	const calculateTotal = () => {
+		cart.forEach((item) => {
+			let itemPrice = item.stripeData.price_data.unit_amount_decimal;
+			let quantity = item.stripeData.quantity;
+			total += (itemPrice/ 100) * parseFloat(quantity);
+		});
+		return (total).toFixed(2);
 	};
 
 	return (
 		<>
 			<Button variant="contained" onClick={handleOpen}>
-				Cart {cart.length}
+				Cart {cartCount}
 			</Button>
 			<Modal open={open} onClose={handleClose}>
 				<Box sx={style}>
@@ -34,15 +52,18 @@ const CartModal = () => {
 							<h1>Please Buy some Coffee!!!</h1>
 						</div>
 					) : (
-						<div>
-							<h1>Checkout Items</h1>
-							<div>
-								{cart.map((cartItem, index) => {
-									return (
-										<CheckOutCard key={index} id={index} coffee={cartItem}/>
-									)
-								})}
-							</div>
+						<div className="text-center">
+							<Button variant="contained" className="bg-blue-500">Go to Checkout</Button>
+							<h1>subTotal ${calculateTotal()}</h1>
+							{cart.map((cartItem) => {
+								return (
+									<CheckOutCard
+										key={cartItem.itemId}
+										id={cartItem.itemId}
+										coffee={cartItem.stripeData}
+									/>
+								);
+							})}
 						</div>
 					)}
 				</Box>

@@ -59,7 +59,6 @@ const AddCartBtn = ({ coffee }) => {
 			},
 			quantity: itemQuant
 		}
-
 	}
 
 	const handleChange = (e) => {
