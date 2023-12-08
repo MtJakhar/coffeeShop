@@ -4,13 +4,20 @@ import { Button, Box, Modal } from "@mui/material";
 import React, { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import CheckOutCard from "./CheckOutCard";
+import { useRouter } from "next/router";
 
 const CartModal = () => {
+	// const router = useRouter();
 	const { cart } = useContext(CartContext);
 	const [open, setOpen] = useState(false);
 	const [cartCount, setCartCount] = useState(0);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+	const handleCheckout = (e) => {
+		e.preventDefault();
+		// router.push('/checkout');
+		console.log("routed")
+	}
 
 	const style = {
 		position: "absolute",
@@ -35,9 +42,9 @@ const CartModal = () => {
 		cart.forEach((item) => {
 			let itemPrice = item.stripeData.price_data.unit_amount_decimal;
 			let quantity = item.stripeData.quantity;
-			total += (itemPrice/ 100) * parseFloat(quantity);
+			total += (itemPrice / 100) * parseFloat(quantity);
 		});
-		return (total).toFixed(2);
+		return total.toFixed(2);
 	};
 
 	return (
@@ -53,7 +60,13 @@ const CartModal = () => {
 						</div>
 					) : (
 						<div className="text-center">
-							<Button variant="contained" className="bg-blue-500">Go to Checkout</Button>
+							<Button
+								variant="contained"
+								className="bg-blue-500"
+								onClick={handleCheckout}
+							>
+								Go to Checkout
+							</Button>
 							<h1>subTotal ${calculateTotal()}</h1>
 							{cart.map((cartItem) => {
 								return (
