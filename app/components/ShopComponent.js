@@ -18,8 +18,8 @@ const ShopComponent = ({
 		roast: [],
 	});
 
-	const filterCoffeeData = (coffData, userInput) => {
-		return coffData.filter((coffee) => {
+	const filterCoffeeData = (coffeeData, userInput) => {
+		return coffeeData.filter((coffee) => {
 			// Check if each user input category is not an empty array and matches the coffee data
 			return (
 				(!userInput.brand.length ||
