@@ -4,10 +4,10 @@ import { Button, Box, Modal } from "@mui/material";
 import React, { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import CheckOutCard from "./CheckOutCard";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const CartModal = () => {
-	// const router = useRouter();
+	const router = useRouter();
 	const { cart } = useContext(CartContext);
 	const [open, setOpen] = useState(false);
 	const [cartCount, setCartCount] = useState(0);
@@ -15,8 +15,9 @@ const CartModal = () => {
 	const handleClose = () => setOpen(false);
 	const handleCheckout = (e) => {
 		e.preventDefault();
-		// router.push('/checkout');
-		console.log("routed")
+		router.push('/checkout');
+		// console.log("routed")
+		setOpen(false);
 	}
 
 	const style = {
