@@ -3,7 +3,7 @@
 import { Button, Box, Modal } from "@mui/material";
 import React, { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
-import CheckOutCard from "./CheckOutCard";
+import CartItem from "./CartItem";
 import { useRouter } from "next/navigation";
 
 const CartModal = () => {
@@ -13,10 +13,9 @@ const CartModal = () => {
 	const [cartCount, setCartCount] = useState(0);
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
-	const handleCheckout = (e) => {
+	const handleCartClick = (e) => {
 		e.preventDefault();
-		router.push('/checkout');
-		// console.log("routed")
+		router.push('/cart');
 		setOpen(false);
 	}
 
@@ -64,17 +63,18 @@ const CartModal = () => {
 							<Button
 								variant="contained"
 								className="bg-blue-500"
-								onClick={handleCheckout}
+								onClick={handleCartClick}
 							>
-								Go to Checkout
+								Go to Cart
 							</Button>
-							<h1>subTotal ${calculateTotal()}</h1>
+							<h1>Sub Total ${calculateTotal()}</h1>
 							{cart.map((cartItem) => {
 								return (
-									<CheckOutCard
+									<CartItem
 										key={cartItem.itemId}
 										id={cartItem.itemId}
 										coffee={cartItem.stripeData}
+										isModal={true}
 									/>
 								);
 							})}
