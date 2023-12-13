@@ -15,7 +15,7 @@ const CartModal = () => {
 	const handleClose = () => setOpen(false);
 	const handleCartClick = (e) => {
 		e.preventDefault();
-		router.push('/cart');
+		router.push('/checkout');
 		setOpen(false);
 	}
 

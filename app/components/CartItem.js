@@ -29,19 +29,6 @@ const CartItem = ({ id, coffee, isModal }) => {
 		subtractFromCart(id);
 	};
 
-	// const coffeeData = {
-	// 	price_data: {
-	// 		currency: "usd",
-	// 		product_data: {
-	// 			name: coffee.name,
-	// 			description: coffee.description,
-	// 			images: [coffee.image[1]]
-	// 		},
-	// 		unit_amount_decimal: parseFloat(coffee.price) * 100,
-	// 	},
-	// 	quantity: itemQuant
-	// }
-
 	const coffeeImage = coffee.price_data.product_data.images[0];
 	const coffeeName = coffee.price_data.product_data.name;
 	const coffeePrice = (coffee.price_data.unit_amount_decimal / 100).toFixed(
