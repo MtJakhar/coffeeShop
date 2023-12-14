@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "@/app/components/ReviewSlider";
-import AddReview from "@/app/components/AddReview";
+import AddReviewModal from "@/app/components/AddReviewModal";
 import AddCartBtn from "@/app/components/AddCartBtn";
 
 const prisma = new PrismaClient();
@@ -68,7 +68,7 @@ export default async function CoffeeShowPage({ params }) {
 				alt="brand image"
 			/>
 			<ReviewSlider reviewData={reviews} coffee={coffee} />
-			<AddReview coffee={coffee.id}/>
+			<AddReviewModal coffee={coffee.id}/>
 		</>
 	);
 }
