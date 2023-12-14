@@ -57,7 +57,7 @@ const ShopComponent = ({
 							<CoffeeCard
 								key={coffee.id}
 								coffee={coffee}
-								brandName={brandData.find(
+								brand={brandData.find(
 									(brand) => brand.id === coffee.brand_id
 								)}
 							/>

@@ -3,12 +3,13 @@ import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-const CoffeeCard = ({ brandName, coffee }) => {
+const CoffeeCard = ({ brand, coffee }) => {
 	const router = useRouter();
 
 	const handleClick = (e) => {
 		e.preventDefault();
-		router.push(`coffee/${coffee.webAddress}`);
+		console.log("clicked")
+		router.replace(`/coffee/${coffee.webAddress}`);
 	};
 
 	return (
@@ -25,7 +26,7 @@ const CoffeeCard = ({ brandName, coffee }) => {
 					alt="Coffee Image"
 				/>
 				<hr />
-				<h3>{brandName.name}</h3>
+				<h3>{brand.name}</h3>
 				<h1>{coffee.name}</h1>
 				<p>${coffee.price}</p>
 			</div>

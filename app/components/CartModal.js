@@ -7,6 +7,7 @@ import CartItem from "./CartItem";
 import { useRouter } from "next/navigation";
 
 const CartModal = () => {
+	// turn this into a drawer mui
 	const router = useRouter();
 	const { cart } = useContext(CartContext);
 	const [open, setOpen] = useState(false);
