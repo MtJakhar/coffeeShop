@@ -33,7 +33,6 @@ const Checkout = () => {
       quantity: cartItem.stripeData.quantity, 
      };
 	});
-  console.log(stripeData)
 
 	const sendCart = async(e) => {
 		e.preventDefault();

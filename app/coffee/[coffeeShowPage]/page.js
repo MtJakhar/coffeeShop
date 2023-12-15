@@ -20,7 +20,7 @@ const fetchCoffeeData = async (coffeeAddress) => {
 const fetchRelatedCoffeeData = async (brand_id) => {
 	const coffees = await prisma.coffee.findMany({
 		where: {
-			brand_id: brand_id
+			brand_id: brand_id,
 		},
 		take: 5,
 	});
@@ -51,7 +51,7 @@ export default async function CoffeeShowPage({ params }) {
 	const brand = await fetchBrandData(coffee.brand_id);
 	const reviews = await fetchReviewData(coffee.id);
 	const relatedBrands = await fetchRelatedCoffeeData(coffee.brand_id);
-	
+
 	const relatedCoffeeRoasts = relatedBrands.filter(
 		(coffeeElement) => coffeeElement.id !== coffee.id
 	);
@@ -83,7 +83,7 @@ export default async function CoffeeShowPage({ params }) {
 				height={800}
 				alt="brand image"
 			/>
-			<CoffeeSlider coffees={relatedCoffeeRoasts} brandData={brand} />
+			<CoffeeSlider coffeeData={relatedCoffeeRoasts} brandData={brand} />
 			<ReviewSlider reviewData={reviews} coffee={coffee} />
 			<AddReviewModal coffee={coffee.id} />
 		</>

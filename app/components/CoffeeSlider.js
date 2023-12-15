@@ -1,12 +1,11 @@
 import React from "react";
 import CoffeeCard from "./CoffeeCard";
 
-const CoffeeSlider = ({ coffees, brandData }) => {
+const CoffeeSlider = ({ coffeeData, brandData }) => {
 	return (
 		<>
-			<h1>Other products offered by this company</h1>
 			<div className="flex">
-				{coffees.map((coffee) => {
+				{coffeeData.map((coffee) => {
 					return (
 						<CoffeeCard
 							key={coffee.id}

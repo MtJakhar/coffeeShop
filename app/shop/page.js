@@ -2,10 +2,7 @@
 import { PrismaClient } from "@prisma/client";
 import ShopComponent from "../components/ShopComponent";
 
-
-
 const prisma = new PrismaClient();
-//crate state in this shop page
 
 const getCoffeeData = async () => {
 	const coffees = await prisma.coffee.findMany();

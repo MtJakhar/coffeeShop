@@ -8,8 +8,7 @@ const CoffeeCard = ({ brand, coffee }) => {
 
 	const handleClick = (e) => {
 		e.preventDefault();
-		console.log("clicked")
-		router.replace(`/coffee/${coffee.webAddress}`);
+		router.push(`/coffee/${coffee.webAddress}`);
 	};
 
 	return (
