@@ -67,7 +67,7 @@ const AddReviewModal = ({ coffee }) => {
 				coffee_id: coffee,
 				user_id: data.id,
 			});
-			setAddReviewBtn(false);
+			handleClose();
 			window.location.reload();
 		} catch (error) {
 			console.error("Error creating data", error);
