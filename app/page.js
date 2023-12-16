@@ -3,6 +3,7 @@ import CoffeeSection from "./components/CoffeeSection";
 import IntoSection from "./components/IntoSection";
 import Image from "next/image";
 import coffeeImage from "../public/coffeeImage.jpeg";
+import coffeeFarmers from "../public/coffeeFarmers.jpeg";
 
 const prisma = new PrismaClient();
 
@@ -67,6 +68,13 @@ export default async function Home() {
 				<h1>Home Page</h1>
 				<Image height={500} width={500} src={coffeeImage} />
 				<IntoSection />
+				<div className="overflow-hidden position: relative w-full h-auto">
+					<Image
+						className="object-cover"
+						fill={true}
+						src={coffeeFarmers}
+					/>
+				</div>
 				<CoffeeSection
 					coffeeData={selectedCoffees}
 					lightRoasts={lightRoast}

@@ -4,7 +4,7 @@ import CoffeeCard from "./CoffeeCard";
 const CoffeeSlider = ({ coffeeData, brandData }) => {
 	return (
 		<>
-			<div className="flex">
+			<div className="flex ">
 				{coffeeData.map((coffee) => {
 					return (
 						<CoffeeCard

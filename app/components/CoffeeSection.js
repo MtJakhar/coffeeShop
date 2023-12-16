@@ -47,7 +47,7 @@ const CoffeeSection = ({
 				>
 					Shop All Coffee
 				</p>
-				<div className="flex">
+				<div>
 					<Button
 						variant="contained"
 						className="bg-blue-500 m-2"
