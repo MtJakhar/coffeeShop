@@ -66,9 +66,15 @@ export default async function Home() {
 		<>
 			<div>
 				<h1>Home Page</h1>
-				<Image height={500} width={500} src={coffeeImage} />
+				<div className="overflow-hidden position: relative w-full h-96">
+					<Image
+						className="object-cover"
+						fill={true}
+						src={coffeeImage}
+					/>
+				</div>
 				<IntoSection />
-				<div className="overflow-hidden position: relative w-full h-auto">
+				<div className="overflow-hidden position: relative w-full h-96">
 					<Image
 						className="object-cover"
 						fill={true}
