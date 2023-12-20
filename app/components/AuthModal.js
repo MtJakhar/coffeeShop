@@ -104,7 +104,13 @@ const AuthModal = () => {
 
 	return (
 		<div>
-			<Button variant="contained" onClick={handleOpen}>
+			<Button
+				variant="outlined"
+				color="secondary"
+				size="large"
+				className="font-bold text-lg"
+				onClick={handleOpen}
+			>
 				Log In
 			</Button>
 			<Modal open={open} onClose={handleClose}>

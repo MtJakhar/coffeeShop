@@ -16,9 +16,9 @@ const CartModal = () => {
 	const handleClose = () => setOpen(false);
 	const handleCartClick = (e) => {
 		e.preventDefault();
-		router.push('/checkout');
+		router.push("/checkout");
 		setOpen(false);
-	}
+	};
 
 	const style = {
 		position: "absolute",
@@ -50,7 +50,13 @@ const CartModal = () => {
 
 	return (
 		<>
-			<Button variant="contained" onClick={handleOpen}>
+			<Button
+				variant="outlined"
+				color="secondary"
+				size="large"
+				className="font-bold text-lg"
+				onClick={handleOpen}
+			>
 				Cart {cartCount}
 			</Button>
 			<Modal open={open} onClose={handleClose}>
