@@ -1,10 +1,17 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import AuthContext from "./context/AuthContext";
 import CartContextProvider from "./context/CartContext";
-const inter = Inter({ subsets: ["latin"] });
+
+const roboto = Roboto({
+	style: ["normal", "italic"],
+	subsets: ["latin"],
+	weight: ["100", "300", "400", "500", "700", "900"],
+	display: "swap",
+});
+// off white #FAF9F6, bone white #F9F6EE, Ivory #FFFFF0
 
 export const metadata = {
 	title: "Coffee App",
@@ -14,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className={roboto.className}>
 				<AuthContext>
 					<CartContextProvider>
 						<main>

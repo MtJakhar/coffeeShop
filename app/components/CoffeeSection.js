@@ -50,28 +50,28 @@ const CoffeeSection = ({
 				<div>
 					<Button
 						variant="contained"
-						className="bg-blue-500 m-2"
+						className="m-2"
 						onClick={handleRoast}
 					>
 						New Arrivals
 					</Button>
 					<Button
 						variant="contained"
-						className="bg-blue-500 m-2"
+						className="m-2"
 						onClick={handleLightRoast}
 					>
 						Light Roasts
 					</Button>
 					<Button
 						variant="contained"
-						className="bg-blue-500 m-2"
+						className="m-2"
 						onClick={handleMedRoast}
 					>
 						Medium Roasts
 					</Button>
 					<Button
 						variant="contained"
-						className="bg-blue-500 m-2"
+						className="m-2"
 						onClick={handleDarkRoast}
 					>
 						Dark Roasts
