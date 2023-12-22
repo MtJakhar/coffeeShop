@@ -50,16 +50,16 @@ const NavBar = () => {
 						className="hover:cursor-pointer font-bold text-6xl text-black m-5"
 						onClick={handleClick}
 					>
-						Trade
+						Coffee
 					</h1>
 					<div className="flex">
 						<div
-							className="font-bold text-2xl p-3 m-3 border-white border-b-4 hover:border-black hover:cursor-pointer"
+							className="font-bold text-2xl p-3 mx-3 border-white border-b-4 hover:border-black hover:cursor-pointer"
 							onClick={handleShop}
 						>
 							Shop
 						</div>
-						<div className="font-bold text-2xl p-3 m-3 border-white border-b-4 hover:border-black hover:cursor-pointer">
+						<div className="font-bold text-2xl p-3 mx-3 border-white border-b-4 hover:border-black hover:cursor-pointer">
 							Roaster
 						</div>
 					</div>

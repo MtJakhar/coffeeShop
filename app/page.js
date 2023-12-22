@@ -69,8 +69,6 @@ export default async function Home() {
 				<Head>
 					<title>Coffee Shop</title>
 				</Head>
-
-				<h1>Home Page</h1>
 				<div className="overflow-hidden position: relative w-full h-96">
 					<Image
 						className="object-cover"
