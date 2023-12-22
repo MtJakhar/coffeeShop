@@ -63,26 +63,50 @@ const CartDrawer = () => {
 					onKeyDown={toggleDrawer}
 				>
 					{cart.length === 0 ? (
-						<div>
-							<h1>Please Buy some Coffee!!!</h1>
+						<div className="text-center">
+							<div className="m-3 mb-5">
+								<div>
+									<p className="text-lg">Subtotal</p>
+									<p className="font-bold text-xl text-red-700">
+										${calculateTotal()}
+									</p>
+								</div>
+							</div>
+							<hr className="drop-shadow" />
+							<div className="my-10 mx-5 text-center text-2xl font-bold">
+								<p>
+									Your cart is currently empty. Add more
+									products to continue shopping!
+								</p>
+							</div>
 						</div>
 					) : (
 						<div className="text-center">
-							<Button
-								variant="contained"
-								className="bg-blue-500"
-								onClick={handleCartClick}
-							>
-								Go to Cart
-							</Button>
-							<h1>Sub Total ${calculateTotal()}</h1>
+							<div className="m-3">
+								<div>
+									<p className="text-lg">Subtotal</p>
+									<p className="font-bold text-xl text-red-700">
+										${calculateTotal()}
+									</p>
+								</div>
+								<Button
+									variant="outlined"
+									color="secondary"
+									className="m-2"
+									onClick={handleCartClick}
+								>
+									Go to Cart
+								</Button>
+							</div>
+							<hr className="drop-shadow" />
+
 							{cart.map((cartItem) => {
 								return (
 									<CartItem
 										key={cartItem.itemId}
 										id={cartItem.itemId}
 										coffee={cartItem.stripeData}
-										isModal={true}
+										isDrawer={true}
 									/>
 								);
 							})}

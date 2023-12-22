@@ -9,8 +9,9 @@ import Image from "next/image";
 import { IconButton } from "@mui/material";
 import Selector from "./Selector";
 
-const CartItem = ({ id, coffee, isModal }) => {
+const CartItem = ({ id, coffee, isDrawer }) => {
 	const { subtractFromCart, updateItemQty } = useContext(CartContext);
+
 	const handleLeftClick = () => {
 		if (coffee.quantity > 0) {
 			updateItemQty(id, coffee.quantity - 1);
@@ -37,8 +38,8 @@ const CartItem = ({ id, coffee, isModal }) => {
 
 	return (
 		<>
-			{isModal ? (
-				<div className="text-center">
+			{isDrawer ? (
+				<div>
 					<Image
 						className="mx-auto"
 						src={coffeeImage}
@@ -48,22 +49,27 @@ const CartItem = ({ id, coffee, isModal }) => {
 					/>
 					<p>{coffeeName}</p>
 					<p>${coffeePrice}</p>
-					<div className="flex">
+					<div className="flex justify-center">
 						<div>
-							<IconButton onClick={handleLeftClick}>
+							<IconButton
+								className="mx-1"
+								onClick={handleLeftClick}
+							>
 								<ArrowCircleLeftOutlinedIcon />
 							</IconButton>
 							{coffee.quantity}
-							<IconButton onClick={handleRightClick}>
+							<IconButton
+								className="mx-1"
+								onClick={handleRightClick}
+							>
 								<ArrowCircleRightOutlinedIcon />
 							</IconButton>
 						</div>
-						<div>
-							<IconButton onClick={handleDelete}>
-								<DeleteIcon />
-							</IconButton>
-						</div>
+						<IconButton onClick={handleDelete}>
+							<DeleteIcon />
+						</IconButton>
 					</div>
+					<hr className="mt-4 drop-shadow" />
 				</div>
 			) : (
 				<div className="flex">
@@ -84,7 +90,13 @@ const CartItem = ({ id, coffee, isModal }) => {
 								itemQuant={coffee.quantity}
 								handleChange={handleChange}
 							/>
-							<p className="text-red-500 hover:cursor-pointer" onClick={handleDelete}> Delete</p>
+							<p
+								className="text-red-500 hover:cursor-pointer"
+								onClick={handleDelete}
+							>
+								{" "}
+								Delete
+							</p>
 						</div>
 					</div>
 				</div>
