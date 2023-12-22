@@ -8,7 +8,7 @@ import AuthModal from "./AuthModal";
 import { useContext } from "react";
 import { AuthenticationContext } from "../context/AuthContext";
 import useAuth from "@/hooks/useAuth";
-import CartModal from "./CartModal";
+import CartDrawer from "./CartDrawer";
 import { useRouter } from "next/navigation";
 import { createTheme, ThemeProvider } from "@mui/material";
 
@@ -23,12 +23,12 @@ const NavBar = () => {
 
 	const handleShop = (e) => {
 		e.preventDefault();
-		router.push("shop");
+		router.push("/shop");
 	};
 
 	const handleRoasters = (e) => {
 		e.preventDefault();
-		router.push("shop");
+		router.push("/shop");
 	};
 
 	// off white #FAF9F6, bone white #F9F6EE, Ivory #FFFFF0
@@ -76,7 +76,7 @@ const NavBar = () => {
 							)}
 						</div>
 						<div className="m-1">
-							<CartModal />
+							<CartDrawer />
 						</div>
 					</div>
 				</Toolbar>

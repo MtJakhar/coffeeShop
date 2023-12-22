@@ -4,7 +4,6 @@ import IntoSection from "./components/IntoSection";
 import Image from "next/image";
 import coffeeImage from "../public/coffeeImage.jpeg";
 import coffeeFarmers from "../public/coffeeFarmers.jpeg";
-import Head from "next/head";
 
 const prisma = new PrismaClient();
 
@@ -64,34 +63,25 @@ export default async function Home() {
 	const selectedCoffees = getCoffees.filter((coffee) => coffee.id % 10 === 0);
 
 	return (
-		<>
-			<div>
-				<Head>
-					<title>Coffee Shop</title>
-				</Head>
-				<div className="overflow-hidden position: relative w-full h-96">
-					<Image
-						className="object-cover"
-						fill={true}
-						src={coffeeImage}
-					/>
-				</div>
-				<IntoSection />
-				<div className="overflow-hidden position: relative w-full h-96">
-					<Image
-						className="object-cover"
-						fill={true}
-						src={coffeeFarmers}
-					/>
-				</div>
-				<CoffeeSection
-					coffeeData={selectedCoffees}
-					lightRoasts={lightRoast}
-					medRoasts={medRoast}
-					darkRoasts={darkRoast}
-					brandData={getBrands}
+		<div>
+			<div className="overflow-hidden position: relative w-full h-96">
+				<Image className="object-cover" fill={true} src={coffeeImage} />
+			</div>
+			<IntoSection />
+			<div className="overflow-hidden position: relative w-full h-96">
+				<Image
+					className="object-cover"
+					fill={true}
+					src={coffeeFarmers}
 				/>
 			</div>
-		</>
+			<CoffeeSection
+				coffeeData={selectedCoffees}
+				lightRoasts={lightRoast}
+				medRoasts={medRoast}
+				darkRoasts={darkRoast}
+				brandData={getBrands}
+			/>
+		</div>
 	);
 }

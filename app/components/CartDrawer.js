@@ -1,37 +1,34 @@
 "use client";
 
-import { Button, Box, Modal } from "@mui/material";
+import { Button, Box, Drawer } from "@mui/material";
 import React, { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import CartItem from "./CartItem";
 import { useRouter } from "next/navigation";
 
-const CartModal = () => {
-	// turn this into a drawer mui
+const CartDrawer = () => {
 	const router = useRouter();
 	const { cart } = useContext(CartContext);
 	const [open, setOpen] = useState(false);
 	const [cartCount, setCartCount] = useState(0);
+
 	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
+
 	const handleCartClick = (e) => {
 		e.preventDefault();
 		router.push("/checkout");
 		setOpen(false);
 	};
 
-	const style = {
-		position: "absolute",
-		top: "50%",
-		left: "50%",
-		transform: "translate(-50%, -50%)",
-		width: 400,
-		maxHeight: "80vh", // Set maximum height to 80% of the viewport height
-		bgcolor: "background.paper",
-		border: "2px solid #000",
-		boxShadow: 24,
-		p: 4,
-		overflowY: "auto", // Enable vertical scrolling
+	const toggleDrawer = (event) => {
+		if (
+			event.type === "keydown" &&
+			(event.key === "Tab" || event.key === "Shift")
+		) {
+			return;
+		}
+		handleOpen();
 	};
 
 	useEffect(() => {
@@ -59,8 +56,12 @@ const CartModal = () => {
 			>
 				Cart {cartCount}
 			</Button>
-			<Modal open={open} onClose={handleClose}>
-				<Box sx={style}>
+			<Drawer open={open} anchor={"right"} onClose={handleClose}>
+				<Box
+					sx={{ width: 300, overflowY: "auto" }}
+					onClick={toggleDrawer}
+					onKeyDown={toggleDrawer}
+				>
 					{cart.length === 0 ? (
 						<div>
 							<h1>Please Buy some Coffee!!!</h1>
@@ -88,9 +89,9 @@ const CartModal = () => {
 						</div>
 					)}
 				</Box>
-			</Modal>
+			</Drawer>
 		</>
 	);
 };
 
-export default CartModal;
+export default CartDrawer;
