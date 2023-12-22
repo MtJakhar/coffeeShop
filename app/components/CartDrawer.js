@@ -66,7 +66,9 @@ const CartDrawer = () => {
 						<div className="text-center">
 							<div className="m-3 mb-5">
 								<div>
-									<p className="text-lg">Subtotal</p>
+									<p className="font-bold text-lg">
+										Subtotal
+									</p>
 									<p className="font-bold text-xl text-red-700">
 										${calculateTotal()}
 									</p>
@@ -84,7 +86,9 @@ const CartDrawer = () => {
 						<div className="text-center">
 							<div className="m-3">
 								<div>
-									<p className="text-lg">Subtotal</p>
+									<p className="font-semibold text-lg">
+										Subtotal
+									</p>
 									<p className="font-bold text-xl text-red-700">
 										${calculateTotal()}
 									</p>
