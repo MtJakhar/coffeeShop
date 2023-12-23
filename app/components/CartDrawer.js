@@ -18,7 +18,13 @@ const CartDrawer = () => {
 	const handleCartClick = (e) => {
 		e.preventDefault();
 		router.push("/checkout");
-		setOpen(false);
+		handleClose();
+	};
+
+	const handleShopClick = (e) => {
+		e.preventDefault();
+		router.push("/shop");
+		handleClose();
 	};
 
 	const toggleDrawer = (event) => {
@@ -75,10 +81,15 @@ const CartDrawer = () => {
 								</div>
 							</div>
 							<hr className="drop-shadow" />
-							<div className="my-10 mx-5 text-center text-2xl font-bold">
-								<p>
-									Your cart is currently empty. Add more
-									products to continue shopping!
+							<div className="my-10 mx-5 text-center">
+								<p className="text-4xl font-bold text-neutral-400 my-8">
+									Your cart is craving delicious coffee.
+								</p>
+								<p
+									className="text-2xl font-bold border-b-[6px] pb-2 border-red-600 inline hover:cursor-pointer"
+									onClick={handleShopClick}
+								>
+									Shop
 								</p>
 							</div>
 						</div>
