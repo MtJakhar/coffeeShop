@@ -77,7 +77,7 @@ export default async function Home() {
 						<h1 className="font-bold drop-shadow-xl text-8xl mb-3 text-center">
 							The Best Coffee is Artisanal
 						</h1>
-						<p className="drop-shadow-xl text-[1.5rem] mb-5 text-center">
+						<p className="drop-shadow-xl text-3xl mb-5 text-center">
 							We'll match you to coffee that's personalized to
 							your taste and delivered to your door.
 						</p>
