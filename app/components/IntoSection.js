@@ -7,21 +7,21 @@ import deliveryMan from "../../public/deliveryMan.png";
 const IntoSection = () => {
 	const introData = [
 		{
-			header: "Artisanal Roasters.",
+			header: "Artisanal Roasters",
 			text: `Our Artisanal roasters, driven by a commitment to
 		excellence, transform carefully selected coffee beans into
 		extraordinary brews.`,
 			image: cup,
 		},
 		{
-			header: "Sourced from Ethical Growers.",
+			header: "Sourced from Ethical Growers",
 			text: `Embrace the goodness in every sip knowing that our coffees
 		are sourced directly from ethical growers who prioritize
 		sustainable and responsible practices.`,
 			image: certified,
 		},
 		{
-			header: "Roasted fresh to order.",
+			header: "Roasted fresh to order",
 			text: `Our coffee undergoes roasting within 48 hours before being shipped directly from the roaster to ensure freshness.`,
 			image: deliveryMan,
 		},

@@ -10,24 +10,27 @@ const CoffeeCard = ({ brand, coffee }) => {
 		e.preventDefault();
 		router.push(`/coffee/${coffee.webAddress}`);
 	};
-
 	return (
 		<>
 			<div
-				className="justify-center border-2 border-black text-center"
+				className="text-center border-2 rounded-xl shadow-md hover:shadow-xl hover:scale-105 mt-5 mx-5 w-[450px] h-[650px] flex-none transition-transform duration-300"
 				onClick={handleClick}
 			>
 				<Image
-					className="mx-auto"
-					src={coffee.image[0]}
+					className="mx-auto rounded-t-xl bg-[#F5F5F5]"
+					src={coffee.image[1]}
 					width={500}
 					height={500}
 					alt="Coffee Image"
 				/>
-				<hr />
-				<h3>{brand.name}</h3>
-				<h1>{coffee.name}</h1>
-				<p>${coffee.price}</p>
+
+				<div className="mt-6">
+					<h3 className="text-xl font-semibold">
+						{brand?.name.toUpperCase()}
+					</h3>
+					<h1 className="text-3xl font-bold m-2">{coffee.name}</h1>
+					<p className="text-xl font-semibold">${coffee.price}</p>
+				</div>
 			</div>
 		</>
 	);

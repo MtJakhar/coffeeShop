@@ -53,23 +53,28 @@ const Footer = () => {
 				<div className="grid sm:grid-cols-2 md:grid-cols-5 ">
 					{lists.map((list) => {
 						return (
-							<ul>
+							<ul key={lists.indexOf(list)}>
 								{list.map((listItem) => {
-									if (list.indexOf(listItem) === 0) {
-										return (
-											<li className="font-bold px-6 sm:py-4 md:py-6">
+									return (
+										<li
+											className={
+												list.indexOf(listItem) === 0
+													? "font-bold px-6 sm:py-4 md:py-6"
+													: "font-thin px-6 sm:py-4 md:py-8"
+											}
+											key={list.indexOf(listItem)}
+										>
+											<span
+												className={
+													list.indexOf(listItem) === 0
+														? ""
+														: "hover:text-red-600 cursor-pointer"
+												}
+											>
 												{listItem}
-											</li>
-										);
-									} else {
-										return (
-											<li className="font-thin px-6 sm:py-4 md:py-8">
-												<span className="hover:text-red-600 cursor-pointer">
-													{listItem}
-												</span>
-											</li>
-										);
-									}
+											</span>
+										</li>
+									);
 								})}
 							</ul>
 						);
@@ -91,7 +96,10 @@ const Footer = () => {
 					<ul className="md:flex">
 						{copyRightList.map((listItem) => {
 							return (
-								<li className="font-thin pr-4 py-2">
+								<li
+									key={copyRightList.indexOf(listItem)}
+									className="font-thin pr-4 py-2"
+								>
 									<span className="hover:text-red-600 underline underline-offset-1 cursor-pointer">
 										{listItem}
 									</span>
