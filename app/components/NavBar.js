@@ -68,7 +68,15 @@ const NavBar = () => {
 							{loading ? null : (
 								<>
 									{data ? (
-										<Button onClick={logout}>Logout</Button>
+										<Button
+											variant="outlined"
+											color="secondary"
+											size="large"
+											className="font-bold text-lg"
+											onClick={logout}
+										>
+											Logout
+										</Button>
 									) : (
 										<AuthModal />
 									)}

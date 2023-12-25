@@ -107,7 +107,6 @@ const CartDrawer = () => {
 								<Button
 									variant="outlined"
 									color="secondary"
-									className="m-2"
 									onClick={handleCartClick}
 								>
 									Go to Cart
