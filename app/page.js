@@ -77,7 +77,7 @@ export default async function Home() {
 						<h1 className="font-bold drop-shadow-xl text-8xl mb-3 text-center">
 							The Best Coffee is Artisanal
 						</h1>
-						<p className="drop-shadow-xl text-3xl mb-5 text-center">
+						<p className="drop-shadow-xl text-3xl mt-12 mb-5 text-center">
 							We'll match you to coffee that's personalized to
 							your taste and delivered to your door.
 						</p>
@@ -107,10 +107,10 @@ export default async function Home() {
 				/>
 				<div className="absolute sm:left-1/2 sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 md:transform-none md:left-[5rem] md:top-1/4">
 					<div className="w-[40rem] h-[30rem] sm:text-center md:text-left text-white">
-						<h1 className="font-bold text-7xl mb-4">
+						<h1 className="font-bold drop-shadow-xl text-7xl mb-4">
 							Meet America's Best roasters.
 						</h1>
-						<p className="text-3xl">
+						<p className="drop-shadow-xl text-3xl">
 							We bring the best in the US together for you. They
 							pour their craft into the 100+ unique coffees you
 							can try with Trade.
