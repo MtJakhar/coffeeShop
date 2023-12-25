@@ -28,23 +28,27 @@ const IntoSection = () => {
 	];
 
 	return (
-		<div className="grid sm:grid-cols-1 md:grid-cols-3 ">
+		<div className="grid sm:grid-cols-1 md:grid-cols-3 text-center sm:my-20  md:my-32 sm:mx-28 md:mx-0">
 			{introData.map((element) => {
 				return (
-					<div className="text-center mt-20 mb-40 mx-4 w-1/3">
+					<div
+						className={
+							introData.indexOf(element) === 1
+								? "sm:border-y-2 sm:border-x-0 md:border-y-0 md:border-x-2  sm:py-16 md:py-0 border-neutral-400"
+								: "sm:my-16 md:my-0"
+						}
+					>
 						<Image
-							className="mx-auto my-8"
+							className="mx-auto mb-10"
 							width={100}
 							height={100}
 							src={element.image}
 							alt="image"
 						/>
-						<h1 className="text-3xl font-bold mb-8">
+						<h1 className="text-4xl font-bold mb-7">
 							{element.header}
 						</h1>
-						<p className=" text-xl mx-auto px-2 w-80 h-20">
-							{element.text}
-						</p>
+						<p className="text-2xl w-2/3 mx-auto">{element.text}</p>
 					</div>
 				);
 			})}
