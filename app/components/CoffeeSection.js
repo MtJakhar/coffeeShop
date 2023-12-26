@@ -68,7 +68,7 @@ const CoffeeSection = ({
 		setButtonList((prevList) => {
 			return prevList.map((element, index) => ({
 				...element,
-				isClicked: index === buttonClicked,
+				isClicked: index === buttonClicked ? true : false,
 			}));
 		});
 	};
@@ -80,16 +80,16 @@ const CoffeeSection = ({
 	return (
 		<>
 			<div>
-				<div className="mx-14 mt-28">
-					<h1 className="text-7xl font-bold drop-shadow-md mb-8">
+				<div className="mx-14 mt-28 sm:text-center md:text-left">
+					<h1 className="sm:text-6xl md:text-7xl font-bold drop-shadow-md mb-8">
 						Roasted by real (talented) people
 					</h1>
-					<p className="text-2xl drop-shadow-md mb-8">
-						Trade has 450+ coffees expertly crafted by the country’s
-						top local roasters. Your first bag is free.
+					<p className="text-2xl drop-shadow-md sm:mx-8 md:mx-0 mb-8">
+						We have more than a hundred coffees expertly crafted by
+						the country’s top local roasters.
 					</p>
 
-					<div className="my-4">
+					<div className="">
 						{buttonList.map((element, index) => {
 							return (
 								<Button
@@ -97,8 +97,8 @@ const CoffeeSection = ({
 									variant="outlined"
 									className={
 										element.isClicked === true
-											? "mr-4 text-white bg-black hover:bg-black hover:text-white rounded-full"
-											: "mr-4 text-black border-black hover:text-white hover:bg-black rounded-full"
+											? "mr-4 mt-4 mb-4 text-white bg-black hover:bg-black hover:text-white font-bold rounded-full"
+											: "mr-4 mt-4 mb-4 text-black border-black hover:text-white hover:bg-black font-bold rounded-full"
 									}
 									size="large"
 									onClick={element.handler}
@@ -109,7 +109,7 @@ const CoffeeSection = ({
 						})}
 					</div>
 					<p
-						className="underline hover:cursor-pointer mt-8"
+						className="underline text-xl hover:cursor-pointer mt-8"
 						onClick={handleClick}
 					>
 						Shop All Coffee
