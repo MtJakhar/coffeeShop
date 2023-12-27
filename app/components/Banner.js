@@ -24,7 +24,7 @@ const Banner = () => {
 							We'll match you to coffee that's personalized to
 							your taste and delivered to your door.
 						</p>
-						<div className="text-center align-middle">
+						<div className="text-center mt-14">
 							<button
 								type="button"
 								className="w-72 h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px]  uppercase"
