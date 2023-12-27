@@ -22,12 +22,15 @@ const BannerTwo = () => {
 							pour their craft into the 100+ unique coffees you
 							can try with Trade.
 						</p>
-						<Button
-							variant="contained"
-							className="bg-[#f53c32] hover:bg-[#d34d43] text-xl py-3 px-10 mt-4"
-						>
-							Get Started
-						</Button>
+
+						<div>
+							<button
+								type="button"
+								className="w-[224px] h-14 position:relative overflow-hidden shadow shadow-[#505050] hover:shadow-[#505050] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[21px] uppercase mt-4"
+							>
+								Get Started
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

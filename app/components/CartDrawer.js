@@ -53,15 +53,13 @@ const CartDrawer = () => {
 
 	return (
 		<>
-			<Button
-				variant="outlined"
-				color="secondary"
-				size="large"
-				className="font-bold text-lg"
+			<button
+				type="button"
+				className="w-[120px] h-[44px] border-[1px] border-[#D3D3D3] text-lg font-bold bg-white shadow-inner rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
 				onClick={handleOpen}
 			>
 				Cart {cartCount}
-			</Button>
+			</button>
 			<Drawer open={open} anchor={"right"} onClose={handleClose}>
 				<Box
 					sx={{ width: 300, overflowY: "auto" }}
