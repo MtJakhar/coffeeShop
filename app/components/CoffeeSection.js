@@ -92,21 +92,21 @@ const CoffeeSection = ({
 					<div className="">
 						{buttonList.map((element, index) => {
 							return (
-								<Button
+								<button
+									type="button"
 									key={index}
-									variant="outlined"
 									className={
 										element.isClicked === true
-											? "mr-4 mt-4 mb-4 text-white bg-black hover:bg-black hover:text-white font-bold rounded-full"
-											: "mr-4 mt-4 mb-4 text-black border-black hover:text-white hover:bg-black font-bold rounded-full"
+											? "w-[164px] h-10 border-[1px] mr-3 my-3 border-black text-lg text-white bg-black hover:bg-black hover:text-white font-bold rounded-full"
+											: "w-[164px] h-10 border-[1px] mr-3 my-2 border-black text-lg text-black bg-white hover:bg-black hover:text-white font-bold rounded-full"
 									}
-									size="large"
 									onClick={element.handler}
 								>
 									{element.title}
-								</Button>
+								</button>
 							);
 						})}
+						<div></div>
 					</div>
 					<p
 						className="underline text-xl hover:cursor-pointer mt-8"
