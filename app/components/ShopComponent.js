@@ -51,7 +51,7 @@ const ShopComponent = ({
 						setUserInput={setUserInput}
 					/>
 				</div>
-				<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4">
+				<div className="grid md:grid-cols-3 sm:grid-cols-1 gap-6 mx-auto">
 					{newCoffeeData.map((coffee) => {
 						return (
 							<CoffeeCard
@@ -62,7 +62,8 @@ const ShopComponent = ({
 								)}
 							/>
 						);
-					})};
+					})}
+					;
 				</div>
 			</div>
 		</div>
