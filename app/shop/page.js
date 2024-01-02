@@ -1,4 +1,3 @@
-
 import { PrismaClient } from "@prisma/client";
 import ShopComponent from "../components/ShopComponent";
 
@@ -20,19 +19,19 @@ const getCountryData = async () => {
 	const countries = await prisma.country.findMany();
 
 	return countries;
-}
+};
 
 const getRegionData = async () => {
 	const regions = await prisma.region.findMany();
-	
-	return regions
-}
+
+	return regions;
+};
 
 const getRoastData = async () => {
 	const roasts = await prisma.roast.findMany();
-	
-	return roasts
-}
+
+	return roasts;
+};
 
 export default async function Shop() {
 	const coffeeData = await getCoffeeData();
@@ -40,13 +39,16 @@ export default async function Shop() {
 	const countryData = await getCountryData();
 	const regionData = await getRegionData();
 	const roastData = await getRoastData();
-	
+
 	return (
 		<>
-			<div>
-				<h1>SHOPPING</h1>
-				<ShopComponent coffeeData={coffeeData} brandData={brandData} countryData={countryData} regionData={regionData} roastData={roastData}/>
-			</div>
+			<ShopComponent
+				coffeeData={coffeeData}
+				brandData={brandData}
+				countryData={countryData}
+				regionData={regionData}
+				roastData={roastData}
+			/>
 		</>
 	);
 }

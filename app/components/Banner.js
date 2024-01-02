@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import coffeeBgHero from "../../public/coffeeBgHero.jpeg";
-import { Button } from "@mui/material";
 
 const Banner = () => {
 	return (

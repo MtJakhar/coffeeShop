@@ -21,26 +21,26 @@ const summaryName = (name) => {
 const AccordionCard = ({ name, data, handleCheckBox }) => {
 	return (
 		<>
-			<Accordion>
+			<Accordion className="font-bold text-xl py-3 pl-3">
 				<AccordionSummary expandIcon={<ExpandMore />}>
 					<p>{summaryName(name)}</p>
 				</AccordionSummary>
 				<AccordionDetails>
-						{data.map((element) => {
-							return (
-								<div key={element.name}>
-									<FormControlLabel
-										control={<Checkbox />}
-										label={element.name}
-										labelPlacement="end"
-										onClick={() =>
-											handleCheckBox(name, element.id)
-										}
-									/>
-								</div>
-							);
-						})}
-					</AccordionDetails>
+					{data.map((element) => {
+						return (
+							<div key={element.name}>
+								<FormControlLabel
+									control={<Checkbox color="error" />}
+									label={element.name}
+									labelPlacement="end"
+									onClick={() =>
+										handleCheckBox(name, element.id)
+									}
+								/>
+							</div>
+						);
+					})}
+				</AccordionDetails>
 			</Accordion>
 		</>
 	);
