@@ -2,7 +2,6 @@
 
 import React, { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import { Button } from "@mui/material";
 import Selector from "./Selector";
 
 const AddCartBtn = ({ coffee }) => {
@@ -38,13 +37,13 @@ const AddCartBtn = ({ coffee }) => {
 	return (
 		<div className="flex">
 			<Selector itemQuant={itemQuant} handleChange={handleChange} />
-			<Button
-				className="m-2 bg-slate-600"
-				variant="contained"
+			<button
+				type="button"
+				className="w-72 h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
 				onClick={sendItem}
 			>
 				Add to Cart
-			</Button>
+			</button>
 		</div>
 	);
 };
