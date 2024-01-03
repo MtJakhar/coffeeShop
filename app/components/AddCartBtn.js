@@ -31,10 +31,10 @@ const AddCartBtn = ({ coffee }) => {
 	const sendItem = (e) => {
 		e.preventDefault();
 		addToCart(coffeeData);
-		console.log("item sent", cart);
 	};
 
 	return (
+
 		<div className="flex">
 			<Selector itemQuant={itemQuant} handleChange={handleChange} />
 			<button

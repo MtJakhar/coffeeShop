@@ -2,7 +2,6 @@ import React from "react";
 import CoffeeCard from "./CoffeeCard";
 
 const CoffeeSlider = ({ coffeeData, brandData }) => {
-	console.log(Array.isArray(brandData));
 	return (
 		<>
 			<div className="flex m-10 overflow-x-auto h-[750px]">

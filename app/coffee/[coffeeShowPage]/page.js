@@ -22,7 +22,7 @@ const fetchRelatedCoffeeData = async (brand_id) => {
 		where: {
 			brand_id: brand_id,
 		},
-		take: 5,
+		take: 6,
 	});
 
 	return coffees;
@@ -58,32 +58,56 @@ export default async function CoffeeShowPage({ params }) {
 
 	return (
 		<>
-			<h1>{brand.name}</h1>
-			<div className="flex">
-				<Image
-					src={coffee.image[1]}
-					width={800}
-					height={800}
-					alt="image of coffee"
-				/>
-				<div className="text-center justify-center p-7">
-					<h1>{coffee.name}</h1>
-					<p>{coffee.description}</p>
-					<div className="text-center justify-center">
-						<p>One Time Purchase -----${coffee.price}</p>
-						<div>
-							<AddCartBtn coffee={coffee} />
+			<div className="bg-[#222222]">
+				<div className="flex">
+					<div
+						className="w-1/2 position: relative "
+						style={{
+							backgroundImage: `url(${brand.image})`,
+							backgroundSize: "cover",
+						}}
+					>
+						<Image
+							className="mx-auto"
+							src={coffee.image[1]}
+							width={800}
+							height={800}
+							alt="image of coffee"
+						/>
+					</div>
+					<div className="w-1/2 text-white px-16 py-14">
+						<div className="w-1/2">
+							<h1 className="text-5xl font-bold">
+								{brand.name}{" "}
+								<span className="text-xl">{brand.address}</span>
+							</h1>
+							<h1 className="text-3xl pt-4">{coffee.name}</h1>
+							<p className="text-xl py-4">{coffee.description}</p>
+							<div className="bg-[#30302e] rounded py-8 px-6 ">
+								<div className="flex justify-between text-3xl">
+									<p>One Time Purchase</p>
+									<p>${coffee.price}</p>
+								</div>
+								<div className="pt-8">
+									<AddCartBtn coffee={coffee} />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div className="w-2/3 mx-auto pt-20">
+					<div className="flex justify-between text-white text-3xl font-semibold px-14">
+						<p>Other {brand.name} Coffees </p>
+						<p className="hover:cursor-pointer hover:text-[#dc2626]">
+							View Entire Collection
+						</p>
+					</div>
+					<CoffeeSlider
+						coffeeData={relatedCoffeeRoasts}
+						brandData={brand}
+					/>
+				</div>
 			</div>
-			<Image
-				src={brand.image}
-				width={800}
-				height={800}
-				alt="brand image"
-			/>
-			<CoffeeSlider coffeeData={relatedCoffeeRoasts} brandData={brand} />
 			<ReviewSlider reviewData={reviews} coffee={coffee} />
 			<AddReviewModal coffee={coffee.id} />
 		</>
