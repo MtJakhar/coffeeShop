@@ -1,8 +1,8 @@
 import React from "react";
-import { Box ,FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 
 const Selector = ({ itemQuant, handleChange }) => {
-  const MenuProps = {
+	const MenuProps = {
 		PaperProps: {
 			style: {
 				maxHeight: 200,
@@ -10,7 +10,7 @@ const Selector = ({ itemQuant, handleChange }) => {
 		},
 	};
 
-  const MenuItems = (number) => {
+	const MenuItems = (number) => {
 		let array = [];
 		for (let i = 0; i < number; i++) {
 			array.push(
@@ -25,11 +25,9 @@ const Selector = ({ itemQuant, handleChange }) => {
 	return (
 		<>
 			<Box sx={{ minWidth: 120 }}>
-				<FormControl>
-					<InputLabel id="demo-simple-select-label">Qty</InputLabel>
+				<FormControl className="bg-white rounded">
+					<InputLabel color="error">Qty</InputLabel>
 					<Select
-						labelId="demo-simple-select-label"
-						id="demo-simple-select"
 						value={itemQuant}
 						label="quantity"
 						onChange={handleChange}

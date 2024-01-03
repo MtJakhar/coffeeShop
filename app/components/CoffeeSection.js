@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import CoffeeSlider from "./CoffeeSlider";
-import { Button } from "@mui/material";
 
 const CoffeeSection = ({
 	coffeeData,
