@@ -2,7 +2,7 @@
 
 import React, { useContext } from "react";
 import Rating from "@mui/material/Rating";
-import Button from "@mui/material/Button";
+import RedButton from "./RedButton";
 import axios from "axios";
 import { AuthenticationContext } from "../context/AuthContext";
 import EditModal from "./EditModal";
@@ -27,16 +27,10 @@ const ReviewCard = ({ review }) => {
 	const renderButtons = () => {
 		if (review.user_id === data?.id) {
 			return (
-				<div>
-					<Button
-						variant="contained"
-						className="bg-red-500 text-white m-2"
-						onClick={deleteReview}
-					>
-						Delete
-					</Button>
-					<EditModal review={review}/>
-				</div>
+				<>
+					<EditModal review={review} />
+					<RedButton text={"delete"} click={deleteReview} />
+				</>
 			);
 		} else {
 			return <></>;
@@ -44,19 +38,22 @@ const ReviewCard = ({ review }) => {
 	};
 
 	return (
-		<div className="border-2 border-black">
-			<h1>
-				{review.first_name} {review.last_name}
-			</h1>
-			<div>
-				<Rating
-					value={review.rating}
-					className="text-red-500"
-					readOnly
-				/>
+		<div className="flex-none relative border-2 w-[400px] h-[450px] border-black rounded m-4">
+			<div className="m-8">
+				<h1 className="font-bold text-2xl">
+					{review.first_name} {review.last_name}
+				</h1>
+				<div className="py-4">
+					<Rating
+						value={review.rating}
+						className="text-red-500"
+						size="large"
+						readOnly
+					/>
+				</div>
+				<p className="text-xl">"{review.text}"</p>
+				<div className="absolute bottom-8">{renderButtons()}</div>
 			</div>
-			<p>"{review.text}"</p>
-			{renderButtons()}
 		</div>
 	);
 };

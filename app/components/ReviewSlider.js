@@ -1,19 +1,16 @@
-import React from 'react'
-import ReviewCard from './ReviewCard'
+import React from "react";
+import ReviewCard from "./ReviewCard";
 
 const ReviewSlider = ({ reviewData, coffee }) => {
-  return (
-    <div>
-      <h1>Reviews for {coffee.name}</h1>
-      <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-6 m-4'>
-        {reviewData.map((review) => {
-          return (
-            <ReviewCard review={review} />
-          )
-        })}
-      </div>
-    </div>
-  )
-}
+	return (
+		<>
+			<div className="w-4/5 mx-auto flex m-10 overflow-x-auto h-[600px] justify-around items-center">
+				{reviewData.map((review) => {
+					return <ReviewCard review={review} />;
+				})}
+			</div>
+		</>
+	);
+};
 
-export default ReviewSlider
+export default ReviewSlider;
