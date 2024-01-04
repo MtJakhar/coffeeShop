@@ -59,9 +59,9 @@ export default async function CoffeeShowPage({ params }) {
 	return (
 		<>
 			<div className="bg-[#222222]">
-				<div className="flex">
+				<div className=" lg:flex">
 					<div
-						className="w-1/2 position: relative "
+						className=" lg:w-1/2 position: relative "
 						style={{
 							backgroundImage: `url(${brand.image})`,
 							backgroundSize: "cover",
@@ -75,19 +75,23 @@ export default async function CoffeeShowPage({ params }) {
 							alt="image of coffee"
 						/>
 					</div>
-					<div className="w-1/2 text-white px-16 py-14">
-						<div className="w-1/2">
+
+					<div className="lg:w-1/2 text-white px-16 py-14">
+						<div className="w-full lg:w-[650px]">
 							<h1 className="text-5xl font-bold">
 								{brand.name}{" "}
 								<span className="text-xl">{brand.address}</span>
 							</h1>
+
 							<h1 className="text-3xl pt-4">{coffee.name}</h1>
 							<p className="text-xl py-4">{coffee.description}</p>
-							<div className="bg-[#30302e] rounded py-8 px-6 ">
+
+							<div className="bg-[#30302e] rounded py-8 px-6 mt-10">
 								<div className="flex justify-between text-3xl">
 									<p>One Time Purchase</p>
-									<p>${coffee.price}</p>
+									<p>${coffee.price}/bag</p>
 								</div>
+
 								<div className="pt-8">
 									<AddCartBtn coffee={coffee} />
 								</div>
@@ -95,10 +99,11 @@ export default async function CoffeeShowPage({ params }) {
 						</div>
 					</div>
 				</div>
-				<div className="w-2/3 mx-auto pt-20">
+
+				<div className="mx-auto pt-20">
 					<div className="flex justify-between text-white text-3xl font-semibold px-14">
-						<p>Other {brand.name} Coffees </p>
-						<p className="hover:cursor-pointer hover:text-[#dc2626]">
+						<p>Other {brand.name} Coffees</p>
+						<p className="hover:cursor-pointer hover:text-[#dc2626] underline">
 							View Entire Collection
 						</p>
 					</div>
@@ -108,8 +113,13 @@ export default async function CoffeeShowPage({ params }) {
 					/>
 				</div>
 			</div>
-			<ReviewSlider reviewData={reviews} coffee={coffee} />
-			<AddReviewModal coffee={coffee.id} />
+			<div>
+				<h1 className="mt-24 font-bold text-5xl drop-shadow text-center">
+					Reviews
+				</h1>
+				<ReviewSlider reviewData={reviews} coffee={coffee} />
+				<AddReviewModal coffee={coffee.id} />
+			</div>
 		</>
 	);
 }

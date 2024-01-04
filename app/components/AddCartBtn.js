@@ -3,10 +3,11 @@
 import React, { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import Selector from "./Selector";
+import SelectorV2 from "./SelectorV2";
 
 const AddCartBtn = ({ coffee }) => {
 	const [itemQuant, setItemQuant] = useState(1);
-	const { cart, addToCart } = useContext(CartContext);
+	const { addToCart } = useContext(CartContext);
 
 	const coffeeData = {
 		itemId: coffee.id,
@@ -24,8 +25,8 @@ const AddCartBtn = ({ coffee }) => {
 		},
 	};
 
-	const handleChange = (e) => {
-		setItemQuant(e.target.value);
+	const handleChange = (number) => {
+		setItemQuant(number);
 	};
 
 	const sendItem = (e) => {
@@ -34,12 +35,11 @@ const AddCartBtn = ({ coffee }) => {
 	};
 
 	return (
-
-		<div className="flex">
-			<Selector itemQuant={itemQuant} handleChange={handleChange} />
+		<div className="mx-7 mb-2">
+			<SelectorV2 itemQuant={itemQuant} handleChange={handleChange} />
 			<button
 				type="button"
-				className="w-72 h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
+				className="block w-full h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
 				onClick={sendItem}
 			>
 				Add to Cart

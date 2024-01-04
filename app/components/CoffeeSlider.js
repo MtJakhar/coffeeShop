@@ -4,7 +4,7 @@ import CoffeeCard from "./CoffeeCard";
 const CoffeeSlider = ({ coffeeData, brandData }) => {
 	return (
 		<>
-			<div className="flex m-10 overflow-x-auto h-[750px]">
+			<div className="flex m-10 overflow-x-auto h-[750px] justify-around">
 				{coffeeData.map((coffee) => {
 					const brand = Array.isArray(brandData)
 						? brandData.find(
