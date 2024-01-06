@@ -1,8 +1,21 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import coffeeFarmers from "../../public/coffeeFarmers.jpeg";
+import { useContext } from "react";
+import { useRouter } from "next/navigation";
+import AuthModal from "./AuthModal";
+import { AuthenticationContext } from "../context/AuthContext";
 
 const BannerTwo = () => {
+	const router = useRouter();
+	const { data } = useContext(AuthenticationContext);
+	const handleShop = (e) => {
+		e.preventDefault();
+		router.push("/shop");
+	};
+
 	return (
 		<>
 			<div className="overflow-hidden position: relative w-full sm:h-[45rem] md:h-[40rem]">
@@ -22,13 +35,18 @@ const BannerTwo = () => {
 							can try with Trade.
 						</p>
 
-						<div>
-							<button
-								type="button"
-								className="w-[224px] h-14 position:relative overflow-hidden shadow shadow-[#505050] hover:shadow-[#505050] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[21px] uppercase mt-4"
-							>
-								Get Started
-							</button>
+						<div className="mt-6">
+							{data ? (
+								<button
+									type="button"
+									className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
+									onClick={handleShop}
+								>
+									Shop Coffee
+								</button>
+							) : (
+								<AuthModal btn={"banner"} />
+							)}
 						</div>
 					</div>
 				</div>

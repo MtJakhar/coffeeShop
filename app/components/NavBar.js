@@ -2,7 +2,6 @@
 
 import React from "react";
 import AppBar from "@mui/material/AppBar";
-import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import AuthModal from "./AuthModal";
 import { useContext } from "react";
@@ -76,7 +75,7 @@ const NavBar = () => {
 											Log out
 										</button>
 									) : (
-										<AuthModal />
+										<AuthModal btn="login" />
 									)}
 								</>
 							)}

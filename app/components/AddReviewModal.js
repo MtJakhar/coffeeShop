@@ -100,10 +100,10 @@ const AddReviewModal = ({ coffee }) => {
 	return (
 		<>
 			{data ? (
-				<div className="mx-4 mb-24">
+				<div>
 					<button
 						type="button"
-						className="block w-1/3 mx-auto  h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
+						className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
 						onClick={handleOpen}
 					>
 						Add Review
