@@ -115,10 +115,9 @@ export default async function CoffeeShowPage({ params }) {
 			</div>
 			<div>
 				<h1 className="mt-24 font-bold text-5xl drop-shadow text-center">
-					Reviews
+					Reviews for {coffee.name}
 				</h1>
 				<ReviewSlider reviewData={reviews} coffee={coffee} />
-				<AddReviewModal coffee={coffee.id} />
 			</div>
 		</>
 	);

@@ -38,7 +38,7 @@ const ReviewCard = ({ review }) => {
 	};
 
 	return (
-		<div className="flex-none relative border-2 w-[400px] h-[450px] border-black rounded m-4">
+		<div className="flex-none relative border-2 w-[400px] h-[400px] border-[#D3D3D3] rounded-lg">
 			<div className="m-8">
 				<h1 className="font-bold text-2xl">
 					{review.first_name} {review.last_name}
