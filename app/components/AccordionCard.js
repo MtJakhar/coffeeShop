@@ -30,12 +30,16 @@ const AccordionCard = ({ name, data, handleCheckBox }) => {
 						return (
 							<div key={element.name}>
 								<FormControlLabel
-									control={<Checkbox color="error" />}
+									control={
+										<Checkbox
+											color="error"
+											onClick={() =>
+												handleCheckBox(name, element.id)
+											}
+										/>
+									}
 									label={element.name}
 									labelPlacement="end"
-									onClick={() =>
-										handleCheckBox(name, element.id)
-									}
 								/>
 							</div>
 						);

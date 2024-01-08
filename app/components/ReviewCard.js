@@ -27,10 +27,10 @@ const ReviewCard = ({ review }) => {
 	const renderButtons = () => {
 		if (review.user_id === data?.id) {
 			return (
-				<>
+				<div className="space-x-[4.8rem]">
 					<EditModal review={review} />
 					<RedButton text={"delete"} click={deleteReview} />
-				</>
+				</div>
 			);
 		} else {
 			return <></>;
@@ -38,7 +38,7 @@ const ReviewCard = ({ review }) => {
 	};
 
 	return (
-		<div className="flex-none relative border-2 w-[400px] h-[400px] border-[#D3D3D3] rounded-lg">
+		<div className="flex-none relative sm:m-2 xl:m-0 border-2 w-[400px] h-[400px] border-[#D3D3D3] rounded-lg">
 			<div className="m-8">
 				<h1 className="font-bold text-2xl">
 					{review.first_name} {review.last_name}
@@ -51,7 +51,7 @@ const ReviewCard = ({ review }) => {
 						readOnly
 					/>
 				</div>
-				<p className="text-xl">"{review.text}"</p>
+				<p className="text-xl h-full max-h-48">"{review.text}"</p>
 				<div className="absolute bottom-8">{renderButtons()}</div>
 			</div>
 		</div>

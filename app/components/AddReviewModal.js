@@ -80,6 +80,7 @@ const AddReviewModal = ({ coffee }) => {
 		left: "50%",
 		transform: "translate(-50%, -50%)",
 		width: 500,
+		height: 500,
 		bgcolor: "background.paper",
 		border: "2px solid #000",
 		boxShadow: 24,
@@ -110,10 +111,11 @@ const AddReviewModal = ({ coffee }) => {
 					</button>
 					<Modal open={open} onClose={handleClose}>
 						<Box sx={style}>
-							<div className="m-5">
+							<div className="mt-2 m-4">
 								<Rating
 									value={newData.rating}
 									name="rating"
+									className="text-red-500 mb-4"
 									onChange={onChangeRating}
 								/>
 								<div>
@@ -121,29 +123,32 @@ const AddReviewModal = ({ coffee }) => {
 										label="Review"
 										id="text"
 										name="text"
+										color="warning"
 										type="text"
 										value={newData.text}
 										onChange={onChangeHandler}
 										fullWidth
 										multiline
-										rows={5}
+										rows={12}
 									/>
 								</div>
-								<button
-									type="button"
-									className="block w-full h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
-									onClick={postReview}
-								>
-									Post
-								</button>
+								<div className="flex mt-7 justify-between">
+									<button
+										type="button"
+										className="block w-44 h-12 shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-xl text-white uppercase"
+										onClick={postReview}
+									>
+										Post
+									</button>
 
-								<button
-									type="button"
-									className="block w-full h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
-									onClick={handleClose}
-								>
-									Add to Cart
-								</button>
+									<button
+										type="button"
+										className="block w-44 h-12 shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-xl text-white uppercase"
+										onClick={handleClose}
+									>
+										Close
+									</button>
+								</div>
 							</div>
 						</Box>
 					</Modal>

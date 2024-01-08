@@ -2,7 +2,6 @@
 
 import React, { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import Selector from "./Selector";
 import SelectorV2 from "./SelectorV2";
 
 const AddCartBtn = ({ coffee }) => {
