@@ -94,7 +94,7 @@ const CartDrawer = () => {
 					) : (
 						<div className="text-center">
 							<div className="m-3">
-								<div>
+								<div className="mb-2">
 									<p className="font-semibold text-lg">
 										Subtotal
 									</p>
@@ -105,6 +105,7 @@ const CartDrawer = () => {
 								<Button
 									variant="outlined"
 									color="secondary"
+									className="mb-2"
 									onClick={handleCartClick}
 								>
 									Go to Cart

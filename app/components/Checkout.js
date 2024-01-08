@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import axios from "axios";
+import RedButton from "./RedButton";
 
 const Checkout = () => {
 	const { cart } = useContext(CartContext);
@@ -20,7 +20,6 @@ const Checkout = () => {
 		return total.toFixed(2);
 	};
 
-
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 			setHydrated(true);
@@ -28,35 +27,45 @@ const Checkout = () => {
 	}, []);
 
 	const stripeData = cart.map((cartItem) => {
-		return { 
-      price_data: cartItem.stripeData.price_data,
-      quantity: cartItem.stripeData.quantity, 
-     };
+		return {
+			price_data: cartItem.stripeData.price_data,
+			quantity: cartItem.stripeData.quantity,
+		};
 	});
 
-	const sendCart = async(e) => {
+	const sendCart = async (e) => {
 		e.preventDefault();
 		try {
-			const { data } = await axios.post("http://localhost:3000/api/checkout", stripeData);
-			const { url } = data
-			window.location.href = url
-      localStorage.removeItem('cart');
-		} catch(error) {
-			console.error("Error", error)
+			const { data } = await axios.post(
+				"http://localhost:3000/api/checkout",
+				stripeData
+			);
+			const { url } = data;
+			window.location.href = url;
+			localStorage.removeItem("cart");
+		} catch (error) {
+			console.error("Error", error);
 		}
-	}
+	};
 
 	return (
-		<>
-			<div className="mx-auto text-center">
-				<h1 className="m-1">
-					Subtotal: ${!hydrated ? "0.00" : calculateTotal()}
+		<div className="sm:col-span-2 xl:col-span-2">
+			<div className="text-center bg-white text-black rounded-lg p-6 mt-6 mr-4">
+				<h1 className="pb-3 text-xl font-bold">
+					Subtotal
+					<div>
+						{!hydrated ? (
+							<span className="text-red-700">$0.00</span>
+						) : (
+							<span className="text-red-700">
+								${calculateTotal()}
+							</span>
+						)}
+					</div>
 				</h1>
-				<Button className="bg-blue-500" variant="contained" onClick={sendCart}>
-					Proceed to checkout
-				</Button>
+				<RedButton text={"checkout"} click={sendCart} />
 			</div>
-		</>
+		</div>
 	);
 };
 

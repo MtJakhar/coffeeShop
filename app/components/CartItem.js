@@ -72,20 +72,19 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 					<hr className="mt-4 drop-shadow" />
 				</div>
 			) : (
-				<div className="flex">
+				<div className="flex item p-2">
 					<Image
-						// className="mx-auto"
+						className=""
 						src={coffeeImage}
 						width={300}
 						height={300}
 						alt="Coffee Image"
 					/>
 					<div>
-						<div className="flex">
-							<p>{coffeeName}</p>
-							<p>${coffeePrice}</p>
-						</div>
-						<div className="flex">
+						<p>
+							{coffeeName} ${coffeePrice}
+						</p>
+						<div className="flex items-center">
 							<Selector
 								itemQuant={coffee.quantity}
 								handleChange={handleChange}

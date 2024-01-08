@@ -14,9 +14,9 @@ const ReviewSlider = ({ reviewData, coffee }) => {
 		<>
 			{reviewData.length > 0 ? (
 				<div className="mb-28">
-					<div className="w-4/5 mx-auto flex  overflow-x-auto h-[600px] justify-around items-center">
-						{reviewData.map((review) => {
-							return <ReviewCard review={review} />;
+					<div className="w-4/5 mx-auto flex  overflow-x-auto h-[600px] sm: justify-normal xl:justify-around items-center">
+						{reviewData.map((review, index) => {
+							return <ReviewCard key={index} review={review} />;
 						})}
 					</div>
 					<div className="text-center">

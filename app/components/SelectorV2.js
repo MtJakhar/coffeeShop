@@ -30,7 +30,7 @@ const SelectorV2 = ({ itemQuant, handleChange }) => {
 					name="itemQuant"
 				>
 					<div
-						className="text-black h-full w-1/3 rounded-l relative"
+						className="text-black h-full w-1/3 rounded-l relative hover:bg-[#F5F5F5] hover:shadow-inner"
 						onClick={handleSubtract}
 					>
 						<RemoveIcon className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" />
@@ -39,10 +39,10 @@ const SelectorV2 = ({ itemQuant, handleChange }) => {
 						{itemQuant}
 					</div>
 					<div
-						className="text-black h-full w-1/3 rounded-r relative"
+						className="text-black h-full w-1/3 rounded-r relative hover:bg-[#F5F5F5] hover:shadow-inner"
 						onClick={handleAdd}
 					>
-						<AddIcon className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2" />
+						<AddIcon className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 " />
 					</div>
 				</div>
 			</div>
