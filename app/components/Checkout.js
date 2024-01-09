@@ -49,23 +49,31 @@ const Checkout = () => {
 	};
 
 	return (
-		<div className="sm:col-span-2 xl:col-span-2">
-			<div className="text-center bg-white text-black rounded-lg p-6 mt-6 mr-4">
-				<h1 className="pb-3 text-xl font-bold">
-					Subtotal
-					<div>
-						{!hydrated ? (
-							<span className="text-red-700">$0.00</span>
-						) : (
-							<span className="text-red-700">
-								${calculateTotal()}
-							</span>
-						)}
+		<>
+			{cart.length === 0 ? (
+				<div></div>
+			) : (
+				<div className="flex-auto w-1/5 h-36 text-center bg-white text-black shadow-lg rounded-lg m-6 ">
+					<div className="p-4">
+						<h1 className="text-2xl font-bold pb-2">
+							<p>Subtotal</p>
+							<div className="text-xl">
+								{!hydrated ? (
+									<span className="text-red-700">$0.00</span>
+								) : (
+									<span className="text-red-700">
+										${calculateTotal()}
+									</span>
+								)}
+							</div>
+						</h1>
+						<div className="">
+							<RedButton text={"checkout"} click={sendCart} />
+						</div>
 					</div>
-				</h1>
-				<RedButton text={"checkout"} click={sendCart} />
-			</div>
-		</div>
+				</div>
+			)}
+		</>
 	);
 };
 

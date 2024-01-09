@@ -8,6 +8,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Image from "next/image";
 import { IconButton } from "@mui/material";
 import Selector from "./Selector";
+import RedButton from "./RedButton";
 
 const CartItem = ({ id, coffee, isDrawer }) => {
 	const { subtractFromCart, updateItemQty } = useContext(CartContext);
@@ -72,30 +73,36 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 					<hr className="mt-4 drop-shadow" />
 				</div>
 			) : (
-				<div className="flex item p-2">
-					<Image
-						className=""
-						src={coffeeImage}
-						width={300}
-						height={300}
-						alt="Coffee Image"
-					/>
-					<div>
-						<p>
-							{coffeeName} ${coffeePrice}
-						</p>
-						<div className="flex items-center">
-							<Selector
-								itemQuant={coffee.quantity}
-								handleChange={handleChange}
+				<div className="border-t-2 py-20 mx-24">
+					<div className="grid sm:grid-col-1 xl:grid-cols-2">
+						<div className="w-[400px] mx-auto bg-[#F5F5F5]  rounded-lg">
+							<Image
+								className="mx-auto"
+								src={coffeeImage}
+								width={300}
+								height={300}
+								alt="Coffee Image"
 							/>
-							<p
-								className="text-red-500 hover:cursor-pointer"
-								onClick={handleDelete}
-							>
-								{" "}
-								Delete
-							</p>
+						</div>
+						<div className="sm:w-[400px] xl:w-[500px] mx-auto pt-4  sm:text-center xl:text-left rounded-lg">
+							<div className="flex-none xl:flex xl:justify-between">
+								<p className="font-bold text-3xl text-wrap">
+									{coffeeName}
+								</p>
+								<p className="text-xl font-bold">
+									${coffeePrice}
+								</p>
+							</div>
+							<div className="xl:mt-32 flex sm:justify-around xl:justify-between items-center">
+								<Selector
+									itemQuant={coffee.quantity}
+									handleChange={handleChange}
+								/>
+								<RedButton
+									text={"delete"}
+									click={handleDelete}
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
