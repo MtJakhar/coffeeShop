@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { PrismaClient } from "@prisma/client";
 import ReviewSlider from "../../components/ReviewSlider";
-import AddReviewModal from "../../components/AddReviewModal";
 import AddCartBtn from "../../components/AddCartBtn";
 import CoffeeSlider from "../../components/CoffeeSlider";
 
@@ -59,9 +58,9 @@ export default async function CoffeeShowPage({ params }) {
 	return (
 		<>
 			<div className="bg-[#222222]">
-				<div className=" lg:flex">
+				<div className="xl:flex">
 					<div
-						className=" lg:w-1/2 position: relative "
+						className=" xl:w-1/2 position: relative "
 						style={{
 							backgroundImage: `url(${brand.image})`,
 							backgroundSize: "cover",
@@ -76,12 +75,14 @@ export default async function CoffeeShowPage({ params }) {
 						/>
 					</div>
 
-					<div className="lg:w-1/2 text-white px-16 py-14">
-						<div className="w-full lg:w-[650px]">
+					<div className="xl:w-1/2 text-white px-16 pt-14 pb-8">
+						<div className="w-full xl:w-[650px]">
 							<h1 className="text-5xl font-bold">
 								{brand.name}{" "}
 								<span className="text-xl">{brand.address}</span>
 							</h1>
+
+							<p className="text-xl py-4">{brand.description}</p>
 
 							<h1 className="text-3xl pt-4">{coffee.name}</h1>
 							<p className="text-xl py-4">{coffee.description}</p>

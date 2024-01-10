@@ -76,7 +76,6 @@ const ShopComponent = ({
 					in the US. All our specialty coffee is roasted to order and
 					shipped fresh to your door.
 				</p>
-				{/* <p>{newCoffeeData.length} Coffees</p> */}
 			</div>
 			<div className="flex">
 				<div className="mt-5">

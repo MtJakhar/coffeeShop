@@ -49,8 +49,8 @@ const Footer = () => {
 
 	return (
 		<>
-			<div className="sm:py-16 md:py-32 sm:px-8 md:px-40 text-2xl text-white bg-black">
-				<div className="grid sm:grid-cols-2 md:grid-cols-5 ">
+			<div className="sm:py-16 xl:py-32 sm:px-8 xl:px-40 text-2xl text-white bg-black">
+				<div className="grid sm:grid-cols-2 xl:grid-cols-5 ">
 					{lists.map((list) => {
 						return (
 							<ul key={lists.indexOf(list)}>
@@ -59,8 +59,8 @@ const Footer = () => {
 										<li
 											className={
 												list.indexOf(listItem) === 0
-													? "font-bold px-6 sm:py-4 md:py-6"
-													: "font-thin px-6 sm:py-4 md:py-8"
+													? "font-bold px-6 sm:py-4 xl:py-6"
+													: "font-thin px-6 sm:py-4 xl:py-8"
 											}
 											key={list.indexOf(listItem)}
 										>
@@ -79,7 +79,7 @@ const Footer = () => {
 							</ul>
 						);
 					})}
-					<div className="py-8 sm:pl-6 md:px-0 sm:col-span-2 md:col-span-1">
+					<div className="py-8 sm:pl-6 xl:px-0 sm:col-span-2 xl:col-span-1">
 						<p className="font-semibold text-5xl">
 							Stay Caffeinated
 						</p>
@@ -93,7 +93,7 @@ const Footer = () => {
 				</div>
 
 				<div className="px-6 pt-8">
-					<ul className="md:flex">
+					<ul className="xl:flex">
 						{copyRightList.map((listItem) => {
 							return (
 								<li
