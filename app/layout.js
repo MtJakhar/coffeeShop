@@ -11,7 +11,6 @@ const roboto = Roboto({
 	weight: ["100", "300", "400", "500", "700", "900"],
 	display: "swap",
 });
-// off white #FAF9F6, bone white #F9F6EE, Ivory #FFFFF0
 
 export const metadata = {
 	title: "Coffee App",

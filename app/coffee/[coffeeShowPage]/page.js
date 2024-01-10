@@ -60,18 +60,26 @@ export default async function CoffeeShowPage({ params }) {
 			<div className="bg-[#222222]">
 				<div className="xl:flex">
 					<div
-						className=" xl:w-1/2 position: relative "
-						style={{
-							backgroundImage: `url(${brand.image})`,
-							backgroundSize: "cover",
-						}}
+						className=" xl:w-1/2 relative z-0"
+						// style={{
+						// 	backgroundImage: `url(${brand.image})`,
+						// 	backgroundColor: "#F5F5F5",
+						// 	backgroundSize: "cover",
+						// }}
 					>
 						<Image
-							className="mx-auto"
+							className="mx-auto relative z-50"
 							src={coffee.image[1]}
 							width={800}
 							height={800}
+							priority={true}
 							alt="image of coffee"
+						/>
+						<Image
+							className="object-cover"
+							fill={true}
+							src={brand.image}
+							alt="brand image"
 						/>
 					</div>
 
