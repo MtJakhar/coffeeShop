@@ -28,14 +28,14 @@ const IntoSection = () => {
 	];
 
 	return (
-		<div className="grid sm:grid-cols-1 md:grid-cols-3 text-center sm:my-20  md:my-32 sm:mx-28 md:mx-0">
+		<div className="grid sm:grid-cols-1 xl:grid-cols-3 text-center sm:my-20  xl:my-32 sm:mx-28 xl:mx-0">
 			{introData.map((element) => {
 				return (
 					<div
 						className={
 							introData.indexOf(element) === 1
-								? "sm:border-y-2 sm:border-x-0 md:border-y-0 md:border-x-2  sm:py-16 md:py-0 border-neutral-400"
-								: "sm:my-16 md:my-0"
+								? "sm:border-y-2 sm:border-x-0 xl:border-y-0 xl:border-x-2  sm:py-16 xl:py-0 border-neutral-400"
+								: "sm:my-16 xl:my-0"
 						}
 					>
 						<Image

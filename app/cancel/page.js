@@ -1,30 +1,36 @@
 import React from "react";
-import Head from "next/head";
 
 const page = () => {
 	return (
 		<>
-      <Head>
-        <title>Canceled</title>
-      </Head>
-      <h1>Your order has been canceled</h1>
-			<p>
-				We're sorry to hear that you've decided to cancel your order.
-				Your satisfaction is important to us, and we want to ensure your
-				experience with our online store is as positive as possible. If
-				there's anything specific that led to your decision to cancel,
-				please let us know. Your feedback is valuable and helps us
-				improve our products and services. We're here to assist you, and
-				if there's anything we can do to address your concerns, please
-				don't hesitate to reach out to our customer support team. <a href="mailto:orders@example.com">orders@example.com</a> If you
-				changed your mind or need further assistance, remember that our
-				customer support team is available to help you with any
-				questions or concerns you may have. Feel free to explore our
-				website for other products that might better suit your needs. We
-				appreciate your consideration and hope to have the opportunity
-				to serve you in the future. Thank you for choosing CoffeeShop.
-				Best regards, CoffeeShop
-			</p>
+			<div>
+				<div className="sm:w-[650px] xl:w-[800px] mx-auto my-36">
+					<h1 className="sm:mx-10 xl:mx-12 pb-2 border-b-[6px] border-red-600 font-bold drop-shadow-md sm:text-4xl xl:text-5xl text-center">
+						You have cancelled your order
+					</h1>
+					<div className=" sm:py-6 xl:py-12 sm:text-2xl xl:text-3xl">
+						<p>
+							We're sorry you're canceling your order. Your
+							satisfaction is crucial. If there's a specific
+							reason, please share for improvement. Contact us at{" "}
+							<a
+								className="text-red-700"
+								href="mailto:orders@example.com"
+							>
+								orders@example.com
+							</a>{" "}
+							for assistance.
+						</p>
+						<p className="pt-4">
+							Our customer support is here to help with any
+							concerns or questions. Explore our website for
+							alternative products. We appreciate your
+							consideration and hope to serve you in the future.
+							Thank you for choosing CoffeeShop.
+						</p>
+					</div>
+				</div>
+			</div>
 		</>
 	);
 };

@@ -25,12 +25,6 @@ const NavBar = () => {
 		router.push("/shop");
 	};
 
-	const handleRoasters = (e) => {
-		e.preventDefault();
-		router.push("/shop");
-	};
-
-	// off white #FAF9F6, bone white #F9F6EE, Ivory #FFFFF0
 	const theme = createTheme({
 		palette: {
 			primary: {
@@ -51,15 +45,12 @@ const NavBar = () => {
 					>
 						Coffee
 					</h1>
-					<div className="flex">
+					<div>
 						<div
-							className="font-bold text-2xl p-3 mx-3 border-white border-b-4 hover:border-black hover:cursor-pointer"
+							className="font-bold text-2xl px-3 pt-3 pb-2  mx-4 border-white border-b-[5px] hover:border-red-600 hover:cursor-pointer"
 							onClick={handleShop}
 						>
 							Shop
-						</div>
-						<div className="font-bold text-2xl p-3 mx-3 border-white border-b-4 hover:border-black hover:cursor-pointer">
-							Roaster
 						</div>
 					</div>
 					<div className="flex">

@@ -79,8 +79,8 @@ const CoffeeSection = ({
 	return (
 		<>
 			<div>
-				<div className="mx-14 mt-28 sm:text-center md:text-left">
-					<h1 className="sm:text-6xl md:text-7xl font-bold drop-shadow-md mb-8">
+				<div className="mx-14 mt-28 sm:text-center xl:text-left">
+					<h1 className="sm:text-6xl xl:text-7xl font-bold drop-shadow-md mb-8">
 						Roasted by real (talented) people
 					</h1>
 					<p className="text-2xl drop-shadow-md sm:mx-8 md:mx-0 mb-8">
@@ -88,7 +88,7 @@ const CoffeeSection = ({
 						the country’s top local roasters.
 					</p>
 
-					<div className="">
+					<div>
 						{buttonList.map((element, index) => {
 							return (
 								<button

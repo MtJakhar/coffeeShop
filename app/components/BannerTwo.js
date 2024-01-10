@@ -18,14 +18,14 @@ const BannerTwo = () => {
 
 	return (
 		<>
-			<div className="overflow-hidden position: relative w-full sm:h-[45rem] md:h-[40rem]">
+			<div className="overflow-hidden position: relative w-full sm:h-[45rem] xl:h-[40rem]">
 				<Image
 					className="object-cover"
 					fill={true}
 					src={coffeeFarmers}
 				/>
-				<div className="absolute sm:left-1/2 sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 md:transform-none md:left-[5rem] md:top-1/4">
-					<div className="w-[40rem] h-[30rem] sm:text-center md:text-left text-white">
+				<div className="absolute sm:left-1/2 sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 xl:transform-none xl:left-[5rem] xl:top-1/4">
+					<div className="w-[40rem] h-[30rem] sm:text-center xl:text-left text-white">
 						<h1 className="font-bold drop-shadow-xl text-7xl mb-4">
 							Meet America's Best roasters.
 						</h1>
@@ -39,7 +39,7 @@ const BannerTwo = () => {
 							{data ? (
 								<button
 									type="button"
-									className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
+									className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-xl bg-[#f53c32] hover:shadow-xl hover:bg-[#d34d43] text-[24px] uppercase"
 									onClick={handleShop}
 								>
 									Shop Coffee
