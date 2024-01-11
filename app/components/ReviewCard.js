@@ -29,7 +29,11 @@ const ReviewCard = ({ review }) => {
 			return (
 				<div className="space-x-[4.8rem]">
 					<EditModal review={review} />
-					<RedButton text={"delete"} click={deleteReview} />
+					<RedButton
+						text={"delete"}
+						click={deleteReview}
+						disabled={false}
+					/>
 				</div>
 			);
 		} else {

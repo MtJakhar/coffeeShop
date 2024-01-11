@@ -32,7 +32,7 @@ const BannerTwo = () => {
 						<p className="drop-shadow-xl text-3xl">
 							We bring the best in the US together for you. They
 							pour their craft into the 100+ unique coffees you
-							can try with Trade.
+							can try with Coffee Shop.
 						</p>
 
 						<div className="mt-6">

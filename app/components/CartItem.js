@@ -101,6 +101,7 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 								<RedButton
 									text={"delete"}
 									click={handleDelete}
+									disabled={false}
 								/>
 							</div>
 						</div>

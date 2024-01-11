@@ -66,7 +66,7 @@ const EditModal = ({ review }) => {
 
 	return (
 		<>
-			<RedButton text={"edit"} click={handleOpen} />
+			<RedButton text={"edit"} click={handleOpen} disabled={false} />
 			<Modal open={open} onClose={handleClose}>
 				<Box sx={style}>
 					<div className="mt-2 m-4">

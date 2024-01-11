@@ -54,6 +54,7 @@ export default async function CoffeeShowPage({ params }) {
 	const relatedCoffeeRoasts = relatedBrands.filter(
 		(coffeeElement) => coffeeElement.id !== coffee.id
 	);
+	// backgroundImage via style doesn't work cause google is blocking the url, but doesn't when in image component
 
 	return (
 		<>
@@ -61,11 +62,11 @@ export default async function CoffeeShowPage({ params }) {
 				<div className="xl:flex">
 					<div
 						className=" xl:w-1/2 relative z-0"
-						// style={{
-						// 	backgroundImage: `url(${brand.image})`,
-						// 	backgroundColor: "#F5F5F5",
-						// 	backgroundSize: "cover",
-						// }}
+						style={{
+							// backgroundImage: `url(${brand.image})`,
+							backgroundColor: "#F5F5F5",
+							backgroundSize: "cover",
+						}}
 					>
 						<Image
 							className="mx-auto relative z-50"

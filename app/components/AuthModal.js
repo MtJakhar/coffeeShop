@@ -9,7 +9,7 @@ import SignUpContent from "./SignUpContent";
 
 const AuthModal = ({ btn }) => {
 	const [open, setOpen] = useState(false);
-	const [isLogin, setIsLogin] = useState(true);
+	const [isLoginModal, setIsLoginModal] = useState(true);
 	const [inputs, setInputs] = useState({
 		firstName: "",
 		lastName: "",
@@ -37,7 +37,7 @@ const AuthModal = ({ btn }) => {
 	};
 
 	const handleClick = () => {
-		setIsLogin(!isLogin);
+		setIsLoginModal(!isLoginModal);
 		setInputs({
 			firstName: "",
 			lastName: "",
@@ -49,7 +49,7 @@ const AuthModal = ({ btn }) => {
 	};
 
 	const handleAuthClick = () => {
-		if (isLogin) {
+		if (isLoginModal) {
 			login(
 				{ email: inputs.email, password: inputs.password },
 				handleClose
@@ -62,7 +62,7 @@ const AuthModal = ({ btn }) => {
 	const [disabled, setDisabled] = useState(true);
 
 	useEffect(() => {
-		if (isLogin) {
+		if (isLoginModal) {
 			if (inputs.password && inputs.email) {
 				return setDisabled(false);
 			}
@@ -83,7 +83,7 @@ const AuthModal = ({ btn }) => {
 	}, [inputs]);
 
 	const renderContent = (LoginContent, SignupContent) => {
-		if (isLogin) {
+		if (isLoginModal) {
 			return LoginContent;
 		} else {
 			return SignupContent;
@@ -134,6 +134,7 @@ const AuthModal = ({ btn }) => {
 		width: 400,
 		bgcolor: "background.paper",
 		border: "2px solid #000",
+		borderRadius: "15px",
 		boxShadow: 24,
 		p: 4,
 	};

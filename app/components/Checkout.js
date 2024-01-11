@@ -68,7 +68,11 @@ const Checkout = () => {
 							</div>
 						</h1>
 						<div className="">
-							<RedButton text={"checkout"} click={sendCart} />
+							<RedButton
+								text={"checkout"}
+								click={sendCart}
+								disabled={false}
+							/>
 						</div>
 					</div>
 				</div>
