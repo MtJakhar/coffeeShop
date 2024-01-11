@@ -2,12 +2,13 @@
 
 import React, { useContext, useState, useEffect } from "react";
 import { AuthenticationContext } from "../context/AuthContext";
-import { Button, Box, Modal, Rating, TextField } from "@mui/material";
+import { Alert, Box, Modal, Rating, TextField } from "@mui/material";
 import axios from "axios";
 
 const AddReviewModal = ({ coffee }) => {
 	const { data } = useContext(AuthenticationContext);
 	const [open, setOpen] = useState(false);
+	const [error, setError] = useState(null);
 
 	const [newData, setNewData] = useState({
 		first_name: data?.firstName,
@@ -71,6 +72,7 @@ const AddReviewModal = ({ coffee }) => {
 			window.location.reload();
 		} catch (error) {
 			console.error("Error creating data", error);
+			setError(error.response.data.errorMessage);
 		}
 	};
 
@@ -80,7 +82,7 @@ const AddReviewModal = ({ coffee }) => {
 		left: "50%",
 		transform: "translate(-50%, -50%)",
 		width: 500,
-		height: 500,
+
 		bgcolor: "background.paper",
 		border: "2px solid #000",
 		boxShadow: 24,
@@ -112,6 +114,11 @@ const AddReviewModal = ({ coffee }) => {
 					<Modal open={open} onClose={handleClose}>
 						<Box sx={style}>
 							<div className="mt-2 m-4">
+								{error ? (
+									<Alert severity="error" className="mb-4">
+										{error}
+									</Alert>
+								) : null}
 								<Rating
 									value={newData.rating}
 									name="rating"
