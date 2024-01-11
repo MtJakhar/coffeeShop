@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { Modal, Box, Rating, TextField } from "@mui/material";
+import { Alert, Modal, Box, Rating, TextField } from "@mui/material";
 import axios from "axios";
 import RedButton from "./RedButton";
 
 const EditModal = ({ review }) => {
 	const [open, setOpen] = useState(false);
+	const [error, setError] = useState(null);
 	const [reviewData, setReviewData] = useState({
 		text: review.text,
 		rating: review.rating,
@@ -48,6 +49,7 @@ const EditModal = ({ review }) => {
 			window.location.reload();
 		} catch (error) {
 			console.error("Error updating data", error);
+			setError(error.response.data.errorMessage);
 		}
 	};
 
@@ -69,6 +71,11 @@ const EditModal = ({ review }) => {
 			<Modal open={open} onClose={handleClose}>
 				<Box sx={style}>
 					<div className="mt-2 m-4">
+						{error ? (
+							<Alert severity="error" className="mb-4">
+								{error}
+							</Alert>
+						) : null}
 						<Rating
 							value={reviewData.rating}
 							name="rating"
