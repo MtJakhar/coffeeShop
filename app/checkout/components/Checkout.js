@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import axios from "axios";
-import RedButton from "./RedButton";
+import RedButton from "../../components/RedButton";
 
 const Checkout = () => {
 	const { cart } = useContext(CartContext);

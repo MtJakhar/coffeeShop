@@ -1,6 +1,6 @@
 import React from "react";
-import Cart from "../components/Cart";
-import Checkout from "../components/Checkout";
+import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 
 export default function page() {
 	return (

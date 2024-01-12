@@ -3,9 +3,9 @@
 import React from "react";
 import ReviewCard from "./ReviewCard";
 import { useContext } from "react";
-import { AuthenticationContext } from "../context/AuthContext";
+import { AuthenticationContext } from "../../context/AuthContext";
 import AddReviewModal from "./AddReviewModal";
-import AuthModal from "./AuthModal";
+import AuthModal from "../../components/AuthModal";
 
 const ReviewSlider = ({ reviewData, coffee }) => {
 	const { data } = useContext(AuthenticationContext);

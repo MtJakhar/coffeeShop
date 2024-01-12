@@ -3,8 +3,14 @@
 import React from "react";
 import AccordionCard from "./AccordionCard";
 
-const AccordionShop = ({ brandData, coffeeData, countryData, regionData, roastData, userInput, setUserInput  }) => {
-
+const AccordionShop = ({
+	brandData,
+	countryData,
+	regionData,
+	roastData,
+	userInput,
+	setUserInput,
+}) => {
 	const handleCheckBox = (key, selectedValue) => {
 		if (userInput[key].includes(selectedValue)) {
 			setUserInput((prevData) => ({
@@ -42,7 +48,6 @@ const AccordionShop = ({ brandData, coffeeData, countryData, regionData, roastDa
 
 	return (
 		<div>
-			
 			{listedItems.map((item) => {
 				return (
 					<AccordionCard

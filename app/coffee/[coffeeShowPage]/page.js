@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { PrismaClient } from "@prisma/client";
-import ReviewSlider from "../../components/ReviewSlider";
-import AddCartBtn from "../../components/AddCartBtn";
-import CoffeeSlider from "../../components/CoffeeSlider";
+import ReviewSlider from "../components/ReviewSlider";
+import AddCartBtn from "../components/AddCartBtn";
+import CoffeeSelectionSection from "../components/CoffeeSelectionSection";
 
 const prisma = new PrismaClient();
 
@@ -109,19 +109,10 @@ export default async function CoffeeShowPage({ params }) {
 						</div>
 					</div>
 				</div>
-
-				<div className="mx-auto pt-20">
-					<div className="flex justify-between text-white text-3xl font-semibold px-14">
-						<p>Other {brand.name} Coffees</p>
-						<p className="hover:cursor-pointer hover:text-[#dc2626] underline">
-							View Entire Collection
-						</p>
-					</div>
-					<CoffeeSlider
-						coffeeData={relatedCoffeeRoasts}
-						brandData={brand}
-					/>
-				</div>
+				<CoffeeSelectionSection
+					coffeeData={relatedCoffeeRoasts}
+					brandData={brand}
+				/>
 			</div>
 			<div>
 				<h1 className="mt-24 font-bold text-5xl drop-shadow text-center">

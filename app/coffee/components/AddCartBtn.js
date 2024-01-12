@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useContext } from "react";
-import { CartContext } from "../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import SelectorV2 from "./SelectorV2";
 
 const AddCartBtn = ({ coffee }) => {

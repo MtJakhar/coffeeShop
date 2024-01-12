@@ -2,10 +2,10 @@
 
 import React, { useContext } from "react";
 import Rating from "@mui/material/Rating";
-import RedButton from "./RedButton";
+import RedButton from "../../components/RedButton";
 import axios from "axios";
-import { AuthenticationContext } from "../context/AuthContext";
-import EditModal from "./EditModal";
+import { AuthenticationContext } from "../../context/AuthContext";
+import EditModal from "../../components/EditModal";
 
 const ReviewCard = ({ review }) => {
 	const { data } = useContext(AuthenticationContext);

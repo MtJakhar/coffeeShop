@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import CoffeeCard from "./CoffeeCard";
+import CoffeeCard from "../../components/CoffeeCard";
 import AccordionShop from "./AccordionShop";
-import PaginationControlled from "./PaginationControlled";
+import PaginationControlled from "../../components/PaginationControlled";
 
 const ShopComponent = ({
 	brandData,

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext, useState, useEffect } from "react";
-import { AuthenticationContext } from "../context/AuthContext";
+import { AuthenticationContext } from "../../context/AuthContext";
 import { Alert, Box, Modal, Rating, TextField } from "@mui/material";
 import axios from "axios";
 

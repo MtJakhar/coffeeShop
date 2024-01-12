@@ -2,8 +2,8 @@
 
 import { Skeleton } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
-import { CartContext } from "../context/CartContext";
-import CartItem from "./CartItem";
+import { CartContext } from "../../context/CartContext";
+import CartItem from "../../components/CartItem";
 import { useRouter } from "next/navigation";
 
 const Cart = () => {
