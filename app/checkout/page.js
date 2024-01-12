@@ -5,8 +5,8 @@ import Checkout from "./components/Checkout";
 export default function page() {
 	return (
 		<>
-			<div className="#FAF9F6">
-				<div className="flex my-20">
+			<div className="bg-[#FAF9F6]">
+				<div className="flex py-20">
 					<Cart />
 					<Checkout />
 				</div>

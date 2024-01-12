@@ -75,7 +75,7 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 			) : (
 				<div className="border-t-2 py-20 mx-24">
 					<div className="grid sm:grid-col-1 xl:grid-cols-2">
-						<div className="w-[400px] mx-auto bg-[#F5F5F5]  rounded-lg">
+						<div className="w-[400px] mx-auto bg-[#F5F5F5] shadow-lg rounded-lg">
 							<Image
 								className="mx-auto"
 								src={coffeeImage}
@@ -86,10 +86,10 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 						</div>
 						<div className="sm:w-[400px] xl:w-[500px] mx-auto pt-4  sm:text-center xl:text-left rounded-lg">
 							<div className="flex-none xl:flex xl:justify-between">
-								<p className="font-bold text-3xl text-wrap">
+								<p className="font-bold text-3xl drop-shadow text-wrap">
 									{coffeeName}
 								</p>
-								<p className="text-xl font-bold">
+								<p className="text-xl font-bold drop-shadow">
 									${coffeePrice}
 								</p>
 							</div>
