@@ -35,14 +35,11 @@ export default function AuthContext({ children }) {
 				});
 			}
 
-			const response = await axios.get(
-				"http://localhost:3000/api/auth/me",
-				{
-					headers: {
-						Authorization: `Bearer ${jwt}`,
-					},
-				}
-			);
+			const response = await axios.get("/api/auth/me", {
+				headers: {
+					Authorization: `Bearer ${jwt}`,
+				},
+			});
 
 			axios.defaults.headers.common["Authorization"] = `Bearer ${jwt}`;
 

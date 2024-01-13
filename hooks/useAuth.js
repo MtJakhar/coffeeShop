@@ -13,13 +13,10 @@ const useAuth = () => {
 			loading: true,
 		});
 		try {
-			const response = await axios.post(
-				"http://localhost:3000/api/auth/login",
-				{
-					email,
-					password,
-				}
-			);
+			const response = await axios.post("/api/auth/login", {
+				email,
+				password,
+			});
 			setAuthState({
 				data: response.data,
 				error: null,
@@ -34,7 +31,7 @@ const useAuth = () => {
 			});
 		}
 	};
-	
+
 	const signup = async (
 		{ firstName, lastName, address, email, phone, password },
 		handleClose
@@ -45,17 +42,14 @@ const useAuth = () => {
 			loading: true,
 		});
 		try {
-			const response = await axios.post(
-				"http://localhost:3000/api/auth/signup",
-				{
-					firstName,
-					lastName,
-					address,
-					phone,
-					email,
-					password,
-				}
-			);
+			const response = await axios.post("/api/auth/signup", {
+				firstName,
+				lastName,
+				address,
+				phone,
+				email,
+				password,
+			});
 			setAuthState({
 				data: response.data,
 				error: null,

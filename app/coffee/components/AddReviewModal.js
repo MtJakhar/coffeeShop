@@ -48,17 +48,14 @@ const AddReviewModal = ({ coffee }) => {
 				user_id: data.id,
 			});
 
-			const response = await axios.post(
-				"http://localhost:3000/api/createReview",
-				{
-					first_name: newData.first_name,
-					last_name: newData.last_name,
-					text: newData.text,
-					rating: newData.rating,
-					coffee_id: newData.coffee_id,
-					user_id: newData.user_id,
-				}
-			);
+			const response = await axios.post("/api/createReview", {
+				first_name: newData.first_name,
+				last_name: newData.last_name,
+				text: newData.text,
+				rating: newData.rating,
+				coffee_id: newData.coffee_id,
+				user_id: newData.user_id,
+			});
 
 			setNewData({
 				first_name: data.firstName,

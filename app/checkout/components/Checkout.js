@@ -36,10 +36,7 @@ const Checkout = () => {
 	const sendCart = async (e) => {
 		e.preventDefault();
 		try {
-			const { data } = await axios.post(
-				"http://localhost:3000/api/checkout",
-				stripeData
-			);
+			const { data } = await axios.post("/api/checkout", stripeData);
 			const { url } = data;
 			window.location.href = url;
 			localStorage.removeItem("cart");

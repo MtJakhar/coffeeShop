@@ -12,12 +12,9 @@ const ReviewCard = ({ review }) => {
 
 	const deleteReview = async () => {
 		try {
-			const response = await axios.delete(
-				"http://localhost:3000/api/deleteReview",
-				{
-					data: { id: review.id },
-				}
-			);
+			const response = await axios.delete("/api/deleteReview", {
+				data: { id: review.id },
+			});
 			window.location.reload();
 		} catch (error) {
 			console.error(error);

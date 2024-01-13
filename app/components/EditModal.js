@@ -37,14 +37,11 @@ const EditModal = ({ review }) => {
 
 	const updateReview = async () => {
 		try {
-			const response = await axios.patch(
-				"http://localhost:3000/api/updateReview",
-				{
-					id: review.id,
-					rating: reviewData.rating,
-					text: reviewData.text,
-				}
-			);
+			const response = await axios.patch("/api/updateReview", {
+				id: review.id,
+				rating: reviewData.rating,
+				text: reviewData.text,
+			});
 			handleClose();
 			window.location.reload();
 		} catch (error) {
