@@ -1,3 +1,3 @@
 web: npm start
 
-release: npx prisma migrate deploy
+release: ./deploy_and_seed.sh
