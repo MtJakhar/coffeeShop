@@ -23,6 +23,7 @@ const BannerTwo = () => {
 					className="object-cover"
 					fill={true}
 					src={coffeeFarmers}
+					alt="coffee farmers"
 				/>
 				<div className="absolute sm:left-1/2 sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-1/2 xl:transform-none xl:left-[5rem] xl:top-1/4">
 					<div className="w-[40rem] h-[30rem] sm:text-center xl:text-left text-white">
