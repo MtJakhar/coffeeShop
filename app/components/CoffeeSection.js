@@ -79,11 +79,11 @@ const CoffeeSection = ({
 	return (
 		<>
 			<div>
-				<div className="mx-14 mt-28 sm:text-center xl:text-left">
-					<h1 className="sm:text-6xl xl:text-7xl font-bold drop-shadow-md mb-8">
+				<div className="mx-14 mt-20 text-center lg:text-left">
+					<h1 className="text-5xl font-bold drop-shadow-md mb-8">
 						Roasted by real (talented) people
 					</h1>
-					<p className="text-2xl drop-shadow-md sm:mx-8 md:mx-0 mb-8">
+					<p className="text-xl drop-shadow-md mx-8 md:mx-0 mb-8">
 						We have more than a hundred coffees expertly crafted by
 						the country’s top local roasters.
 					</p>
@@ -96,8 +96,8 @@ const CoffeeSection = ({
 									key={index}
 									className={
 										element.isClicked === true
-											? "w-[164px] h-10 border-[1px] mr-3 my-3 border-black text-lg text-white bg-black hover:bg-black hover:text-white font-bold rounded-full"
-											: "w-[164px] h-10 border-[1px] mr-3 my-2 border-black text-lg text-black bg-white hover:bg-black hover:text-white font-bold rounded-full"
+											? "w-40 h-10 border-[1px] mr-3 my-3 border-black text-lg text-white bg-black hover:bg-black hover:text-white font-bold rounded-full"
+											: "w-40 h-10 border-[1px] mr-3 my-2 border-black text-lg text-black bg-white hover:bg-black hover:text-white font-bold rounded-full"
 									}
 									onClick={element.handler}
 								>
@@ -108,7 +108,7 @@ const CoffeeSection = ({
 						<div></div>
 					</div>
 					<p
-						className="underline text-xl hover:cursor-pointer mt-8"
+						className="underline text-lg hover:cursor-pointer mt-8"
 						onClick={handleClick}
 					>
 						Shop All Coffee

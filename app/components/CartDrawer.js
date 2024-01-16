@@ -55,7 +55,7 @@ const CartDrawer = () => {
 		<>
 			<button
 				type="button"
-				className="w-[120px] h-[44px] border-[1px] border-[#D3D3D3] text-lg font-bold bg-white shadow-inner rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
+				className="w-28 h-10 border-[1px] border-[#D3D3D3] shadow-inner font-bold bg-white rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
 				onClick={handleOpen}
 			>
 				Cart {cartCount}
@@ -84,7 +84,7 @@ const CartDrawer = () => {
 									Your cart is craving delicious coffee.
 								</p>
 								<p
-									className="text-2xl font-bold border-b-[6px] pb-2 border-red-600 inline hover:cursor-pointer"
+									className="text-xl font-bold border-b-[4px] pb-2 border-red-600 inline hover:cursor-pointer"
 									onClick={handleShopClick}
 								>
 									Shop

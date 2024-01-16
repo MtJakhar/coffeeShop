@@ -38,7 +38,7 @@ const AddCartBtn = ({ coffee }) => {
 			<SelectorV2 itemQuant={itemQuant} handleChange={handleChange} />
 			<button
 				type="button"
-				className="block w-full h-[66px] shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[26px] text-white uppercase"
+				className="block w-full h-14 shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-xl text-white uppercase"
 				onClick={sendItem}
 			>
 				Add to Cart

@@ -49,8 +49,8 @@ const Footer = () => {
 
 	return (
 		<>
-			<div className="sm:py-16 xl:py-32 sm:px-8 xl:px-40 text-2xl text-white bg-black">
-				<div className="grid sm:grid-cols-2 xl:grid-cols-5 ">
+			<div className="py-16 px-8 md:py-20 md:px-28  text-white bg-black">
+				<div className="grid grid-cols-2 md:grid-cols-5 ">
 					{lists.map((list) => {
 						return (
 							<ul key={lists.indexOf(list)}>
@@ -59,8 +59,8 @@ const Footer = () => {
 										<li
 											className={
 												list.indexOf(listItem) === 0
-													? "font-bold px-6 sm:py-4 xl:py-6"
-													: "font-thin px-6 sm:py-4 xl:py-8"
+													? "font-bold px-6 py-4 md:py-6"
+													: "font-thin px-6 py-4 md:py-6"
 											}
 											key={list.indexOf(listItem)}
 										>
@@ -79,21 +79,21 @@ const Footer = () => {
 							</ul>
 						);
 					})}
-					<div className="py-8 sm:pl-6 xl:px-0 sm:col-span-2 xl:col-span-1">
-						<p className="font-semibold text-5xl">
+					<div className="py-8 sm:pl-6 md:px-0 col-span-2 md:col-span-1">
+						<p className="font-semibold text-3xl">
 							Stay Caffeinated
 						</p>
 						<div className="flex pt-8">
-							<FacebookRoundedIcon className="hover:text-blue-400 my-4 mr-6 text-4xl" />
-							<InstagramIcon className="hover:text-pink-400 my-4 mr-6 text-4xl" />
-							<TwitterIcon className="hover:text-sky-600 my-4 mr-6 text-4xl" />
-							<YouTubeIcon className="hover:text-red-500 my-4 mr-6 text-4xl" />
+							<FacebookRoundedIcon className="hover:text-blue-400 mr-6 text-2xl" />
+							<InstagramIcon className="hover:text-pink-400 mr-6 text-2xl" />
+							<TwitterIcon className="hover:text-sky-600 mr-6 text-2xl" />
+							<YouTubeIcon className="hover:text-red-500 mr-6 text-2xl" />
 						</div>
 					</div>
 				</div>
 
 				<div className="px-6 pt-8">
-					<ul className="xl:flex">
+					<ul className="md:flex">
 						{copyRightList.map((listItem) => {
 							return (
 								<li

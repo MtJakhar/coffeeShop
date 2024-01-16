@@ -103,7 +103,7 @@ const AddReviewModal = ({ coffee }) => {
 				<div>
 					<button
 						type="button"
-						className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
+						className="text-white w-40 h-12 shadow shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-lg uppercase"
 						onClick={handleOpen}
 					>
 						Add Review
@@ -139,7 +139,7 @@ const AddReviewModal = ({ coffee }) => {
 								<div className="flex mt-7 justify-between">
 									<button
 										type="button"
-										className="block w-44 h-12 shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-xl text-white uppercase"
+										className="text-white w-40 h-12 shadow shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-lg uppercase"
 										onClick={postReview}
 									>
 										Post
@@ -147,7 +147,7 @@ const AddReviewModal = ({ coffee }) => {
 
 									<button
 										type="button"
-										className="block w-44 h-12 shadow shadow-[#505050] hover:shadow-[#505050] rounded bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-xl text-white uppercase"
+										className="text-white w-40 h-12 shadow shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-lg uppercase"
 										onClick={handleClose}
 									>
 										Close

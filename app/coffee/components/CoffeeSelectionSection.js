@@ -13,8 +13,8 @@ const CoffeeSelectionSection = ({ coffeeData, brandData }) => {
 	};
 
 	return (
-		<div className="mx-auto pt-20">
-			<div className="flex justify-between text-white text-3xl font-semibold px-14">
+		<div className="mx-auto pt-12">
+			<div className="flex justify-between text-white text-2xl font-semibold px-14">
 				<p>Other {brandData.name} Coffees</p>
 				<p
 					className="hover:cursor-pointer hover:text-[#dc2626] underline"

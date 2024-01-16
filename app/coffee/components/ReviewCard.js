@@ -39,20 +39,19 @@ const ReviewCard = ({ review }) => {
 	};
 
 	return (
-		<div className="flex-none relative sm:m-2 xl:m-0 border-2 w-[400px] h-[400px] border-[#D3D3D3] rounded-lg">
+		<div className="flex-none relative m-2 border-2 w-[400px] h-[400px] border-[#D3D3D3] rounded-lg">
 			<div className="m-8">
-				<h1 className="font-bold text-2xl">
+				<h1 className="font-bold text-xl">
 					{review.first_name} {review.last_name}
 				</h1>
 				<div className="py-4">
 					<Rating
 						value={review.rating}
 						className="text-red-500"
-						size="large"
 						readOnly
 					/>
 				</div>
-				<p className="text-xl h-full max-h-48">"{review.text}"</p>
+				<p className="text-lg ">"{review.text}"</p>
 				<div className="absolute bottom-8">{renderButtons()}</div>
 			</div>
 		</div>

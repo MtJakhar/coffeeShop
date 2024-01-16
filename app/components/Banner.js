@@ -18,7 +18,7 @@ const Banner = () => {
 
 	return (
 		<>
-			<div className="overflow-hidden position: relative w-full sm:h-[70rem] xl:h-[65rem]">
+			<div className="overflow-hidden position: relative w-full h-[650px] bg-[#FFE4C4]">
 				<Image
 					className="object-cover transform scale-x-[-1]"
 					fill={true}
@@ -26,11 +26,11 @@ const Banner = () => {
 					alt="from freepik.com"
 				/>
 				<div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">
-					<div className="w-[40rem] h-[30rem] text-white">
-						<h1 className="font-bold drop-shadow-xl text-8xl mb-3 text-center">
+					<div className="text-white">
+						<h1 className="font-bold drop-shadow-xl text-6xl text-center">
 							The Best Coffee is Artisanal
 						</h1>
-						<p className="drop-shadow-xl text-3xl mt-12 mb-5 text-center">
+						<p className="md:w-3/4 mx-auto drop-shadow-xl text-xl pt-10 text-center">
 							We'll match you to coffee that's personalized to
 							your taste and delivered to your door.
 						</p>
@@ -38,7 +38,7 @@ const Banner = () => {
 							{data ? (
 								<button
 									type="button"
-									className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
+									className="text-white w-40 h-12 shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-lg uppercase"
 									onClick={handleShop}
 								>
 									Shop Coffee

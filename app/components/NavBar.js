@@ -40,14 +40,14 @@ const NavBar = () => {
 			<AppBar position="sticky">
 				<Toolbar className="flex justify-between">
 					<h1
-						className="hover:cursor-pointer font-bold text-6xl text-black m-5"
+						className="hover:cursor-pointer font-bold text-4xl text-black"
 						onClick={handleClick}
 					>
 						Coffee
 					</h1>
 					<div>
 						<div
-							className="font-bold text-2xl px-3 pt-3 pb-2  mx-4 border-white border-b-[5px] hover:border-red-600 hover:cursor-pointer"
+							className="font-bold border-white border-b-[3px] hover:border-red-600 hover:cursor-pointer"
 							onClick={handleShop}
 						>
 							Shop
@@ -60,10 +60,10 @@ const NavBar = () => {
 									{data ? (
 										<button
 											type="button"
-											className="w-[120px] h-[44px] border-[1px] border-[#D3D3D3] text-lg shadow-inner font-bold bg-white rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
+											className="w-28 h-10 border-[1px] border-[#D3D3D3] shadow-inner font-bold bg-white rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
 											onClick={logout}
 										>
-											Log out
+											log out
 										</button>
 									) : (
 										<AuthModal btn="login" />

@@ -21,7 +21,7 @@ const summaryName = (name) => {
 const AccordionCard = ({ name, data, handleCheckBox }) => {
 	return (
 		<>
-			<Accordion className="font-bold text-xl py-3 pl-3">
+			<Accordion className="font-bold py-3">
 				<AccordionSummary expandIcon={<ExpandMore />}>
 					<p>{summaryName(name)}</p>
 				</AccordionSummary>

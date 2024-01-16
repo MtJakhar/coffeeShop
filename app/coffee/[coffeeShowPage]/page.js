@@ -59,9 +59,9 @@ export default async function CoffeeShowPage({ params }) {
 	return (
 		<>
 			<div className="bg-[#222222]">
-				<div className="xl:flex">
+				<div className="lg:flex">
 					<div
-						className=" xl:w-1/2 relative z-0"
+						className="lg:w-1/2 relative z-0"
 						style={{
 							// backgroundImage: `url(${brand.image})`,
 							backgroundColor: "#F5F5F5",
@@ -71,8 +71,8 @@ export default async function CoffeeShowPage({ params }) {
 						<Image
 							className="mx-auto relative z-50"
 							src={coffee.image[1]}
-							width={800}
-							height={800}
+							width={600}
+							height={600}
 							priority={true}
 							alt="image of coffee"
 						/>
@@ -84,25 +84,25 @@ export default async function CoffeeShowPage({ params }) {
 						/>
 					</div>
 
-					<div className="xl:w-1/2 text-white px-16 pt-14 pb-8">
-						<div className="w-full xl:w-[650px]">
-							<h1 className="text-5xl font-bold">
+					<div className="lg:w-1/2 text-white px-14 pt-10 pb-8">
+						<div className="w-full">
+							<h1 className="text-4xl font-bold">
 								{brand.name}{" "}
-								<span className="text-xl">{brand.address}</span>
+								<span className="text-lg">{brand.address}</span>
 							</h1>
 
-							<p className="text-xl py-4">{brand.description}</p>
+							<p className="py-4">{brand.description}</p>
 
-							<h1 className="text-3xl pt-4">{coffee.name}</h1>
-							<p className="text-xl py-4">{coffee.description}</p>
+							<h1 className="text-2xl pt-4">{coffee.name}</h1>
+							<p className="py-4">{coffee.description}</p>
 
-							<div className="bg-[#30302e] rounded py-8 px-6 mt-10">
-								<div className="flex justify-between text-3xl">
+							<div className="bg-[#30302e] rounded p-8 px-6 mt-10">
+								<div className="flex justify-between text-2xl">
 									<p>One Time Purchase</p>
 									<p>${coffee.price}/bag</p>
 								</div>
 
-								<div className="pt-8">
+								<div className="pt-4">
 									<AddCartBtn coffee={coffee} />
 								</div>
 							</div>
@@ -115,7 +115,7 @@ export default async function CoffeeShowPage({ params }) {
 				/>
 			</div>
 			<div>
-				<h1 className="mt-24 font-bold text-5xl drop-shadow text-center">
+				<h1 className="mt-24 mb-10 font-bold text-4xl drop-shadow text-center">
 					Reviews for {coffee.name}
 				</h1>
 				<ReviewSlider reviewData={reviews} coffee={coffee} />

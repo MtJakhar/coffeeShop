@@ -68,17 +68,15 @@ const ShopComponent = ({
 	return (
 		<div className="ml-8 mr-4">
 			<div>
-				<h1 className="sm:text-[5rem] lg:text-[8rem] xl:text-[10rem] font-bold">
-					All Coffee
-				</h1>
-				<p className="text-[1.5rem] lg:w-3/5 mb-4">
+				<h1 className="text-7xl pt-4 font-bold">All Coffee</h1>
+				<p className="py-4 md:w-3/4">
 					Choose from a wide variety of coffee from the top roasters
 					in the US. All our specialty coffee is roasted to order and
 					shipped fresh to your door.
 				</p>
 			</div>
 			<div className="flex">
-				<div className="mt-5">
+				<div className="pt-5">
 					<AccordionShop
 						coffeeData={newCoffeeData}
 						brandData={brandData}
@@ -90,9 +88,9 @@ const ShopComponent = ({
 					/>
 				</div>
 
-				<div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-6 mx-auto mb-14">
+				<div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 mx-auto mb-14">
 					{currentCoffeeData}
-					<div className="mx-auto mt-8 xl:col-span-3 lg:col-span-2 sm:col-span-1">
+					<div className="mx-auto mt-8 lg:col-span-3 md:col-span-2 col-span-1">
 						<PaginationControlled
 							currentPage={currentPage}
 							handleCurrentPage={handleCurrentPage}

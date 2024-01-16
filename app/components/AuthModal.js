@@ -95,7 +95,7 @@ const AuthModal = ({ btn }) => {
 			return (
 				<button
 					type="button"
-					className="w-[120px] h-[44px] border-[1px] border-[#D3D3D3] text-lg font-bold shadow-inner bg-white rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
+					className="w-28 h-10 border-[1px] border-[#D3D3D3] shadow-inner font-bold bg-white rounded hover:bg-[#F1F1F1] hover:border-black uppercase"
 					onClick={handleOpen}
 				>
 					Log In
@@ -106,7 +106,7 @@ const AuthModal = ({ btn }) => {
 			return (
 				<button
 					type="button"
-					className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
+					className="text-white w-40 h-12 shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-lg uppercase"
 					onClick={handleOpen}
 				>
 					Get Started
@@ -117,7 +117,7 @@ const AuthModal = ({ btn }) => {
 			return (
 				<button
 					type="button"
-					className="text-white w-[240px] h-16  shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-[24px] uppercase"
+					className="text-white w-40 h-12 shadow-[#505050] hover:shadow-[rgb(80,80,80)] rounded-md bg-[#f53c32] hover:shadow-md hover:bg-[#d34d43] text-lg uppercase"
 					onClick={handleOpen}
 				>
 					Log In

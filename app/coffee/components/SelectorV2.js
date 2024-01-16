@@ -21,12 +21,12 @@ const SelectorV2 = ({ itemQuant, handleChange }) => {
 
 	return (
 		<>
-			<div className="mb-9">
+			<div className="mb-6">
 				<label className="text-xl" htmlFor="itemQuant">
-					QUANTITY
+					Quantity
 				</label>
 				<div
-					className="flex h-[66px] justify-around items-center bg-white rounded"
+					className="flex h-14 justify-around items-center bg-white rounded"
 					name="itemQuant"
 				>
 					<div
