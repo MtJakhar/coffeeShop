@@ -48,11 +48,11 @@ const Checkout = () => {
 	return (
 		<>
 			{cart.length === 0 ? (
-				<div></div>
+				<></>
 			) : (
-				<div className="flex-auto w-1/5 h-36 text-center bg-white text-black shadow-lg rounded-lg m-6 ">
+				<div className="lg:flex-auto lg:w-1/5 h-36 text-center bg-white text-black shadow-lg rounded-lg mx-12 lg:m-6 ">
 					<div className="p-4">
-						<h1 className="text-2xl font-bold pb-2">
+						<h1 className="text-xl font-bold pb-2">
 							<p>Subtotal</p>
 							<div className="text-xl">
 								{!hydrated ? (
@@ -64,7 +64,7 @@ const Checkout = () => {
 								)}
 							</div>
 						</h1>
-						<div className="">
+						<div>
 							<RedButton
 								text={"checkout"}
 								click={sendCart}

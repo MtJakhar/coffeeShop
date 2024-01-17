@@ -6,7 +6,7 @@ export default function page() {
 	return (
 		<>
 			<div className="bg-[#FAF9F6]">
-				<div className="flex py-20">
+				<div className="lg:flex py-10">
 					<Cart />
 					<Checkout />
 				</div>

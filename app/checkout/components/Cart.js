@@ -5,6 +5,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import CartItem from "../../components/CartItem";
 import { useRouter } from "next/navigation";
+import Checkout from "./Checkout";
 
 const Cart = () => {
 	const router = useRouter();
@@ -24,20 +25,14 @@ const Cart = () => {
 
 	return (
 		<>
-			<div className="flex-auto w-4/5 bg-white text-black shadow-lg my-6 mx-12 rounded-lg p-4">
+			<div className="lg:flex-auto lg:w-4/5 bg-white text-black shadow-lg my-6 mx-12 rounded-lg p-4">
 				<div>
-					<h1 className="text-6xl drop-shadow font-bold text-center pt-8 pb-12">
+					<h1 className="text-5xl drop-shadow font-bold text-center pt-8 pb-12">
 						Shopping Cart
 					</h1>
 					<div>
 						{!hydrated ? (
 							<div>
-								<Skeleton
-									className="mx-20 my-3"
-									variant="rounded"
-									width={300}
-									height={300}
-								/>
 								<Skeleton
 									className="mx-20 my-3"
 									variant="rounded"
@@ -67,7 +62,7 @@ const Cart = () => {
 												coffee.
 											</p>
 											<p
-												className="text-2xl font-bold border-b-[6px] pb-2 border-red-600 inline hover:cursor-pointer"
+												className="text-xl font-bold border-b-[4px] pb-2 border-red-600 inline hover:cursor-pointer"
 												onClick={handleShopClick}
 											>
 												Shop

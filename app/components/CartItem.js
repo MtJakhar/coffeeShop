@@ -73,9 +73,9 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 					<hr className="mt-4 drop-shadow" />
 				</div>
 			) : (
-				<div className="border-t-2 py-20 mx-24">
-					<div className="grid sm:grid-col-1 xl:grid-cols-2">
-						<div className="w-[400px] mx-auto bg-[#F5F5F5] shadow-lg rounded-lg">
+				<div className="border-t-2 py-10 mx-14">
+					<div className="grid grid-col-1 lg:grid-cols-2">
+						<div className="w-[300px] mx-auto lg:mx-0 bg-[#F5F5F5] rounded-lg">
 							<Image
 								className="mx-auto"
 								src={coffeeImage}
@@ -84,16 +84,12 @@ const CartItem = ({ id, coffee, isDrawer }) => {
 								alt="Coffee Image"
 							/>
 						</div>
-						<div className="sm:w-[400px] xl:w-[500px] mx-auto pt-4  sm:text-center xl:text-left rounded-lg">
-							<div className="flex-none xl:flex xl:justify-between">
-								<p className="font-bold text-3xl drop-shadow text-wrap">
-									{coffeeName}
-								</p>
-								<p className="text-xl font-bold drop-shadow">
-									${coffeePrice}
-								</p>
+						<div className="pt-6 text-center lg:text-left rounded-lg">
+							<div className="flex-none lg:flex lg:justify-between text-xl font-bold drop-shadow">
+								<p className="text-wrap">{coffeeName}</p>
+								<p className="pt-5 lg:pt-0">${coffeePrice}</p>
 							</div>
-							<div className="xl:mt-32 flex sm:justify-around xl:justify-between items-center">
+							<div className="pt-4 lg:pt-40 flex justify-around lg:justify-between items-center">
 								<Selector
 									itemQuant={coffee.quantity}
 									handleChange={handleChange}
