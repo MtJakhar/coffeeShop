@@ -11,14 +11,14 @@ const prisma = new PrismaClient();
 
 async function main() {
 	//delete previous table data
-	// console.log("Deleting previous table data...")
-	// await prisma.coffee.deleteMany();
-	// await prisma.user.deleteMany();
-	// await prisma.review.deleteMany();
-	// await prisma.brand.deleteMany();
-	// await prisma.country.deleteMany();
-	// await prisma.region.deleteMany();
-	// await prisma.roast.deleteMany();
+	console.log("Deleting previous table data...");
+	await prisma.coffee.deleteMany();
+	await prisma.user.deleteMany();
+	await prisma.review.deleteMany();
+	await prisma.brand.deleteMany();
+	await prisma.country.deleteMany();
+	await prisma.region.deleteMany();
+	await prisma.roast.deleteMany();
 
 	//create new table data
 	console.log("Creating new table data...");
