@@ -9,7 +9,7 @@ import { AuthenticationContext } from "../context/AuthContext";
 import useAuth from "@/hooks/useAuth";
 import CartDrawer from "./CartDrawer";
 import { useRouter } from "next/navigation";
-import { createTheme, ThemeProvider } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const NavBar = () => {
 	const router = useRouter();
