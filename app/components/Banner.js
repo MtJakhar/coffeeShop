@@ -18,7 +18,7 @@ const Banner = () => {
 
 	return (
 		<>
-			<div className="overflow-hidden position: relative w-full h-[650px] bg-[#FFE4C4]">
+			<div className="overflow-hidden position: relative w-full h-[650px] bg-black">
 				<Image
 					className="object-cover transform scale-x-[-1]"
 					fill={true}
