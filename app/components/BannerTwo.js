@@ -18,7 +18,7 @@ const BannerTwo = () => {
 
 	return (
 		<>
-			<div className="overflow-hidden position: relative w-full h-[550px] bg-[#FFE4C4]">
+			<div className="overflow-hidden position: relative w-full h-[550px] bg-black">
 				<Image
 					className="object-cover"
 					fill={true}
