@@ -1,6 +1,6 @@
 # Coffee Ecommerce Website
 
-Welcome to our Coffee Ecommerce Application! This full-stack application is built using Next.js, React, Node.js, Tailwind CSS, JavaScript, Stripe, and Prisma.
+Welcome to my Coffee Ecommerce Application! This full-stack application is built using Next.js, React, Node.js, Tailwind CSS, JavaScript, Stripe, and Prisma.
 
 ## Test Credentials
 - Test Email: test@gmail.com
